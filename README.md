@@ -1,5 +1,5 @@
 ﻿<h1>
-  <img src="./logo.png" alt="Logo" style="vertical-align: middle; 
+  <img src="./Logo/logo.png" alt="Logo" style="vertical-align: middle; 
   width: 200px; height: 200px;">
   Mi Proyecto
 </h1>
