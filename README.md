@@ -46,6 +46,14 @@ Crear migración (Se deben crear en el orden en que se desea que se ejecuten)
 php artisan:makemigration create_nombre_table
 ```
 
+Configurar las migraciones
+```javascript
+ Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+ });
+```
+
 Migrar (Se migra por orden alfabético)
 ```
 php artisan migrate
@@ -73,6 +81,8 @@ php artisan migrate:status
 
 # 3. Configuración
 
+Hay que modificar el archivo .env (Se encuentra en el directorio raiz):
+
 ```javascript
  'mysql' => [
             'driver' => 'mysql',
@@ -94,6 +104,8 @@ php artisan migrate:status
             ]) : [],
         ],
 ```
+
+# 4. Modelo
 
 
 
