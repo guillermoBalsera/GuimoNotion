@@ -39,3 +39,31 @@ npm install
 npm run dev
 ```
 
+# Migraciones
+
+Crear migración (Se deben crear en el orden en que se desea que se ejecuten)
+```
+php artisan:makemigration create_nombre_table
+```
+
+Migrar (Se migra por orden alfabético)
+```
+php artisan migrate
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
