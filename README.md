@@ -1,6 +1,6 @@
 ﻿# PHP-Laravel
 
-![Logo](./Logo/logo.png)
+![Logo](./Logo/logo.png){:width="200px" height="100px"}
 
 # 1. Instalación Laravel y creación del proyecto
 
