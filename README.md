@@ -39,7 +39,7 @@ npm install
 npm run dev
 ```
 
-# Migraciones
+# 2. Migraciones
 
 Crear migración (Se deben crear en el orden en que se desea que se ejecuten)
 ```
@@ -50,6 +50,28 @@ Migrar (Se migra por orden alfabético)
 ```
 php artisan migrate
 ```
+
+Deshacer la última migración
+```
+php artisan migrate:rollback
+```
+
+Deshacer todas las migraciones
+```
+php artisan migrate:reset
+```
+
+Deshacer todas las migraciones y migrar de nuevo
+```
+php artisan migrate:fresh
+```
+
+Estado de las migraciones
+```
+php artisan migrate:status
+```
+
+
 
 
 
