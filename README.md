@@ -1,5 +1,7 @@
 ﻿# PHP-Laravel
 
+![Logo](./Logo/astronaut__4_-removebg-preview.png)
+
 # 1. Instalación Laravel y creación del proyecto
 
 Instalar Laravel
