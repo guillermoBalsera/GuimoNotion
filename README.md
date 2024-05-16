@@ -1,5 +1,7 @@
 ﻿# PHP-Laravel
 
+# 1. Instalación Laravel y creación del proyecto
+
 Instalar Laravel
 ```
 composer global require laravel/installer
@@ -15,17 +17,22 @@ Versión de Laravel
 laravel -v
 ```
 
-
+Intalar Breeze
 ```
 composer require laravel/breeze --dev
+```
 
+Crear el proyecto (Elegir la opcion 0 o blame) ¿?
+```
+php artisan breeze: install
 ```
 ```
-composer global update laravel/installer
+php artisan migrate
 ```
 ```
-composer global update laravel/installer
+npm install
 ```
 ```
-composer global update laravel/installer
+npm run dev
 ```
+
