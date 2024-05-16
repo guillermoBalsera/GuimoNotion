@@ -1,9 +1,6 @@
-﻿<h1>
-  <img src="./Logo/logo.png" alt="Logo" style="vertical-align: middle; 
-  width: 200px; height: 200px;">
-  Mi Proyecto
-</h1>
+﻿# PHP-Laravel
 
+<img src="./Logo/logo.png" alt="Descripción de la imagen" width="200px" height="200px">
 
 # 1. Instalación Laravel y creación del proyecto
 
