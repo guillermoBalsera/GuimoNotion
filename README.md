@@ -1,7 +1,8 @@
 ﻿<div align="center">
-   # PHP-Laravel
+   <h1>PHP-Laravel</h1>
   <img src="./Logo/logo.png" alt="Descripción de la imagen" width="200px" height="200px">
-<div>
+</div>
+   
 # 1. Instalación Laravel y creación del proyecto
 
 Instalar Laravel
