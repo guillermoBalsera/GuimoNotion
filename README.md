@@ -30,33 +30,32 @@
    
 ## 1. Instalación de Laravel y creación de un nuevo proyecto
 
-Instalar Laravel
+#####Instalar Laravel
 ```
 composer global require laravel/installer
 ```
 
-Actualizar Laravel
+#####Actualizar Laravel
 ```
 composer global update laravel/installer
 ```
 
-Versión de Laravel
+#####Versión de Laravel
 ```
 laravel -v
 ```
 
-Intalar Breeze
+#####Intalar Breeze
 ```
 composer require laravel/breeze --dev
 ```
 
-Crear el proyecto ¿?
+#####Crear el proyecto ¿?
 ```
 composer create-project laravel/laravel APi_12
 ```
 
-Elegir la opcion 0 o blame
-
+#####Elegir la opcion 0 o blame
 ```
 php artisan breeze:install
 ```
@@ -72,12 +71,12 @@ npm run dev
 
 ## 2. Migraciones
 
-Crear migración (Se deben crear en el orden en que se desea que se ejecuten)
+#####Crear migración (Se deben crear en el orden en que se desea que se ejecuten)
 ```
 php artisan:makemigration create_nombre_table
 ```
 
-Configurar las migraciones
+#####Configurar las migraciones
 ```php
  Schema::create('users', function (Blueprint $table) {
             $table->id();
@@ -85,34 +84,34 @@ Configurar las migraciones
  });
 ```
 
-Migrar (Se migra por orden alfabético)
+#####Migrar (Se migra por orden alfabético)
 ```
 php artisan migrate
 ```
 
-Deshacer la última migración
+#####Deshacer la última migración
 ```
 php artisan migrate:rollback
 ```
 
-Deshacer todas las migraciones
+#####Deshacer todas las migraciones
 ```
 php artisan migrate:reset
 ```
 
-Deshacer todas las migraciones y migrar de nuevo
+#####Deshacer todas las migraciones y migrar de nuevo
 ```
 php artisan migrate:fresh
 ```
 
-Estado de las migraciones
+#####Estado de las migraciones
 ```
 php artisan migrate:status
 ```
 
 ## 3. Configuración
 
-Hay que modificar el archivo .env (Se encuentra en el directorio raiz):
+#####Hay que modificar el archivo .env (Se encuentra en el directorio raiz):
 
 ```javascript
 DB_CONNECTION=mysql
@@ -125,7 +124,7 @@ DB_PASSWORD=*
 
 ## 4. Modelo
 
-Especificar el nombre de la tabla en la base de datos
+#####Especificar el nombre de la tabla en la base de datos
 
 ```php
 protected $table = 'tasks_lists';
@@ -134,7 +133,7 @@ protected $primaryKey = 'id';
 
 ### 4.1 Atributos
 
-Se deben especificar también las foreign keys
+#####Se deben especificar también las foreign keys
 
 ```php
 protected $fileable = [
