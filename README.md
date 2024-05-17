@@ -3,12 +3,30 @@
    <h1>PHP-Laravel</h1>
 </div>
 
+# Proyecto Ejemplo
+
 ## Índice
-- [1. Instalación de Laravel y creación de un nuevo proyecto](#introducción)
+- [Introducción](#introducción)
 - [Instalación](#instalación)
 - [Uso](#uso)
 - [Contribuir](#contribuir)
 - [Licencia](#licencia)
+
+## Introducción
+Aquí va la introducción de tu proyecto.
+
+## Instalación
+Instrucciones para instalar tu proyecto.
+
+## Uso
+Ejemplos y guías de uso.
+
+## Contribuir
+Guía para contribuir al proyecto.
+
+## Licencia
+Información sobre la licencia del proyecto.
+
    
 ## 1. Instalación de Laravel y creación de un nuevo proyecto
 
