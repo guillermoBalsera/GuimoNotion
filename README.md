@@ -29,8 +29,10 @@ Crear el proyecto ¿?
 ```
 composer create-project laravel/laravel APi_12
 ```
+
+Elegir la opcion 0 o blame
+
 ```
-/*Elegir la opcion 0 o blame*/
 php artisan breeze:install
 ```
 ```
