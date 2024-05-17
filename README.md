@@ -111,7 +111,7 @@ php artisan migrate:status
 
 ##### Hay que modificar el archivo .env (Se encuentra en el directorio raiz):
 
-```javascript
+```php
 DB_CONNECTION=mysql
 DB_HOST=localhost
 DB_PORT=3306
@@ -222,6 +222,21 @@ class Biblioteca extends Model {
 }
 ```
 
+# 5. Seeders
+
+Los seeders sirven para rellenar la base de datos con información inicial.
+
+Se debe crear un seeder para cada tabla.
+
+```code
+php artisan make:seeder NombreSeeder
+```
+
+Desde la función 'run' de la clase 'DatabaseSeeder'
+
+```php
+
+```
 
 
 
