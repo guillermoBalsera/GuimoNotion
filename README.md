@@ -3,7 +3,7 @@
    <h1>PHP-Laravel</h1>
 </div>
 
-- # Índice
+# Índice
 
 - [1. Instalación de Laravel y creación de un nuevo proyecto](#1-instalación-de-laravel-y-creación-de-un-nuevo-proyecto)
   - [Instalar Laravel](#instalar-laravel)
