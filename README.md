@@ -20,7 +20,7 @@
   - [Deshacer todas las migraciones](#deshacer-todas-las-migraciones)
   - [Deshacer todas las migraciones y migrar de nuevo](#deshacer-todas-las-migraciones-y-migrar-de-nuevo)
   - [Estado de las migraciones](#estado-de-las-migraciones)
-- [3. Configuración](#3-configuración)
+- [3. Configuración del archivo .env para la conexión con la base de datos](#3-configuración)
 - [4. Modelo](#4-modelo)
   - [4.1 Atributos](#41-atributos)
   - [4.2 Relaciones](#42-relaciones)
@@ -109,7 +109,7 @@ php artisan migrate:fresh
 php artisan migrate:status
 ```
 
-## 3. Configuración
+## 3. Configuración del archivo .env para la conexión con la base de datos
 
 ##### Hay que modificar el archivo .env (Se encuentra en el directorio raiz):
 
