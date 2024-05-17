@@ -53,7 +53,7 @@ composer require laravel/breeze --dev
 composer create-project laravel/laravel APi_12
 ```
 
-##### Elegir la opcion `0` o blame
+##### Elegir la opcion ` 0 ` o `blame`
 ```
 php artisan breeze:install
 ```
@@ -86,6 +86,9 @@ Schema::create('users', function (Blueprint $table) {
 ```
 php artisan migrate
 ```
+
+> [!NOTE]
+> Se migra por orden alfabético o por fecha de creación si no se han modificado los nombre de los archivos.
 
 ##### Deshacer la última migración
 ```
@@ -153,7 +156,9 @@ protected $fileable = [
    'name'
 ];
 ```
-<small>Se deben especificar también las **foreign keys**</small>
+
+> [!NOTE]
+> Se deben especificar también las **foreign keys**
 
 ### 4.2 Relaciones
 
