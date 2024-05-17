@@ -53,7 +53,7 @@ composer require laravel/breeze --dev
 composer create-project laravel/laravel APi_12
 ```
 
-##### Elegir la opcion 0 o blame
+##### Elegir la opcion `0` o blame
 ```
 php artisan breeze:install
 ```
@@ -109,7 +109,7 @@ php artisan migrate:status
 
 ## 3. Configuración
 
-##### Hay que modificar el archivo .env (Se encuentra en el directorio raiz):
+##### Hay que modificar el archivo *.env* (Se encuentra en el directorio raiz):
 
 ```php
 DB_CONNECTION=mysql
@@ -134,12 +134,12 @@ La tabla es el plural del nombre del modelo creado, pero a veces no lo detecta b
 protected $table = 'tasks_lists';
 ```
 
-Con la primary key pasa algo parecido. Laravel asume que cada tabla tiene declarado un campo llamado 'id', pero en caso de que no sea así debemos sobreescribirlo.
+Con la primary key pasa algo parecido. Laravel asume que cada tabla tiene declarado un campo llamado `id`, pero en caso de que no sea así debemos sobreescribirlo.
 ```php
 protected $primaryKey = 'id';
 ```
 
-La propiedad 'timestamps' nos permite crear los campos 'updated_at' y 'created_at' en la base de datos de forma automática en la base de datos.
+La propiedad `timestamps` nos permite crear los campos `updated_at` y `created_at` en la base de datos de forma automática en la base de datos.
 Estos campos se actualizan automaticamente al ejercer acciones de actualizado o creación de la fila.
 ```php
 public $timestamps = false;
@@ -153,13 +153,13 @@ protected $fileable = [
    'name'
 ];
 ```
-<small>Se deben especificar también las foreign keys</small>
+<small>Se deben especificar también las **foreign keys**</small>
 
 ### 4.2 Relaciones
 
 #### 4.2.1 One to One
 
-Se debe crear una funcion 'hasOne()' en uno de los modelos.
+Se debe crear una funcion `hasOne()` en uno de los modelos.
 
 ```php
 class Libro extends Model {
@@ -169,7 +169,7 @@ class Libro extends Model {
 }
 ```
 
-Si se desea hacer la relación bidireccional debe agregarse al otro modelo el metodo 'belongsTo()'
+Si se desea hacer la relación bidireccional debe agregarse al otro modelo el metodo `belongsTo()`
 
 ```php
 class Libro extends Model {
@@ -181,7 +181,7 @@ class Libro extends Model {
 
 #### 4.2.2 One to Many
 
-Se debe crear la función 'hasMany()' en el modelo que posee varios objetos.
+Se debe crear la función `hasMany()` en el modelo que posee varios objetos.
 
 ```php
 class Autor extends Model
@@ -192,7 +192,7 @@ class Autor extends Model
 }
 ```
 
-La relación inversa se establece creando la función 'belongsTo()' en el otro modelo.
+La relación inversa se establece creando la función `belongsTo()` en el otro modelo.
 
 ```php
 class Libro extends Model {
@@ -204,7 +204,7 @@ class Libro extends Model {
 
 #### 4.2.3 Many to Many
 
-En los dos modelos debe definirse el metodo 'belongToMany()'
+En los dos modelos debe definirse el metodo `belongToMany()`
 
 ```php
 class Libro extends Model {
