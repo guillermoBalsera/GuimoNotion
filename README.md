@@ -87,7 +87,7 @@ Schema::create('users', function (Blueprint $table) {
 php artisan migrate
 ```
 
-> [!NOTE]
+> [!NOTA]
 > Se migra por orden alfabético o por fecha de creación si no se han modificado los nombre de los archivos.
 
 ##### Deshacer la última migración
@@ -157,7 +157,7 @@ protected $fileable = [
 ];
 ```
 
-> [!NOTE]
+> [!NOTA]
 > Se deben especificar también las **foreign keys**
 
 ### 4.2 Relaciones
@@ -229,18 +229,51 @@ class Biblioteca extends Model {
 
 # 5. Seeders
 
-Los seeders sirven para rellenar la base de datos con información inicial.
+Los **seeders** sirven para rellenar la base de datos con información inicial.
 
-Se debe crear un seeder para cada tabla.
+Para crear un **seeder** usaremos el comando:
 
-```code
+```
 php artisan make:seeder NombreSeeder
 ```
+
+Se recomienda crear un **seeder** para cada tabla. En este **seeder** se creará un método `run` donde escribiremos los datos que queremos introducir en la base de datos.
 
 Desde la función 'run' de la clase 'DatabaseSeeder'
 
 ```php
+$this->call(NombreSeeder::class);
+```
 
+# 6. Factories
+
+Los **factories** son clases que nos crean datos ficticios automáticamente.
+
+Para crear un **factorie** usaremos el comando:
+
+```
+php artisan make:factorie NombreFactorie
+```
+
+Se recomienda crear un **factorie** para cada clase: En este **factorie** debemos completar el atributo `model` y la función `definition()`.
+
+```php
+class NombreFactory extendes Factory {
+  protected $model = Nombre::class;
+
+  public function definition() {
+    return [
+      'atributo' => fake()->name(),
+      'atributo' => fake()->name()
+    ];
+  }
+}
+```
+
+Luego desde la función `run` de la clase **Seeder** podemos llamar al **factorie** de la siguiente forma:
+
+```php
+\App\Models\Nombre::factory(número)->create();
 ```
 
 
