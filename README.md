@@ -78,10 +78,10 @@ php artisan:makemigration create_nombre_table
 
 ##### Configurar las migraciones
 ```php
- Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
- });
+Schema::create('users', function (Blueprint $table) {
+   $table->id();
+   $table->string('name');
+});
 ```
 
 ##### Migrar (Se migra por orden alfabético)
@@ -124,30 +124,79 @@ DB_PASSWORD=*
 
 ## 4. Modelo
 
+##### Crear nuevo modelo
+```
+php artisan make:model Nombre
+```
+
 ##### Especificar el nombre de la tabla en la base de datos
 
+La tabla es el plural del nombre del modelo creado, pero a veces no lo detecta bien asi que le cambiamos manualmente el nombre para que pueda encontrar la tabla.
 ```php
 protected $table = 'tasks_lists';
+```
+
+Con la primary key pasa algo parecido. Laravel asume que cada tabla tiene declarado un campo llamado 'id', pero en caso de que no sea así debemos sobreescribirlo.
+```php
 protected $primaryKey = 'id';
 ```
 
 ### 4.1 Atributos
 
-##### Se deben especificar también las foreign keys
-
 ```php
 protected $fileable = [
-      'id',
-      'name'
-    ];
+   'id',
+   'name'
+];
 ```
+<small>Se deben especificar también las foreign keys</small>
 
 ### 4.2 Relaciones
 
 #### 4.2.1 One to One
 
+Se debe crear una funcion 'hasOne()' en uno de los modelos.
+
+```php
+public function clase_relacionada(){
+    return $this->hasOne(ClaseRelacionada::class);
+}
+```
+
+Si se desea hacer la relación bidireccional debe agregarse al otro modelo el metodo 'belongsTo()'
+
+```php
+class Libro extends Model
+{
+  public function portada(){
+    return $this->hasOne(Portada::class);
+  }
+}
+```
 
 #### 4.2.2 One to Many
+
+Se debe crear la función 'hasMany()' en el modelo que posee varios objetos.
+
+```php
+class Autor extends Model
+{
+  public function libros(){
+    return $this->hasMany(Libro::class);
+  }
+}
+```
+
+La relación inversa se establece creando la función 'belongsTo()' en el otro modelo.
+
+```php
+class Libro extends Model
+{
+  public function autor(){
+    return $this->belongsTo(Autor::class);
+  }
+}
+```
 
 
 #### 4.2.3 Many to Many
