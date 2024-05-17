@@ -158,17 +158,18 @@ protected $fileable = [
 Se debe crear una funcion 'hasOne()' en uno de los modelos.
 
 ```php
-public function clase_relacionada(){
-    return $this->hasOne(ClaseRelacionada::class);
+class Libro extends Model {
+  public function portada() {
+    return $this->hasOne(Portada::class);
+  }
 }
 ```
 
 Si se desea hacer la relación bidireccional debe agregarse al otro modelo el metodo 'belongsTo()'
 
 ```php
-class Libro extends Model
-{
-  public function portada(){
+class Libro extends Model {
+  public function portada() {
     return $this->hasOne(Portada::class);
   }
 }
@@ -190,17 +191,32 @@ class Autor extends Model
 La relación inversa se establece creando la función 'belongsTo()' en el otro modelo.
 
 ```php
-class Libro extends Model
-{
-  public function autor(){
+class Libro extends Model {
+  public function autor() {
     return $this->belongsTo(Autor::class);
   }
 }
 ```
 
-
 #### 4.2.3 Many to Many
 
+En los dos modelos debe definirse el metodo 'belongToMany()'
+
+```php
+class Libro extends Model {
+  public function bibliotecas() {
+    return $this->belongsToMany(Biblioteca::class);
+  }
+}
+```
+
+```php
+class Biblioteca extends Model {
+  public function libros() {
+    return $this->belongsToMany(Libro::class);
+  }
+}
+```
 
 
 
