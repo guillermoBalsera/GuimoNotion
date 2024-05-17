@@ -3,7 +3,7 @@
   <img src="./Logo/logo.png" alt="Descripción de la imagen" width="200px" height="200px">
 </div>
    
-## 1. Instalación Laravel y creación del proyecto
+## 1. Instalación de Laravel y creación de un nuevo proyecto
 
 Instalar Laravel
 ```
