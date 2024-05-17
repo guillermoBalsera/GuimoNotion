@@ -25,8 +25,12 @@ Intalar Breeze
 composer require laravel/breeze --dev
 ```
 
-Crear el proyecto (Elegir la opcion 0 o blame) ¿?
+Crear el proyecto ¿?
 ```
+composer create-project laravel/laravel APi_12
+```
+```
+/*Elegir la opcion 0 o blame*/
 php artisan breeze:install
 ```
 ```
