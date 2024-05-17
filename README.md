@@ -139,6 +139,12 @@ Con la primary key pasa algo parecido. Laravel asume que cada tabla tiene declar
 protected $primaryKey = 'id';
 ```
 
+La propiedad 'timestamps' nos permite crear los campos 'updated_at' y 'created_at' en la base de datos de forma automática en la base de datos.
+Estos campos se actualizan automaticamente al ejercer acciones de actualizado o creación de la fila.
+```php
+public $timestamps = false;
+```
+
 ### 4.1 Atributos
 
 ```php
