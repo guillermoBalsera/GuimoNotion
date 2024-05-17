@@ -3,7 +3,7 @@
   <img src="./Logo/logo.png" alt="Descripción de la imagen" width="200px" height="200px">
 </div>
    
-# 1. Instalación Laravel y creación del proyecto
+## 1. Instalación Laravel y creación del proyecto
 
 Instalar Laravel
 ```
@@ -39,7 +39,7 @@ npm install
 npm run dev
 ```
 
-# 2. Migraciones
+## 2. Migraciones
 
 Crear migración (Se deben crear en el orden en que se desea que se ejecuten)
 ```
@@ -47,7 +47,7 @@ php artisan:makemigration create_nombre_table
 ```
 
 Configurar las migraciones
-```javascript
+```php
  Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
@@ -79,39 +79,49 @@ Estado de las migraciones
 php artisan migrate:status
 ```
 
-# 3. Configuración
+## 3. Configuración
 
 Hay que modificar el archivo .env (Se encuentra en el directorio raiz):
 
 ```javascript
- 'mysql' => [
-            'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'strict' => true,
-            'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
-        ],
+DB_CONNECTION=LENGUAJE DE LA BASE DE DATOS
+DB_HOST=IP DE LA BASE DE DATOS/LOCALHOST
+DB_PORT=PUERTO DE LA BASE DE DATOS
+DB_DATABASE=NOMBRE DE LA BASE DE DATOS
+DB_USERNAME=NOMBRE DE USUARIO PARA ACCEDER A LA BASE DE DATOS
+DB_PASSWORD=CONTRASEÑA PARA ACCEDER A LA BASE DE DATOS
 ```
 
-# 4. Modelo
+## 4. Modelo
 
-Crear nuevo modelo
+Especificar el nombre de la tabla en la base de datos
 
+```php
+protected $table = 'tasks_lists';
+protected $primaryKey = 'id';
 ```
-php artisan create migration
+
+### 4.1 Atributos
+
+Se deben especificar también las foreign keys
+
+```php
+protected $fileable = [
+      'id',
+      'name'
+    ];
 ```
+
+### 4.2 Relaciones
+
+#### 4.2.1 One to One
+
+
+#### 4.2.2 One to Many
+
+
+#### 4.2.3 Many to Many
+
 
 
 
