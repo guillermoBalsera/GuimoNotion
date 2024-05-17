@@ -2,6 +2,13 @@
    <img src="./Logo/logo.png" alt="Descripción de la imagen" width="200px" height="200px">
    <h1>PHP-Laravel</h1>
 </div>
+
+## Índice
+- [1. Instalación de Laravel y creación de un nuevo proyecto](#introducción)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Contribuir](#contribuir)
+- [Licencia](#licencia)
    
 ## 1. Instalación de Laravel y creación de un nuevo proyecto
 
