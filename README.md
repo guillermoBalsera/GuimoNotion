@@ -107,8 +107,11 @@ Hay que modificar el archivo .env (Se encuentra en el directorio raiz):
 
 # 4. Modelo
 
+Crear nuevo modelo
 
-
+```
+php artisan create migration
+```
 
 
 
