@@ -3,30 +3,30 @@
    <h1>PHP-Laravel</h1>
 </div>
 
-# Proyecto Ejemplo
+- # Índice
 
-## Índice
-- [Introducción](#introducción)
-- [Instalación](#instalación)
-- [Uso](#uso)
-- [Contribuir](#contribuir)
-- [Licencia](#licencia)
-
-## Introducción
-Aquí va la introducción de tu proyecto.
-
-## Instalación
-Instrucciones para instalar tu proyecto.
-
-## Uso
-Ejemplos y guías de uso.
-
-## Contribuir
-Guía para contribuir al proyecto.
-
-## Licencia
-Información sobre la licencia del proyecto.
-
+- [1. Instalación de Laravel y creación de un nuevo proyecto](#1-instalación-de-laravel-y-creación-de-un-nuevo-proyecto)
+  - [Instalar Laravel](#instalar-laravel)
+  - [Actualizar Laravel](#actualizar-laravel)
+  - [Versión de Laravel](#versión-de-laravel)
+  - [Instalar Breeze](#instalar-breeze)
+  - [Crear el proyecto](#crear-el-proyecto)
+  - [Ejecutar comandos iniciales](#ejecutar-comandos-iniciales)
+- [2. Migraciones](#2-migraciones)
+  - [Crear migración](#crear-migración)
+  - [Configurar las migraciones](#configurar-las-migraciones)
+  - [Migrar](#migrar)
+  - [Deshacer la última migración](#deshacer-la-última-migración)
+  - [Deshacer todas las migraciones](#deshacer-todas-las-migraciones)
+  - [Deshacer todas las migraciones y migrar de nuevo](#deshacer-todas-las-migraciones-y-migrar-de-nuevo)
+  - [Estado de las migraciones](#estado-de-las-migraciones)
+- [3. Configuración](#3-configuración)
+- [4. Modelo](#4-modelo)
+  - [4.1 Atributos](#41-atributos)
+  - [4.2 Relaciones](#42-relaciones)
+    - [4.2.1 One to One](#421-one-to-one)
+    - [4.2.2 One to Many](#422-one-to-many)
+    - [4.2.3 Many to Many](#423-many-to-many)
    
 ## 1. Instalación de Laravel y creación de un nuevo proyecto
 
