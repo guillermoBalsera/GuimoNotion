@@ -88,7 +88,7 @@ php artisan migrate
 ```
 
 > [!NOTE]
-> Se migra por orden alfabético o por fecha de creación si no se han modificado los nombre de los archivos.
+> Se migra por orden alfabético o por fecha de creación si no se han modificado los nombres de los archivos.
 
 ##### Deshacer la última migración
 ```
