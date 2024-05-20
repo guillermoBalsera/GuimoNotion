@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="./Logo/logo.png" alt="Descripción de la imagen" width="200px" height="200px">
+   <img src="../Logo/logo.png" alt="Descripción de la imagen" width="200px" height="200px">
    <h1>PHP-Laravel</h1>
 </div>
 
@@ -272,7 +272,8 @@ class NombreFactory extendes Factory {
   public function definition() {
     return [
       'atributo' => fake()->name(),
-      'atributo' => fake()->name()
+      'atributo' => fake()->name(),
+      'foreign_key' => ModeloForeignKey::all()->random()->id,
     ];
   }
 }
@@ -284,17 +285,7 @@ Desde la función `run` de la clase **Seeder** podemos llamar al **factorie** de
 \App\Models\Nombre::factory(número)->create();
 ```
 
-## 7. Controladores
-
-Para crear un **controlador** usaremos el comando:
-
-```
-php artisan make:controller NombreApiController --api
-```
-
-Nos creará los métodos index, store, show, update y destroy vacios por defecto.
-
-## 8. Resources
+## 7. Resources
 
 Los **resources** son herramientas para dar forma a las respuestas *JSON* de la *API*, de tal manera que nos permiten personalizar la presentación de los datos.
 
@@ -304,10 +295,91 @@ Para crear un **resource** usaremos el comando:
 php artisan make:resource NombreResource
 ```
 
-## 9. Collections
+Puedes personalizar qué campos incluir, renombrarlos y agregar información adicional.
 
-Las **collections** nos permiten trasnformar colecciones en respuestas *JSON* estructuradas.
+```php
+public function toArray($request)
+{
+    return [
+        'id' => $this->id,
+        'titulo' => $this->titulo,
+        'contenido' => $this->contenido,
+        'fecha' => $this->created_at->format('Y-m-d'),
+        'clave_foranea' => $this->nombre_tabla,
+        'clave_foranea' => $this->nombre_tabla->campo_tabla
+    ];
+}
+```
 
+## 8. Collections
+
+Las **collections** nos permiten transformar colecciones en respuestas *JSON* estructuradas.
+
+Para crear una **colection** usaremos el comando:
+
+```
+php artisan make:resource ArticuloCollection
+```
+
+## 9. Controladores
+
+Para crear un **controlador** usaremos el comando:
+
+```
+php artisan make:controller NombreApiController --api
+```
+
+Nos creará los métodos index, store, show, update y destroy vacios por defecto.
+
+### 9.1 Validación de campos con request
+
+Para validar campos es recomendable el uso de **request**, que se trata de una clase donde establecemos una serie de reglas que deben cumplir los campos.
+
+Si deseamos crear un **request** utilizamos el siguiente comando:
+
+```
+php artisan make:request CreateNombreRequest
+```
+
+Y dentro de la función `rules` personalizamos las reglas de validación:
+
+```php
+public function rules()
+    {
+        return [
+            'titulo' => 'required|string|max:255',
+            'contenido' => 'required|string',
+            // Otras reglas de validación según tus necesidades
+        ];
+    }
+```
+
+Tras esto no necesitariamos validar en el controlador directamente sino que implementariamos el siguiente código:
+
+```php
+public function store(CreateNombreRequest $request) {
+  return new NombreResource(Nombre::create($request->all()));
+}
+```
+
+### 9.2 Validación de campos en el controlador
+
+Para validar campos en el controlador implementamos el siguiente código dentro de nuestra función:
+
+```php
+$validator = Validator::make($request->all(), [
+  "id" => "required|exists:processes,id", 
+  "code" => "required|string|max:250",
+  "description" => "required",
+  "date" => "required",
+]);
+
+if ($validator->fails()) {
+  return response()->json($validator->errors(), 400);
+}
+```
+
+El *id* solo si es necesario comprobarlo si ese objeto existe en la base de datos para una actualización.
 
 
 
