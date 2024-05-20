@@ -87,7 +87,7 @@ Schema::create('users', function (Blueprint $table) {
 php artisan migrate
 ```
 
-> [!NOTA]
+> [!NOTE]
 > Se migra por orden alfabético o por fecha de creación si no se han modificado los nombre de los archivos.
 
 ##### Deshacer la última migración
@@ -157,7 +157,7 @@ protected $fileable = [
 ];
 ```
 
-> [!NOTA]
+> [!NOTE]
 > Se deben especificar también las **foreign keys**
 
 ### 4.2 Relaciones
