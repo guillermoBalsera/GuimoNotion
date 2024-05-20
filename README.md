@@ -239,10 +239,16 @@ php artisan make:seeder NombreSeeder
 
 Se recomienda crear un **seeder** para cada tabla. En este **seeder** se creará un método `run` donde escribiremos los datos que queremos introducir en la base de datos.
 
-Desde la función 'run' de la clase 'DatabaseSeeder'
+Desde la función `run` de la clase `DatabaseSeeder` llamaremos a los distintos **seeders**
 
 ```php
 $this->call(NombreSeeder::class);
+```
+
+Para ejecutar la clase `DatabaseSeeder` usaremos el comando:
+
+```
+php artisan db:seed
 ```
 
 # 6. Factories
@@ -255,7 +261,9 @@ Para crear un **factorie** usaremos el comando:
 php artisan make:factorie NombreFactorie
 ```
 
-Se recomienda crear un **factorie** para cada clase: En este **factorie** debemos completar el atributo `model` y la función `definition()`.
+Se recomienda crear un **factorie** para cada clase. 
+
+En este **factorie** debemos completar el atributo `model` y la función `definition()`.
 
 ```php
 class NombreFactory extendes Factory {
@@ -270,12 +278,35 @@ class NombreFactory extendes Factory {
 }
 ```
 
-Luego desde la función `run` de la clase **Seeder** podemos llamar al **factorie** de la siguiente forma:
+Desde la función `run` de la clase **Seeder** podemos llamar al **factorie** de la siguiente forma:
 
 ```php
 \App\Models\Nombre::factory(número)->create();
 ```
 
+## 7. Controladores
+
+Para crear un **controlador** usaremos el comando:
+
+```
+php artisan make:controller NombreApiController --api
+```
+
+Nos creará los métodos index, store, show, update y destroy vacios por defecto.
+
+## 8. Resources
+
+Los **resources** son herramientas para dar forma a las respuestas *JSON* de la *API*, de tal manera que nos permiten personalizar la presentación de los datos.
+
+Para crear un **resource** usaremos el comando:
+
+```
+php artisan make:resource NombreResource
+```
+
+## 9. Collections
+
+Las **collections** nos permiten trasnformar colecciones en respuestas *JSON* estructuradas.
 
 
 
