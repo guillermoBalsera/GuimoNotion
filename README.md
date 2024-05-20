@@ -247,7 +247,7 @@ $this->call(NombreSeeder::class);
 
 # 6. Factories
 
-Los **factories** son clases que nos crean datos ficticios automáticamente.
+Los **factories** son clases que crean por nosotros datos ficticios automáticamente.
 
 Para crear un **factorie** usaremos el comando:
 
