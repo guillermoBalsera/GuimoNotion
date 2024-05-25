@@ -1,6 +1,6 @@
 <div align="center">
    <img src="../0-Assets/logo.png" alt="Descripción de la imagen" width="200px" height="200px">
-   <h1>Angular</h1>
+   <h1>ANGULAR</h1>
 </div>
 
 # 1. Instalación y creación de un nuevo proyecto

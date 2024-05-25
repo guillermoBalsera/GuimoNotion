@@ -1,10 +1,22 @@
 <div align="center">
    <img src="../0-Assets/logo.png" alt="Descripción de la imagen" width="200px" height="200px">
-   <h1>PHP-Laravel</h1>
+   <h1>PHP LARAVEL</h1>
 </div>
 
-- [1. Instalación de Laravel y creación de un nuevo proyecto](#1-instalación-de-laravel-y-creación-de-un-nuevo-proyecto) - [Instalar Laravel](#instalar-laravel) - [Actualizar Laravel](#actualizar-laravel) - [Versión de Laravel](#versión-de-laravel) - [Intalar Breeze](#intalar-breeze) - [Crear el proyecto](#crear-el-proyecto)
-- [2. Migraciones](#2-migraciones) - [Crear migración](#crear-migración) - [Configurar las migraciones](#configurar-las-migraciones) - [Migrar](#migrar) - [Deshacer la última migración](#deshacer-la-última-migración) - [Deshacer todas las migraciones](#deshacer-todas-las-migraciones) - [Deshacer todas las migraciones y migrar de nuevo](#deshacer-todas-las-migraciones-y-migrar-de-nuevo) - [Estado de las migraciones](#estado-de-las-migraciones)
+- [1. Instalación de Laravel y creación de un nuevo proyecto](#1-instalación-de-laravel-y-creación-de-un-nuevo-proyecto)
+  - [Instalar Laravel](#instalar-laravel)
+  - [Actualizar Laravel](#actualizar-laravel)
+  - [Versión de Laravel](#versión-de-laravel)
+  - [Intalar Breeze](#intalar-breeze)
+  - [Crear el proyecto](#crear-el-proyecto)
+- [2. Migraciones](#2-migraciones)
+  - [Crear migración](#crear-migración)
+  - [Configurar las migraciones](#configurar-las-migraciones)
+  - [Migrar](#migrar)
+  - [Deshacer la última migración](#deshacer-la-última-migración)
+  - [Deshacer todas las migraciones](#deshacer-todas-las-migraciones)
+  - [Deshacer todas las migraciones y migrar de nuevo](#deshacer-todas-las-migraciones-y-migrar-de-nuevo)
+  - [Estado de las migraciones](#estado-de-las-migraciones)
 - [3. Configuración](#3-configuración)
 - [4. Modelo](#4-modelo)
   - [Crear nuevo modelo](#crear-nuevo-modelo)
