@@ -3,6 +3,8 @@
    <h1>ANGULAR</h1>
 </div>
 
+---
+
 # 1. Instalación y creación de un nuevo proyecto
 
 ## Intalar node.js
@@ -101,7 +103,16 @@ Para iniciar el proyecto usamos el comando:
 ng serve
 ```
 
-## Generación de componentes 
+# Rutas
+
+En el `app-routing.module.ts` se establecen las rutas de la siguiente manera:
+
+```typescript
+const routes = [
+   path: 'nombre-ruta',
+   component: NombreComponente
+];
+```
 
 Para generar un nuevo *component* usamos el comando:
 
@@ -115,7 +126,7 @@ Para generar un nuevo *module* se usa el comando:
 ng generate module directorio/nombreModulo
 ```
 
-Para generar un nuevo *sevice* se utiliza el comando:
+Para generar un nuevo *service* se utiliza el comando:
 
 ```sh
 ng generate service directorio/nombreServicio
