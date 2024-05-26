@@ -44,11 +44,13 @@ Puedes crear encabezados utilizando el símbolo `#`. El número de `#` indica el
 
 Puedes agregar énfasis al texto utilizando asteriscos \* o guiones bajos \_.
 
-- Negrita: Envuelve el texto con dos asteriscos \*\* o dos guiones bajos \_\_.
-- Cursiva: Envuelve el texto con un asterisco \* o un guión bajo \_.
-- Negrita y Cursiva: Usa tres asteriscos \*\*\* o tres guiones bajos \_\_\_.
+- Negrita: Envuelve el texto con 2 asteriscos o 2 guiones bajos. `**negrita**` 
+- Cursiva: Envuelve el texto con 1 asterisco o un 1 guión bajo. `*cursiva*`
+- Negrita y Cursiva: Usa 3 asteriscos o 3 guiones bajos. `***negrita y cursiva***` 
 
 # Listas
+
+Puedes anidar listas utilizando espacios o tabulaciones antes del marcador de la lista.
 
 ## Listas ordenadas
 
@@ -123,24 +125,16 @@ System.out.println("Hola mund0");
 
 En la siguiente tabla se muestra una lista de lenguajes de progración admitidos por Linguistic, el sistema de resaltado de código de GitHub:
 
-<div style="display: flex; justify-content: center;">
-
-| Lenguaje     | Alias                 | Lenguaje    | Alias                 |
-| ------------ | --------------------- | ----------- | --------------------- |
-| Bash / Shell | `bash`, `sh`, `shell` | Java        | `java`                |
-| C            | `c`                   | JavaScript  | `javascript`, `js`    |
-| C++          | `cpp`, `c++`          | JSON        | `json`                |
-| C#           | `csharp`, `cs`        | Kotlin      | `kotlin`              |
-| CSS          | `css`                 | Markdown    | `markdown`, `md`      |
-| Diff         | `diff`                | Objective-C | `objective-c`, `objc` |
-| Go           | `go`                  | Perl        | `perl`, `pl`          |
-| HTML         | `html`                | PHP         | `php`                 |
-| Python       | `python`, `py`        | Ruby        | `ruby`, `rb`          |
-| Rust         | `rust`                | SQL         | `sql`                 |
-| Swift        | `swift`               | TypeScript  | `typescript`, `ts`    |
-| XML          | `xml`                 | YAML        | `yaml`, `yml`         |
-
-</div>
+| Lenguaje     | Alias                 | Lenguaje    | Alias                 | Lenguaje   | Alias              |
+| ------------ | --------------------- | ----------- | --------------------- | ---------- | ------------------ |
+| Bash / Shell | `bash`, `sh`, `shell` | Java        | `java`                | Python     | `python`, `py`     |
+| C            | `c`                   | JavaScript  | `javascript`, `js`    | Ruby       | `ruby`, `rb`       |
+| C++          | `cpp`, `c++`          | JSON        | `json`                | Rust       | `rust`             |
+| C#           | `csharp`, `cs`        | Kotlin      | `kotlin`              | SQL        | `sql`              |
+| CSS          | `css`                 | Markdown    | `markdown`, `md`      | Swift      | `swift`            |
+| Diff         | `diff`                | Objective-C | `objective-c`, `objc` | TypeScript | `typescript`, `ts` |
+| Go           | `go`                  | Perl        | `perl`, `pl`          | XML        | `xml`              |
+| HTML         | `html`                | PHP         | `php`                 | YAML       | `yaml`, `yml`      |
 
 # Líneas horizontales
 
