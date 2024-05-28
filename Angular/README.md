@@ -99,7 +99,7 @@ El archivo **package.json** muestra las dependencias instaladas, la versión de 
 
 Para iniciar el proyecto usamos el comando:
 
-```sh
+```sh 
 ng serve
 ```
 
@@ -109,8 +109,14 @@ En el `app-routing.module.ts` se establecen las rutas de la siguiente manera:
 
 ```typescript
 const routes = [
-   path: 'nombre-ruta',
-   component: NombreComponente
+   {
+      path: 'nombre-ruta',
+      component: NombreComponente
+   },
+   {
+      path: 'nombre-ruta',
+      component: NombreComponente
+   }
 ];
 ```
 
