@@ -5,7 +5,7 @@
 
 ---
 
-Markdown es un lenguaje de marcado ligero que se utiliza para formatear texto. Es fácil de leer y escribir, y se convierte en HTML de manera sencilla. A continuación, te presentamos una guía completa sobre cómo usar Markdown.
+Markdown es un lenguaje de marcado ligero que se utiliza para formatear texto. Es fácil de leer y escribir, y se convierte en HTML de manera sencilla.
 
 - [Encabezados](#encabezados)
 - [Énfasis](#énfasis)
