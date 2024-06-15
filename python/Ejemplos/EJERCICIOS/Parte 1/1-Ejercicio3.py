@@ -1,7 +1,7 @@
 
 
 def main():
-    pressure = 20.3
+    pressure = 0.3
     pressure = pressure_control(pressure)
     print(pressure)
 
