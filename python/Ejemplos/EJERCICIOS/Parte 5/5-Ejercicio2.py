@@ -1,3 +1,9 @@
+""" Hacer un programa que nos permita meter una serie de números positivos de 
+cuatro dígitos (validar por programa) hasta teclear el cero. Por cada número  
+metido  determinar  si  todos  los  dígitos  del  número  son  pares  o  hay  dígitos 
+impares (el resto de dividir un número entre 10 nos saca las unidades o el dígito 
+situado más a la derecha de ese número).  """
+
 def main():
     number = 5387442310523874913
     numbers = odd_digits(number)
@@ -23,7 +29,6 @@ def odd_digits(number):
         if rest % 2 != 0:
             numbers = "{0} {1}".format(numbers, rest  )
         number_length = number_length - 1
-
     return numbers
 
 
