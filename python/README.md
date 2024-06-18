@@ -16,8 +16,6 @@
 
 -->
 
----
-
 - [Funcionalidades básicas](#funcionalidades-básicas)
   - [Print](#print)
   - [Input](#input)
@@ -1051,3 +1049,5 @@ coleccion = db['nombre_de_la_coleccion']
 
 documentos = coleccion.find()
 ```
+
+#
