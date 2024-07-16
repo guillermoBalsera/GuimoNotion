@@ -1,3 +1,10 @@
+""" Hacer un programa que nos permita meter números por el 
+teclado hasta que el número que metamos sea el cero. Por 
+cada  número  metido,  sacar  por  pantalla  el  número  y 
+comprobar si es mayor de 8; si lo es, debemos visualizar su 
+doble,  en  caso  contrario  su  triple.  Al  finalizar  el 
+programa visualizar "Fin". """
+
 import random
 
 

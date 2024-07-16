@@ -1,3 +1,8 @@
+""" Crear un programa que calcule los divisores de un número 
+natural cualquiera. También mostrar si el número ingresado 
+es primo. Un número primo es aquel que solo sea divisible 
+por 1 y por el mismo número. """
+
 
 def main():
     divisors = calculate_divisors(14)

@@ -1,3 +1,9 @@
+""" Calcula  las  raíces  reales  de  una  ecuación  de  segundo 
+grado: aX2+bX+c=0.Si no existen raíces reales indicarlo por 
+pantalla. 
+Nota:  Buscar  que  método  de  la  clase  Math  nos  permite 
+calcular una raíz cuadrada """
+
 import math
 
 

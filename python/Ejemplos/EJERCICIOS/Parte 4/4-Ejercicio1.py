@@ -1,3 +1,12 @@
+""" Hacer  un  programa  que  convierta  una  cantidad  de  euros  introducida  por 
+teclado a dólares, yenes o libras, sabiendo que: 
+ 
+1 euro son 0,87 libras. 
+    1 euro son 1,11 dólares. 
+      1 euro son 120,63 yenes. 
+ 
+El programa parará cuando metamos la cadena "fin"  """
+
 import random
 
 

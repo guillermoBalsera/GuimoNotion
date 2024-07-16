@@ -1,3 +1,8 @@
+""" Realizar  un  programa  que  calcule  la  hipotenusa  de  un  triángulo  rectángulo, 
+en función de sus catetos (h2 = c2 + c2).
+NOTA:  La  hipotenusa  es  la  raíz  cuadrada  de  la  suma  de  los  catetos  al 
+cuadrado.  """
+
 import math
 import random
 

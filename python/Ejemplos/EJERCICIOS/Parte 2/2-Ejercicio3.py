@@ -1,16 +1,24 @@
-month = 5
-year = 2024
+""" Hacer un programa que nos permita introducir un año y un 
+mes  por  el  teclado  (introducirlo  en  formato  numérico: 
+enero=1, febrero=2....), validarlo para que esté comprendido 
+entre 1 y 12, y visualizar por pantalla los días que tiene 
+el mes. 
+ 
+NOTA: Recordar que febrero puede ser bisiesto (buscar por 
+internet cuándo un mes es bisiesto). """
 
 
 def main():
-    print(calc_month())
+    month = 5
+    year = 2024
+    print(calc_month(month, year))
 
 
-def calc_month():
+def calc_month(month, year):
     if month == 1:
         return 31
     elif month == 2:
-        return february()
+        return february(year)
     elif month == 3:
         return 31
     elif month == 4:
@@ -33,7 +41,7 @@ def calc_month():
         return 31
 
 
-def february():
+def february(year):
     if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
         return 29
     else:

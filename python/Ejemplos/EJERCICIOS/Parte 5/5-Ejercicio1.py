@@ -1,3 +1,9 @@
+""" Hacer un programa que calcule un número de la serie Fibonacci indicándole la 
+posición  de ese número. 
+Un número de la serie Fibonacci se calcula sumando los dos números 
+anteriores a él,  siendo los dos primeros cero y uno. Esta es la serie Fibonacci: 0, 
+1, 1, 2, 3, 5, 8, 13, 21 ... 
+Ejm: El número  que está en la posición 6 sería el 5. """
 
 def main():
     position = 6
