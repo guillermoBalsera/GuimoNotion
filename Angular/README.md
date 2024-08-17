@@ -3,8 +3,6 @@
    <h1>ANGULAR</h1>
 </div>
 
----
-
 # 1. Instalación y creación de un nuevo proyecto
 
 ## Intalar node.js
