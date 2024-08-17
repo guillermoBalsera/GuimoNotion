@@ -11,7 +11,7 @@
 
 Es recomendable el uso de nvm para el control de versiones, por lo que lo instalaremos en lugar del node.js.
 
-Una vez instalado nvm instalamos la ultima versión o la que necesitemos para el proyecto en el que vamos a trabajar.
+Una vez instalado nvm instalamos la última versión o la que necesitemos para el proyecto en el que vamos a trabajar.
 
 Podemos obtener una lista de las versiones disponibles usando el comando: 
 
@@ -45,7 +45,7 @@ Para instalar Angular de forma global tenemos que utilizar el comando:
 npm install -g @angular/cli
 ```
 
-Para instalar Angular en un proyecto tenemos que utilizar el comando:
+Para instalar Angular en un proyecto tenemos que utilizar el comando desde la terminal ubicándose en el proyecto:
 
 ```sh
 npm install @angular/cli
@@ -103,22 +103,83 @@ Para iniciar el proyecto usamos el comando:
 ng serve
 ```
 
-# Rutas
+# Navegación
+
+## Rutas
 
 En el `app-routing.module.ts` se establecen las rutas de la siguiente manera:
 
 ```typescript
 const routes = [
    {
-      path: 'nombre-ruta',
-      component: NombreComponente
+      path: 'route',
+      component: Component
    },
    {
-      path: 'nombre-ruta',
-      component: NombreComponente
+      path: 'route',
+      component: Component
    }
 ];
 ```
+
+Para navegar a una ruta usaremos `[routerLink]="['/route']"`
+
+### Ruta por defecto
+
+Para añadir una ruta por defecto:
+
+```typescript
+{ path: '', redirectTo: '/', pathMatch: 'full' },
+```
+
+### Rutas hijas
+
+Si se quiere establecer una ruta como hija de otra:
+
+```typescript
+const routes: Routes = [
+  {
+    path: 'father',
+    component: FatherComponent,
+    children: [
+      {
+        path: 'child',
+        component: ChildComponent
+      }
+   ]
+}];
+```
+
+Para navegar a la ruta usaremos `[routerLink]="['/father/child']`.
+
+### Envio de información en la ruta
+
+Si queremos enviar algún dato en la url para obtenerla en el componente al que se navega:
+
+```typescript
+{
+   path: 'detail/:detailInfo',
+   component: DetailComponent
+}
+```
+
+Se navega desde el html con `[routerLink]="['/detail', detailInfo]"` en un elemento `<a>`
+
+Para acceder a los parámetros de la ruta primero se debe implementar:
+```typescript
+import { ActivatedRoute } from '@angular/router';
+constructor (private route: ActivatedRoute) {}
+
+const routeParams = this.route.snapshot.paramMap;
+const detailInfo = routeParams.get('detailInfo');
+```
+
+De tal forma que la ruta para acceder al component sería `father/child`, además de que se aplicaría a través del `<router-outlet></router-outlet>`en caso de haberlo.
+
+La mejor forma de organizar las rutas de una web sería tener tres rutas principales:
+- Login
+- Registro
+- Main: esta sería la ruta padre de todas las demás, de manera que así podríamos tener una página base con su respectivo menú y características comunes y las hijas que las compartirían.
 
 Para generar un nuevo *component* usamos el comando:
 
@@ -138,3 +199,7 @@ Para generar un nuevo *service* se utiliza el comando:
 ng generate service directorio/nombreServicio
 ```
 
+Para generar una nueva *pipe* se utiliza el comando
+```sh
+ng generate pipe directorio/pipes
+```
