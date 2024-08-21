@@ -5,6 +5,7 @@
 
 ---
 
+
 Markdown es un lenguaje de marcado ligero que se utiliza para formatear texto. Es fácil de leer y escribir, y se convierte en HTML de manera sencilla.
 
 - [Encabezados](#encabezados)
@@ -44,9 +45,9 @@ Puedes crear encabezados utilizando el símbolo `#`. El número de `#` indica el
 
 Puedes agregar énfasis al texto utilizando asteriscos \* o guiones bajos \_.
 
-- Negrita: Envuelve el texto con 2 asteriscos o 2 guiones bajos. `**negrita**` 
+- Negrita: Envuelve el texto con 2 asteriscos o 2 guiones bajos. `**negrita**`
 - Cursiva: Envuelve el texto con 1 asterisco o un 1 guión bajo. `*cursiva*`
-- Negrita y Cursiva: Usa 3 asteriscos o 3 guiones bajos. `***negrita y cursiva***` 
+- Negrita y Cursiva: Usa 3 asteriscos o 3 guiones bajos. `***negrita y cursiva***`
 
 # Listas
 
@@ -80,11 +81,26 @@ Puedes crear enlaces utilizando corchetes [] para el texto del enlace y parénte
 [Texto del enlace](https://www.ejemplo.com)
 ```
 
+Tambien se pueden crear atajos a los enlaces:
+
+```markdown
+[Nombre del enlace][Referencia al enlace]
+
+[Referencia al enlace]: https://www.ejemplo.com
+```
+
 # Citas
 
 Para crear citas, utiliza el símbolo >.
 
 ```markdown
+> Esta es una cita.
+```
+
+También existen citas especiales que se embellecen en github
+
+```markdown
+> [!NOTE]
 > Esta es una cita.
 ```
 

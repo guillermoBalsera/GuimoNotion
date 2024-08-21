@@ -1,0 +1,39 @@
+site_name: Apuntes
+
+theme:
+  name: material
+  language: es
+  logo: img/logo.png
+  favicon: img/logo.png
+  features:
+    - content.code.copy
+  font:
+    code: Roboto Mono
+    text: Roboto Mono
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-2
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+nav:
+  - Inicio: README.md
+  - Markdown: markdown/README.md
+  - MkDocs: mkdocs/README.md
+  - Frameworks:
+      - Angular: frameworks/Angular/README.md
+      - Electron: frameworks/Electron/README.md
+      - Ionic: frameworks/Ionic/README.md
+      - PHP-Laravel: frameworks/PHP-Laravel/README.md
+      - Spring-Boot: frameworks/Spring-Boot/README.md
+  - Lenguajes de programación:
+      - Bash Script: languages/bashScript/README.md
+      - Kotlin: languages/Kotlin/README.md
+      - Python: languages/Python/README.md
+
+copyright: >
+  Copyright &copy; 2024 - Guillermo Balsera
