@@ -1,136 +1,6 @@
-<div align="center">
-   <img src="../0-Assets/logo.png" alt="Descripción de la imagen" width="200px" height="200px">
-   <h1>PYTHON</h1>
-</div>
+## Funcionalidades básicas
 
-<!--
-
-- EXCEPCIONES
-- GENERADORES
-- DECORADORES
-- MANEJO DE ARCHIVOS EN MODO BINARIO (CURSOR)
-- EXPRESINES REGULARES
-- LAMBDAS
-- CONTEXT MANAGERS
-- MANEJO DE FECHAS Y HORAS
-
--->
-
-- [Funcionalidades básicas](#funcionalidades-básicas)
-  - [Print](#print)
-  - [Input](#input)
-  - [Longitud](#longitud)
-  - [Type](#type)
-  - [Conversión de tipos](#conversión-de-tipos)
-  - [Range](#range)
-  - [Max y Min](#max-y-min)
-  - [Sorted](#sorted)
-  - [Zip](#zip)
-- [Variables](#variables)
-  - [Arrays](#arrays)
-    - [Declarar una lista vacia](#declarar-una-lista-vacia)
-    - [Declarar una lista con valores](#declarar-una-lista-con-valores)
-    - [Añadir un elemento al final de la lista](#añadir-un-elemento-al-final-de-la-lista)
-    - [Eliminar un elemento de la lista por su indice](#eliminar-un-elemento-de-la-lista-por-su-indice)
-    - [Obtener la longitud de la lista](#obtener-la-longitud-de-la-lista)
-    - [Recorrer una lista](#recorrer-una-lista)
-    - [Saber si un elemento se encuentra en la lista](#saber-si-un-elemento-se-encuentra-en-la-lista)
-  - [Tuplas](#tuplas)
-    - [Declarar una tupla](#declarar-una-tupla)
-    - [Desempaquetado de una tupla](#desempaquetado-de-una-tupla)
-  - [Diccionarios](#diccionarios)
-    - [Declarar un diccionario](#declarar-un-diccionario)
-    - [Añadir elementos a un diccionario](#añadir-elementos-a-un-diccionario)
-    - [Eliminar elementos de un diccionario](#eliminar-elementos-de-un-diccionario)
-    - [Longitud de un diccionario](#longitud-de-un-diccionario)
-    - [Iterar sobre un diccionario](#iterar-sobre-un-diccionario)
-  - [Conjuntos](#conjuntos)
-    - [Declarar un conjunto](#declarar-un-conjunto)
-    - [Declarar un conjunto vacio](#declarar-un-conjunto-vacio)
-    - [Añadir elementos a un conjunto](#añadir-elementos-a-un-conjunto)
-    - [Eliminar elementos de un conjunto](#eliminar-elementos-de-un-conjunto)
-    - [Iteracion sobre un conjunto](#iteracion-sobre-un-conjunto)
-    - [Unir conjuntos](#unir-conjuntos)
-    - [Interseccion entre dos conjuntos](#interseccion-entre-dos-conjuntos)
-    - [Diferencia entre dos conjuntos](#diferencia-entre-dos-conjuntos)
-- [Estructuras de control](#estructuras-de-control)
-  - [If](#if)
-  - [While](#while)
-  - [For](#for)
-- [Funciones](#funciones)
-  - [Desempaquetado de Argumentos](#desempaquetado-de-argumentos)
-  - [Argumentos de Palabras Clave Arbitrarios](#argumentos-de-palabras-clave-arbitrarios)
-  - [Documentación de funciones](#documentación-de-funciones)
-- [Objetos](#objetos)
-  - [Definir una clase](#definir-una-clase)
-  - [Crear un objeto](#crear-un-objeto)
-  - [Acceder a los atributos del objeto:](#acceder-a-los-atributos-del-objeto)
-  - [Modificar los atributos de un objeto](#modificar-los-atributos-de-un-objeto)
-  - [Comprobar si un objeto tiene un atributo especifico](#comprobar-si-un-objeto-tiene-un-atributo-especifico)
-  - [Obtener el valor de un atributo si existe o si no devolver un mensaje predefinido](#obtener-el-valor-de-un-atributo-si-existe-o-si-no-devolver-un-mensaje-predefinido)
-  - [Ordenar objetos](#ordenar-objetos)
-- [Manejo de ficheros y directorios](#manejo-de-ficheros-y-directorios)
-  - [Crear un directorio](#crear-un-directorio)
-  - [Crear un archivo](#crear-un-archivo)
-  - [Listar el contenido de un directorio](#listar-el-contenido-de-un-directorio)
-  - [Listar el contenido de un directorio y el contenido de sus subdirectorios](#listar-el-contenido-de-un-directorio-y-el-contenido-de-sus-subdirectorios)
-  - [Renombrar un archivo o directorio](#renombrar-un-archivo-o-directorio)
-  - [Eliminar un archivo](#eliminar-un-archivo)
-  - [Eliminar un directorio y su contenido](#eliminar-un-directorio-y-su-contenido)
-  - [Mover archivo](#mover-archivo)
-  - [Mover directorio](#mover-directorio)
-- [Lectura de ficheros](#lectura-de-ficheros)
-  - [Leer todo el contenido del fichero como una cadena de texto](#leer-todo-el-contenido-del-fichero-como-una-cadena-de-texto)
-  - [Leer un archivo linea a linea](#leer-un-archivo-linea-a-linea)
-  - [Obtener una lista con las lineas del archivo](#obtener-una-lista-con-las-lineas-del-archivo)
-  - [Lectura de archivos binarios](#lectura-de-archivos-binarios)
-  - [Lectura de ficheros CSV](#lectura-de-ficheros-csv)
-    - [Leer el archivo CSV linea a linea](#leer-el-archivo-csv-linea-a-linea)
-    - [Almacenarlo en un diccionario](#almacenarlo-en-un-diccionario)
-    - [Almacenarlo en una coleccion de objetos](#almacenarlo-en-una-coleccion-de-objetos)
-- [Escritura de ficheros](#escritura-de-ficheros)
-  - [Escribir en un archivo de texto](#escribir-en-un-archivo-de-texto)
-  - [Agregar contenido a un archivo existente](#agregar-contenido-a-un-archivo-existente)
-  - [Escribir en un archivo CSV](#escribir-en-un-archivo-csv)
-- [Lectura y escritura de objetos usando pickle](#lectura-y-escritura-de-objetos-usando-pickle)
-  - [Lectura](#lectura)
-  - [Escritura](#escritura)
-- [Bases de datos](#bases-de-datos)
-  - [SQLite](#sqlite)
-    - [Conectar a una base de datos](#conectar-a-una-base-de-datos)
-    - [Crear un cursor](#crear-un-cursor)
-    - [Crear una tabla](#crear-una-tabla)
-    - [Insertar datos](#insertar-datos)
-    - [Guardar los cambios](#guardar-los-cambios)
-    - [Obtener datos](#obtener-datos)
-    - [Cerrar la conexión](#cerrar-la-conexión)
-  - [PostgreSQL](#postgresql)
-    - [Conectar a una base de datos](#conectar-a-una-base-de-datos-1)
-    - [Crear un cursor](#crear-un-cursor-1)
-    - [Crear una tabla](#crear-una-tabla-1)
-    - [Insertar datos](#insertar-datos-1)
-    - [Guardar los cambios](#guardar-los-cambios-1)
-    - [Obtener datos](#obtener-datos-1)
-    - [Cerrar la conexión](#cerrar-la-conexión-1)
-    - [Excepciones](#excepciones)
-  - [MySQL](#mysql)
-    - [Conectar a una base de datos](#conectar-a-una-base-de-datos-2)
-    - [Crear un cursor](#crear-un-cursor-2)
-    - [Crear una tabla](#crear-una-tabla-2)
-    - [Insertar datos](#insertar-datos-2)
-    - [Guardar los cambios](#guardar-los-cambios-2)
-    - [Obtener datos](#obtener-datos-2)
-    - [Cerrar la conexión](#cerrar-la-conexión-2)
-    - [Excepciones](#excepciones-1)
-  - [MongoDB](#mongodb)
-    - [Conectarse a un servidor de MongoDB](#conectarse-a-un-servidor-de-mongodb)
-    - [Conectarse a una base de datos en MongoDB](#conectarse-a-una-base-de-datos-en-mongodb)
-    - [Insertar datos](#insertar-datos-3)
-    - [Leer datos](#leer-datos)
-
-# Funcionalidades básicas
-
-## Print
+### Print
 
 ```python
 print("Hola mundo")
@@ -146,20 +16,20 @@ print("Segunda línea", end=" ")
 print("Tercera línea")
 ```
 
-## Input
+### Input
 
 ```python
 nombre = input("¿Cuál es tu nombre? ")
 ```
 
-## Longitud
+### Longitud
 
 ```python
 mi_lista = [1, 2, 3, 4, 5]
 print(len(mi_lista))  # Output: 5
 ```
 
-## Type
+### Type
 
 ```python
 print(type(123))          # Output: <class 'int'>
@@ -168,7 +38,7 @@ print(type("Hola"))       # Output: <class 'str'>
 print(type([1, 2, 3]))    # Output: <class 'list'>
 ```
 
-## Conversión de tipos
+### Conversión de tipos
 
 ```python
 print(int("123"))       # Output: 123
@@ -177,7 +47,7 @@ print(str(123))         # Output: '123'
 print(list("Hola"))     # Output: ['H', 'o', 'l', 'a']
 ```
 
-## Range
+### Range
 
 La función range() se utiliza para generar una secuencia de números. Comúnmente se usa en bucles for.
 
@@ -190,7 +60,7 @@ range(inicio, fin, paso)
 > fin: El valor final de la secuencia (no se incluye en la secuencia).
 > paso: El incremento entre los números (por defecto es 1).
 
-## Max y Min
+### Max y Min
 
 ```python
 mi_lista = [1, 2, 3, 4, 5]
@@ -217,14 +87,14 @@ print(min(lista))  # Output: 'banana'
 > NOTE
 > Las comparaciones de cadenas de texto se hacen carácter por carácter en el orden de sus valores ASCII
 
-## Sorted
+### Sorted
 
 ```python
 mi_lista = [5, 2, 3, 1, 4]
 print(sorted(mi_lista))  # Output: [1, 2, 3, 4, 5]
 ```
 
-## Zip
+### Zip
 
 La función zip() combina varios iterables, emparejando elementos en tuplas.
 
@@ -235,69 +105,69 @@ combinados = zip(nombres, edades)
 print(list(combinados))  # Output: [('Juan', 30), ('Maria', 25), ('Pedro', 40)]
 ```
 
-# Variables
+## Variables
 
-## Arrays
+### Arrays
 
 > NOTE
 > Los elementos de las listas pueden ser de <u>distintos tipos</u>
 
-### Declarar una lista vacia
+#### Declarar una lista vacia
 
 ```python
 mi_lista = []
 ```
 
-### Declarar una lista con valores
+#### Declarar una lista con valores
 
 ```python
 lista = [1, 2, 3, 4, 5]
 ```
 
-### Añadir un elemento al final de la lista
+#### Añadir un elemento al final de la lista
 
 ```python
 lista.append(6)
 ```
 
-### Eliminar un elemento de la lista por su indice
+#### Eliminar un elemento de la lista por su indice
 
 ```python
 del lista[2]
 ```
 
-### Obtener la longitud de la lista
+#### Obtener la longitud de la lista
 
 ```python
 longitud = len(lista)
 ```
 
-### Recorrer una lista
+#### Recorrer una lista
 
 ```python
 for elemento in lista:
     print(elemento)
 ```
 
-### Saber si un elemento se encuentra en la lista
+#### Saber si un elemento se encuentra en la lista
 
 ```python
 if 3 in lista:
     print("El elemento 3 está en la lista")
 ```
 
-## Tuplas
+### Tuplas
 
 > Note
 > Son similares a las listas, pero son inmutables, es decir, **no se pueden modificar** después de haber sido creadas.
 
-### Declarar una tupla
+#### Declarar una tupla
 
 ```python
 tupla = (1, 2, 3, "cuatro")
 ```
 
-### Desempaquetado de una tupla
+#### Desempaquetado de una tupla
 
 ```python
 tupla_empaquetada = 1, 2, 3
@@ -305,33 +175,33 @@ a, b, c = tupla_empaquetada
 print(a, b, c)
 ```
 
-## Diccionarios
+### Diccionarios
 
-### Declarar un diccionario
+#### Declarar un diccionario
 
 ```python
 mi_diccionario = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
 ```
 
-### Añadir elementos a un diccionario
+#### Añadir elementos a un diccionario
 
 ```python
 mi_diccionario["profesion"] = "Programador"
 ```
 
-### Eliminar elementos de un diccionario
+#### Eliminar elementos de un diccionario
 
 ```python
 del mi_diccionario["ciudad"]
 ```
 
-### Longitud de un diccionario
+#### Longitud de un diccionario
 
 ```python
 longitud = len(mi_diccionario)
 ```
 
-### Iterar sobre un diccionario
+#### Iterar sobre un diccionario
 
 ```python
 # Iterar sobre claves
@@ -347,40 +217,40 @@ for clave, valor in mi_diccionario.items():
     print(clave, valor)
 ```
 
-## Conjuntos
+### Conjuntos
 
-### Declarar un conjunto
+#### Declarar un conjunto
 
 ```python
 mi_conjunto = {1, 2, 3, 4, 5}
 ```
 
-### Declarar un conjunto vacio
+#### Declarar un conjunto vacio
 
 ```python
 conjunto_vacio = set()
 ```
 
-### Añadir elementos a un conjunto
+#### Añadir elementos a un conjunto
 
 ```python
 mi_conjunto.add(6)
 ```
 
-### Eliminar elementos de un conjunto
+#### Eliminar elementos de un conjunto
 
 ```python
 mi_conjunto.remove(3)
 ```
 
-### Iteracion sobre un conjunto
+#### Iteracion sobre un conjunto
 
 ```python
 for elemento in mi_conjunto:
     print(elemento)
 ```
 
-### Unir conjuntos
+#### Unir conjuntos
 
 ```python
 conjunto1 = {1, 2, 3}
@@ -388,7 +258,7 @@ conjunto2 = {3, 4, 5}
 union = conjunto1.union(conjunto2)
 ```
 
-### Interseccion entre dos conjuntos
+#### Interseccion entre dos conjuntos
 
 ```python
 conjunto1 = {1, 2, 3}
@@ -396,7 +266,7 @@ conjunto2 = {3, 4, 5}
 interseccion = conjunto1.intersection(conjunto2) #Output: 3
 ```
 
-### Diferencia entre dos conjuntos
+#### Diferencia entre dos conjuntos
 
 ```python
 conjunto1 = {1, 2, 3}
@@ -413,9 +283,9 @@ diferencia  = conjunto2.difference(conjunto1) # Output: {4, 5}
 > NOTE
 > Cuando hacemos `conjunto1.difference(conjunto2)`, obtenemos los elementos que están en _conjunto1_ pero no en _conjunto2_. Si hacemos `conjunto2.difference(conjunto1)` obtenemos los elementos que están en _conjunto2_ pero no en _conjunto1_.
 
-# Estructuras de control
+## Estructuras de control
 
-## If
+### If
 
 ```python
 if edad >= 18:
@@ -424,7 +294,7 @@ else:
     print("Eres menor de edad")
 ```
 
-## While
+### While
 
 ```python
 contador = 0
@@ -433,7 +303,7 @@ while contador < 5:
     contador += 1
 ```
 
-## For
+### For
 
 ```python
 frutas = ["manzana", "banana", "cereza"]
@@ -446,7 +316,7 @@ for contador in range(5):
     print("El contador es:", contador)
 ```
 
-# Funciones
+## Funciones
 
 ```python
 def suma(a, b):
@@ -464,7 +334,7 @@ def saludar(nombre):
 saludar("juan")
 ```
 
-## Desempaquetado de Argumentos
+### Desempaquetado de Argumentos
 
 ```python
 def sumar(*args):
@@ -480,7 +350,7 @@ print(resultado)  # Output: 15
 > NOTE
 > Puedes pasar un número variable de argumentos a una función utilizando `*args`. Esto permite que una función acepte cualquier número de argumentos posicionales.
 
-## Argumentos de Palabras Clave Arbitrarios
+### Argumentos de Palabras Clave Arbitrarios
 
 ```python
 def imprimir_informacion(**kwargs):
@@ -493,7 +363,7 @@ imprimir_informacion(nombre="Juan", edad=30, ciudad="Ciudad de México")
 > NOTE
 > De manera similar al desempaquetado de argumentos, puedes pasar un número variable de argumentos de palabras clave utilizando `**kwargs`.
 
-## Documentación de funciones
+### Documentación de funciones
 
 ```python
 def suma(a, b):
@@ -503,9 +373,9 @@ def suma(a, b):
 help(suma) # Muestra la cadena de documentación de la función
 ```
 
-# Objetos
+## Objetos
 
-## Definir una clase
+### Definir una clase
 
 ```python
 class Persona:
@@ -517,38 +387,38 @@ class Persona:
         print(f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años.")
 ```
 
-## Crear un objeto
+### Crear un objeto
 
 ```python
 juan = Persona("Juan", 30)
 ```
 
-## Acceder a los atributos del objeto:
+### Acceder a los atributos del objeto:
 
 ```python
 print(juan.nombre)
 ```
 
-## Modificar los atributos de un objeto
+### Modificar los atributos de un objeto
 
 ```python
 juan.nombre = "Juan Carlos"
 ```
 
-## Comprobar si un objeto tiene un atributo especifico
+### Comprobar si un objeto tiene un atributo especifico
 
 ```python
 print(hasattr(juan, "apellidos")) # Output: False
 ```
 
-## Obtener el valor de un atributo si existe o si no devolver un mensaje predefinido
+### Obtener el valor de un atributo si existe o si no devolver un mensaje predefinido
 
 ```python
 print(getattr(juan, "apellidos", "El objeto 'juan' tiene apellidos definidos"))
 # Output: El objeto 'juan' no tiene apellidos definido
 ```
 
-## Ordenar objetos
+### Ordenar objetos
 
 ```python
 personas_ordenadas = sorted(personas, key=lambda x: x.edad)
@@ -556,9 +426,9 @@ personas_ordenadas = sorted(personas, key=lambda x: x.edad)
 personas.sort(key=lambda x: x.edad)
 ```
 
-# Manejo de ficheros y directorios
+## Manejo de ficheros y directorios
 
-## Crear un directorio
+### Crear un directorio
 
 ```python
 import os
@@ -566,7 +436,7 @@ import os
 os.makedirs("nombre_directorio")
 ```
 
-## Crear un archivo
+### Crear un archivo
 
 ```python
 nombre_archivo = "nuevo_archivo.txt"
@@ -575,7 +445,7 @@ with open(nombre_archivo, 'w') as archivo:
     archivo.write("Este es el contenido del archivo.\n")
 ```
 
-## Listar el contenido de un directorio
+### Listar el contenido de un directorio
 
 ```python
 contenido_directorio = os.listdir()
@@ -584,7 +454,7 @@ for elemento in contenido_directorio:
     print(elemento)
 ```
 
-## Listar el contenido de un directorio y el contenido de sus subdirectorios
+### Listar el contenido de un directorio y el contenido de sus subdirectorios
 
 ```python
 import os
@@ -604,7 +474,7 @@ directorio = "ruta/al/directorio"
 listar_contenido_directorio(directorio)
 ```
 
-## Renombrar un archivo o directorio
+### Renombrar un archivo o directorio
 
 ```python
 import os
@@ -615,7 +485,7 @@ nuevo_nombre = "nuevo_nombre.txt"
 os.rename(nombre_original, nuevo_nombre)
 ```
 
-## Eliminar un archivo
+### Eliminar un archivo
 
 ```python
 import os
@@ -625,7 +495,7 @@ nombre_archivo_a_eliminar = "archivo_a_eliminar.txt"
 os.remove(nombre_archivo_a_eliminar)
 ```
 
-## Eliminar un directorio y su contenido
+### Eliminar un directorio y su contenido
 
 ```python
 import shutil
@@ -635,7 +505,7 @@ nombre_directorio_a_eliminar = "directorio_a_eliminar"
 shutil.rmtree(nombre_directorio_a_eliminar)
 ```
 
-## Mover archivo
+### Mover archivo
 
 ```python
 import shutil
@@ -646,7 +516,7 @@ ubicacion_destino = "ruta/a/la/ubicacion/de/destino/archivo.txt"
 shutil.move(ubicacion_original, ubicacion_destino)
 ```
 
-## Mover directorio
+### Mover directorio
 
 ```python
 ubicacion_directorio_original = "ruta/al/directorio/original"
@@ -655,9 +525,9 @@ ubicacion_directorio_destino = "ruta/a/la/ubicacion/de/destino/directorio"
 shutil.move(ubicacion_directorio_original, ubicacion_directorio_destino)
 ```
 
-# Lectura de ficheros
+## Lectura de ficheros
 
-## Leer todo el contenido del fichero como una cadena de texto
+### Leer todo el contenido del fichero como una cadena de texto
 
 ```python
 with open("archivo.txt", "r") as archivo:
@@ -665,7 +535,7 @@ with open("archivo.txt", "r") as archivo:
     print(contenido)
 ```
 
-## Leer un archivo linea a linea
+### Leer un archivo linea a linea
 
 ```python
 with open("archivo.txt", "r") as archivo:
@@ -675,7 +545,7 @@ with open("archivo.txt", "r") as archivo:
         linea = archivo.readline()
 ```
 
-## Obtener una lista con las lineas del archivo
+### Obtener una lista con las lineas del archivo
 
 ```python
 with open("archivo.txt", "r") as archivo:
@@ -690,16 +560,16 @@ with open("archivo.txt", "r") as archivo:
         print(linea, end="")
 ```
 
-## Lectura de archivos binarios
+### Lectura de archivos binarios
 
 ```python
 with open("archivo.bin", "rb") as archivo_binario:
     datos = archivo_binario.read()
 ```
 
-## Lectura de ficheros CSV
+### Lectura de ficheros CSV
 
-### Leer el archivo CSV linea a linea
+#### Leer el archivo CSV linea a linea
 
 ```python
 import csv
@@ -711,7 +581,7 @@ with open("datos.csv", newline="") as archivo_csv:
         print(fila)
 ```
 
-### Almacenarlo en un diccionario
+#### Almacenarlo en un diccionario
 
 ```python
 import csv
@@ -725,7 +595,7 @@ with open("datos.csv", newline="") as archivo_csv:
         datos_diccionario.append(fila)
 ```
 
-### Almacenarlo en una coleccion de objetos
+#### Almacenarlo en una coleccion de objetos
 
 ```python
 import csv
@@ -741,9 +611,9 @@ with open("datos.csv", newline="") as archivo_csv:
         personas.append(persona)
 ```
 
-# Escritura de ficheros
+## Escritura de ficheros
 
-## Escribir en un archivo de texto
+### Escribir en un archivo de texto
 
 ```python
 with open("archivo.txt", "w") as archivo:
@@ -752,14 +622,14 @@ with open("archivo.txt", "w") as archivo:
     archivo.write("Adiós, mundo!")
 ```
 
-## Agregar contenido a un archivo existente
+### Agregar contenido a un archivo existente
 
 ```python
 with open("archivo.txt", "a") as archivo:
     archivo.write("\n¡Esto se añade al final del archivo!")
 ```
 
-## Escribir en un archivo CSV
+### Escribir en un archivo CSV
 
 ```python
 import csv
@@ -778,9 +648,9 @@ with open("datos.csv", "w", newline="") as archivo_csv:
         escritor_csv.writerow(fila)
 ```
 
-# Lectura y escritura de objetos usando pickle
+## Lectura y escritura de objetos usando pickle
 
-## Lectura
+### Lectura
 
 ```python
 import pickle
@@ -792,7 +662,7 @@ for persona in personas_recuperadas:
     print(persona.nombre, persona.edad)
 ```
 
-## Escritura
+### Escritura
 
 ```python
 import pickle
@@ -803,27 +673,27 @@ with open("objetos.pkl", "wb") as archivo:
     pickle.dump(personas, archivo)
 ```
 
-# Bases de datos
+## Bases de datos
 
-## SQLite
+### SQLite
 
 ```python
 import sqlite3
 ```
 
-### Conectar a una base de datos
+#### Conectar a una base de datos
 
 ```python
 conexion = sqlite3.connect('ejemplo.db')
 ```
 
-### Crear un cursor
+#### Crear un cursor
 
 ```python
 cursor = conexion.cursor()
 ```
 
-### Crear una tabla
+#### Crear una tabla
 
 ```python
 cursor.execute('''CREATE TABLE IF NOT EXISTS usuarios (
@@ -833,19 +703,19 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS usuarios (
                 )''')
 ```
 
-### Insertar datos
+#### Insertar datos
 
 ```python
 cursor.execute("INSERT INTO usuarios (nombre, edad) VALUES (?, ?)", ('Juan', 30))
 ```
 
-### Guardar los cambios
+#### Guardar los cambios
 
 ```python
 conexion.commit()
 ```
 
-### Obtener datos
+#### Obtener datos
 
 ```python
 cursor.execute("SELECT * FROM usuarios")
@@ -853,13 +723,13 @@ cursor.execute("SELECT * FROM usuarios")
 filas = cursor.fetchall()
 ```
 
-### Cerrar la conexión
+###3 Cerrar la conexión
 
 ```python
 conexion.close()
 ```
 
-## PostgreSQL
+### PostgreSQL
 
 > NOTE
 > Hay que instalar previamente _psycopg2_
@@ -872,7 +742,7 @@ pip install psycopg2
 import psycopg2
 ```
 
-### Conectar a una base de datos
+#### Conectar a una base de datos
 
 ```python
 conexion = psycopg2.connect(
@@ -883,13 +753,13 @@ conexion = psycopg2.connect(
 )
 ```
 
-### Crear un cursor
+#### Crear un cursor
 
 ```python
 cursor = conexion.cursor()
 ```
 
-### Crear una tabla
+#### Crear una tabla
 
 ```python
 cursor.execute("""
@@ -901,19 +771,19 @@ cursor.execute("""
     """)
 ```
 
-### Insertar datos
+#### Insertar datos
 
 ```python
 cursor.execute("INSERT INTO usuarios (nombre, edad) VALUES (%s, %s)", ("Juan", 30))
 ```
 
-### Guardar los cambios
+#### Guardar los cambios
 
 ```python
 conexion.commit()
 ```
 
-### Obtener datos
+#### Obtener datos
 
 ```python
 cursor.execute("SELECT * FROM usuarios")
@@ -921,19 +791,19 @@ cursor.execute("SELECT * FROM usuarios")
 filas = cursor.fetchall()
 ```
 
-### Cerrar la conexión
+#### Cerrar la conexión
 
 ```python
 conexion.close()
 ```
 
-### Excepciones
+#### Excepciones
 
 ```python
 Exception, psycopg2.Error
 ```
 
-## MySQL
+### MySQL
 
 > NOTE
 > Hay que instalar previamente _mysql-connector-python_
@@ -946,7 +816,7 @@ pip install mysql-connector-python
 import mysql.connector
 ```
 
-### Conectar a una base de datos
+#### Conectar a una base de datos
 
 ```python
 conexion = mysql.connector.connect(
@@ -957,13 +827,13 @@ conexion = mysql.connector.connect(
 )
 ```
 
-### Crear un cursor
+#### Crear un cursor
 
 ```python
 cursor = conexion.cursor()
 ```
 
-### Crear una tabla
+#### Crear una tabla
 
 ```python
 cursor.execute("""
@@ -975,19 +845,19 @@ cursor.execute("""
     """)
 ```
 
-### Insertar datos
+#### Insertar datos
 
 ```python
 cursor.execute("INSERT INTO usuarios (nombre, edad) VALUES (%s, %s)", ("Juan", 30))
 ```
 
-### Guardar los cambios
+#### Guardar los cambios
 
 ```python
 conexion.commit()
 ```
 
-### Obtener datos
+#### Obtener datos
 
 ```python
 cursor.execute("SELECT * FROM usuarios")
@@ -995,19 +865,19 @@ cursor.execute("SELECT * FROM usuarios")
 filas = cursor.fetchall()
 ```
 
-### Cerrar la conexión
+#### Cerrar la conexión
 
 ```python
 conexion.close()
 ```
 
-### Excepciones
+#### Excepciones
 
 ```python
 mysql.connector.Error
 ```
 
-## MongoDB
+### MongoDB
 
 > NOTE
 > Hay que instalar previamente _pymongo_
@@ -1020,17 +890,17 @@ pip install pymongo
 from pymongo import MongoClient
 ```
 
-### Conectarse a un servidor de MongoDB
+#### Conectarse a un servidor de MongoDB
 
 ```python
 cliente = MongoClient('mongodb://localhost:27017/')
 ```
 
-### Conectarse a una base de datos en MongoDB
+#### Conectarse a una base de datos en MongoDB
 
 db = cliente['nombre_de_la_base_de_datos']
 
-### Insertar datos
+#### Insertar datos
 
 ```python
 datos = [
@@ -1042,12 +912,10 @@ datos = [
 coleccion.insert_many(datos)
 ```
 
-### Leer datos
+#### Leer datos
 
 ```python
 coleccion = db['nombre_de_la_coleccion']
 
 documentos = coleccion.find()
 ```
-
-#

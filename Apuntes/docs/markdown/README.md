@@ -2,7 +2,7 @@
 
 Markdown es un lenguaje de marcado ligero que se utiliza para formatear texto. Es fácil de leer y escribir, y se convierte en HTML de manera sencilla.
 
-# Encabezados
+## Encabezados
 
 Puedes crear encabezados utilizando el símbolo `#`. El número de `#` indica el nivel del encabezado.
 
@@ -20,7 +20,7 @@ Puedes crear encabezados utilizando el símbolo `#`. El número de `#` indica el
 ###### Encabezado 6
 ```
 
-# Énfasis
+## Énfasis
 
 Puedes agregar énfasis al texto utilizando asteriscos \* o guiones bajos \_.
 
@@ -28,11 +28,11 @@ Puedes agregar énfasis al texto utilizando asteriscos \* o guiones bajos \_.
 - Cursiva: Envuelve el texto con 1 asterisco o un 1 guión bajo. `*cursiva*`
 - Negrita y Cursiva: Usa 3 asteriscos o 3 guiones bajos. `***negrita y cursiva***`
 
-# Listas
+## Listas
 
 Puedes anidar listas utilizando espacios o tabulaciones antes del marcador de la lista.
 
-## Listas ordenadas
+### Listas ordenadas
 
 Utiliza números seguidos de un punto para crear listas ordenadas.
 
@@ -42,7 +42,7 @@ Utiliza números seguidos de un punto para crear listas ordenadas.
 3. Tercer ítem
 ```
 
-## Listas desordenadas
+### Listas desordenadas
 
 Utiliza asteriscos \*, signos más + o guiones - para listas desordenadas.
 
@@ -52,7 +52,7 @@ Utiliza asteriscos \*, signos más + o guiones - para listas desordenadas.
 - Tercer ítem
 ```
 
-# Enlaces
+## Enlaces
 
 Puedes crear enlaces utilizando corchetes [] para el texto del enlace y paréntesis () para la URL.
 
@@ -68,7 +68,7 @@ Tambien se pueden crear atajos a los enlaces:
 [Referencia al enlace]: https://www.ejemplo.com
 ```
 
-# Citas
+## Citas
 
 Para crear citas, utiliza el símbolo >.
 
@@ -83,7 +83,7 @@ También existen citas especiales que se embellecen en github
 > Esta es una cita.
 ```
 
-# Tablas
+## Tablas
 
 Puedes crear tablas utilizando guiones - para la línea de encabezado y barras verticales | para separar columnas.
 
@@ -94,9 +94,9 @@ Puedes crear tablas utilizando guiones - para la línea de encabezado y barras v
 | Fila 2, Col 1 | Fila 2, Col 2 |
 ```
 
-# Código
+## Código
 
-## Código en Línea
+### Código en Línea
 
 Para código en línea, usa comillas simples invertidas `.
 
@@ -104,7 +104,7 @@ Para código en línea, usa comillas simples invertidas `.
 Este es un ejemplo de `código en línea`.
 ```
 
-## Bloques de Código
+### Bloques de Código
 
 Para bloques de código, utiliza tres comillas simples invertidas ``` antes y después del código. Puedes especificar el lenguaje de programación para resaltado de sintaxis.
 
@@ -116,7 +116,7 @@ System.out.println("Hola mund0");
 
 > Para mostrar un bloque de código de markdown dentro de un bloque de código simplemnete se usan mas comillas simples invertidas en el bloque de código externo.
 
-## Lenguajes
+### Lenguajes
 
 En la siguiente tabla se muestra una lista de lenguajes de progración admitidos por Linguistic, el sistema de resaltado de código de GitHub:
 
@@ -131,7 +131,7 @@ En la siguiente tabla se muestra una lista de lenguajes de progración admitidos
 | Go           | `go`                  | Perl        | `perl`, `pl`          | XML        | `xml`              |
 | HTML         | `html`                | PHP         | `php`                 | YAML       | `yaml`, `yml`      |
 
-# Líneas horizontales
+## Líneas horizontales
 
 Para agregar una línea horizontal, utiliza tres o más guiones, asteriscos, o guiones bajos.
 
@@ -139,7 +139,7 @@ Para agregar una línea horizontal, utiliza tres o más guiones, asteriscos, o g
 ---
 ```
 
-# Escapando caracteres
+## Escapando caracteres
 
 Si necesitas usar un carácter especial literalmente, escápalo con una barra invertida \.
 

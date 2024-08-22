@@ -35,5 +35,9 @@ nav:
       - Kotlin: languages/Kotlin/README.md
       - Python: languages/Python/README.md
 
+
+extra_css:
+  - stylesheets/style.css
+
 copyright: >
   Copyright &copy; 2024 - Guillermo Balsera

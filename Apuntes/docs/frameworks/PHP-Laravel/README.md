@@ -1,66 +1,32 @@
-<div align="center">
-   <img src="../0-Assets/logo.png" alt="Descripción de la imagen" width="200px" height="200px">
-   <h1>PHP LARAVEL</h1>
-</div>
+# PHP-Laravel
 
-- [1. Instalación de Laravel y creación de un nuevo proyecto](#1-instalación-de-laravel-y-creación-de-un-nuevo-proyecto)
-  - [Instalar Laravel](#instalar-laravel)
-  - [Actualizar Laravel](#actualizar-laravel)
-  - [Versión de Laravel](#versión-de-laravel)
-  - [Intalar Breeze](#intalar-breeze)
-  - [Crear el proyecto](#crear-el-proyecto)
-- [2. Migraciones](#2-migraciones)
-  - [Crear migración](#crear-migración)
-  - [Configurar las migraciones](#configurar-las-migraciones)
-  - [Migrar](#migrar)
-  - [Deshacer la última migración](#deshacer-la-última-migración)
-  - [Deshacer todas las migraciones](#deshacer-todas-las-migraciones)
-  - [Deshacer todas las migraciones y migrar de nuevo](#deshacer-todas-las-migraciones-y-migrar-de-nuevo)
-  - [Estado de las migraciones](#estado-de-las-migraciones)
-- [3. Configuración](#3-configuración)
-- [4. Modelo](#4-modelo)
-  - [Crear nuevo modelo](#crear-nuevo-modelo)
-  - [Especificar el nombre de la tabla en la base de datos](#especificar-el-nombre-de-la-tabla-en-la-base-de-datos)
-  - [4.1 Atributos](#41-atributos)
-  - [4.2 Relaciones](#42-relaciones)
-    - [4.2.1 One to One](#421-one-to-one)
-    - [4.2.2 One to Many](#422-one-to-many)
-    - [4.2.3 Many to Many](#423-many-to-many)
-- [5. Seeders](#5-seeders)
-- [6. Factories](#6-factories)
-- [7. Resources](#7-resources)
-- [8. Collections](#8-collections)
-- [9. Controladores](#9-controladores)
-  - [9.1 Validación de campos con request](#91-validación-de-campos-con-request)
-  - [9.2 Validación de campos en el controlador](#92-validación-de-campos-en-el-controlador)
+## Instalación de Laravel y creación de un nuevo proyecto
 
-# 1. Instalación de Laravel y creación de un nuevo proyecto
-
-## Instalar Laravel
+### Instalar Laravel
 
 ```
 composer global require laravel/installer
 ```
 
-## Actualizar Laravel
+### Actualizar Laravel
 
 ```
 composer global update laravel/installer
 ```
 
-## Versión de Laravel
+### Versión de Laravel
 
 ```
 laravel -v
 ```
 
-## Intalar Breeze
+### Intalar Breeze
 
 ```
 composer require laravel/breeze --dev
 ```
 
-## Crear el proyecto
+### Crear el proyecto
 
 ```
 composer create-project laravel/laravel APi_12
@@ -84,9 +50,9 @@ npm install
 npm run dev
 ```
 
-# 2. Migraciones
+## Migraciones
 
-## Crear migración
+### Crear migración
 
 (Se deben crear en el orden en que se desea que se ejecuten)
 
@@ -94,7 +60,7 @@ npm run dev
 php artisan:makemigration create_nombre_table
 ```
 
-## Configurar las migraciones
+### Configurar las migraciones
 
 ```php
 Schema::create('users', function (Blueprint $table) {
@@ -103,7 +69,7 @@ Schema::create('users', function (Blueprint $table) {
 });
 ```
 
-## Migrar
+### Migrar
 
 (Se migra por orden alfabético)
 
@@ -114,31 +80,31 @@ php artisan migrate
 > [!NOTE]
 > Se migra por orden alfabético o por fecha de creación si no se han modificado los nombres de los archivos.
 
-## Deshacer la última migración
+### Deshacer la última migración
 
 ```
 php artisan migrate:rollback
 ```
 
-## Deshacer todas las migraciones
+### Deshacer todas las migraciones
 
 ```
 php artisan migrate:reset
 ```
 
-## Deshacer todas las migraciones y migrar de nuevo
+### Deshacer todas las migraciones y migrar de nuevo
 
 ```
 php artisan migrate:fresh
 ```
 
-## Estado de las migraciones
+### Estado de las migraciones
 
 ```
 php artisan migrate:status
 ```
 
-# 3. Configuración
+## Configuración
 
 Hay que modificar el archivo _.env_ (Se encuentra en el directorio raiz):
 
@@ -151,15 +117,15 @@ DB_USERNAME=*
 DB_PASSWORD=*
 ```
 
-# 4. Modelo
+## Modelo
 
-## Crear nuevo modelo
+### Crear nuevo modelo
 
 ```
 php artisan make:model Nombre
 ```
 
-## Especificar el nombre de la tabla en la base de datos
+### Especificar el nombre de la tabla en la base de datos
 
 La tabla es el plural del nombre del modelo creado, pero a veces no lo detecta bien asi que le cambiamos manualmente el nombre para que pueda encontrar la tabla.
 
@@ -180,7 +146,7 @@ Estos campos se actualizan automaticamente al ejercer acciones de actualizado o 
 public $timestamps = false;
 ```
 
-## 4.1 Atributos
+### Atributos
 
 ```php
 protected $fileable = [
@@ -192,9 +158,9 @@ protected $fileable = [
 > [!NOTE]
 > Se deben especificar también las **foreign keys**
 
-## 4.2 Relaciones
+### Relaciones
 
-### 4.2.1 One to One
+#### One to One
 
 Se debe crear una funcion `hasOne()` en uno de los modelos.
 
@@ -216,7 +182,7 @@ class Libro extends Model {
 }
 ```
 
-### 4.2.2 One to Many
+#### One to Many
 
 Se debe crear la función `hasMany()` en el modelo que posee varios objetos.
 
@@ -239,7 +205,7 @@ class Libro extends Model {
 }
 ```
 
-### 4.2.3 Many to Many
+#### Many to Many
 
 En los dos modelos debe definirse el metodo `belongToMany()`
 
@@ -259,7 +225,7 @@ class Biblioteca extends Model {
 }
 ```
 
-# 5. Seeders
+## Seeders
 
 Los **seeders** sirven para rellenar la base de datos con información inicial.
 
@@ -283,7 +249,7 @@ Para ejecutar la clase `DatabaseSeeder` usaremos el comando:
 php artisan db:seed
 ```
 
-# 6. Factories
+## Factories
 
 Los **factories** son clases que crean por nosotros datos ficticios automáticamente.
 
@@ -317,7 +283,7 @@ Desde la función `run` de la clase **Seeder** podemos llamar al **factorie** de
 \App\Models\Nombre::factory(número)->create();
 ```
 
-# 7. Resources
+## Resources
 
 Los **resources** son herramientas para dar forma a las respuestas _JSON_ de la _API_, de tal manera que nos permiten personalizar la presentación de los datos.
 
@@ -343,7 +309,7 @@ public function toArray($request)
 }
 ```
 
-# 8. Collections
+## Collections
 
 Las **collections** nos permiten transformar colecciones en respuestas _JSON_ estructuradas.
 
@@ -363,7 +329,7 @@ php artisan make:controller NombreApiController --api
 
 Nos creará los métodos index, store, show, update y destroy vacios por defecto.
 
-## 9.1 Validación de campos con request
+### Validación de campos con request
 
 Para validar campos es recomendable el uso de **request**, que se trata de una clase donde establecemos una serie de reglas que deben cumplir los campos.
 
@@ -394,7 +360,7 @@ public function store(CreateNombreRequest $request) {
 }
 ```
 
-## 9.2 Validación de campos en el controlador
+### Validación de campos en el controlador
 
 Para validar campos en el controlador implementamos el siguiente código dentro de nuestra función:
 

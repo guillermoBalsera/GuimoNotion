@@ -1,7 +1,8 @@
+# Angular
 
-# 1. Instalación y creación de un nuevo proyecto
+## Instalación y creación de un nuevo proyecto
 
-## Intalar node.js
+### Intalar node.js
 
 Es recomendable el uso de nvm para el control de versiones, por lo que lo instalaremos en lugar del node.js.
 
@@ -31,7 +32,7 @@ Para indicar que versión queremos utilizar usaremos el siguiente comando sustit
 nvm use 20.0.0
 ```
 
-## Instalar Angular
+### Instalar Angular
 
 Para instalar Angular de forma global tenemos que utilizar el comando:
 
@@ -45,7 +46,7 @@ Para instalar Angular en un proyecto tenemos que utilizar el comando desde la te
 npm install @angular/cli
 ```
 
-## Versiones
+### Versiones
 
 Comandos para el control de versiones:
 
@@ -75,7 +76,7 @@ Si no nos permite comprobar la versión de Angular utilizaremos el siguiente com
 Set-ExecutionPolicy - ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-## Creación de un nuevo proyecto
+### Creación de un nuevo proyecto
 
 Para crear un nuevo proyecto standalone en Angular utilizamos en comando:
 
@@ -97,9 +98,9 @@ Para iniciar el proyecto usamos el comando:
 ng serve
 ```
 
-# Navegación
+## Navegación
 
-## Rutas
+### Rutas
 
 En el `app-routing.module.ts` se establecen las rutas de la siguiente manera:
 
@@ -126,7 +127,7 @@ Para añadir una ruta por defecto:
 { path: '', redirectTo: '/', pathMatch: 'full' },
 ```
 
-### Rutas hijas
+#### Rutas hijas
 
 Si se quiere establecer una ruta como hija de otra:
 
@@ -146,7 +147,7 @@ const routes: Routes = [
 
 Para navegar a la ruta usaremos `[routerLink]="['/father/child']`.
 
-### Envio de información en la ruta
+#### Envio de información en la ruta
 
 Si queremos enviar algún dato en la url para obtenerla en el componente al que se navega:
 
