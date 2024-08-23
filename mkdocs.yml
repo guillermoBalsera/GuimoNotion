@@ -1,10 +1,10 @@
-site_name: Apuntes
+site_name: GuimoNotion
 
 theme:
   name: material
   language: es
-  logo: img/logo.png
-  favicon: img/logo.png
+  logo: img/guimonotion.svg
+  favicon: img/guimonotion.svg
   features:
     - content.code.copy
   font:
