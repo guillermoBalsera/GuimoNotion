@@ -41,7 +41,7 @@
 |----------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|--------------|
 | Markdown | Documentación, blogs, README files                                              | Sintaxis ligera para formatear texto plano, conversión a HTML                                          | X            |
 | HTML     | Estructuración y presentación de contenido en la web                            | Etiquetas para definir elementos como encabezados, párrafos, enlaces, etc.                             |              |
-| XML      | Intercambio de datos entre aplicaciones, configuración                          | Estructura jerárquica con etiquetas personalizables, extensibilidad                                    |              |
-| YAML     | Configuración de aplicaciones, intercambio de datos                             | Formato legible por humanos, jerarquía basada en indentación                                           |              |
 | CSS      | Diseño y presentación de documentos web                                         | Controla el estilo visual de elementos HTML, incluye propiedades para colores, fuentes, márgenes, etc. |              |
+| XML      | Intercambio de datos entre aplicaciones, configuración                          | Estructura jerárquica con etiquetas personalizables, extensibilidad                                    |              |
 | JSON     | Intercambio de datos entre aplicaciones, configuración, almacenamiento de datos | Formato ligero y legible por humanos, basado en texto, usa una sintaxis de pares clave-valor           |              |
+| YAML     | Configuración de aplicaciones, intercambio de datos                             | Formato legible por humanos, jerarquía basada en indentación                                           |              |
