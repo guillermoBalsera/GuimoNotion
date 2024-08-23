@@ -30,8 +30,8 @@ nav:
         - Ionic: frameworks/FrontEnd/Ionic/index.md
         - MkDocs: frameworks/FrontEnd/mkdocs/index.md
       - BackEnd:
-        - PHP-Laravel: frameworks/PHP-Laravel/index.md
-        - Spring-Boot: frameworks/Spring-Boot/index.md
+        - PHP-Laravel: frameworks/BackEnd/PHP-Laravel/index.md
+        - Spring-Boot: frameworks/BackEnd/Spring-Boot/index.md
   - Lenguajes de programación:
       - Bash Script: languages/bashScript/index.md
       - Kotlin: languages/Kotlin/index.md
