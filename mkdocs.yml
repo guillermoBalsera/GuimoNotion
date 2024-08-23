@@ -25,11 +25,13 @@ nav:
   - Markdown: markdown/README.md
   - MkDocs: mkdocs/README.md
   - Frameworks:
-      - Angular: frameworks/Angular/README.md
-      - Electron: frameworks/Electron/README.md
-      - Ionic: frameworks/Ionic/README.md
-      - PHP-Laravel: frameworks/PHP-Laravel/README.md
-      - Spring-Boot: frameworks/Spring-Boot/README.md
+      - FrontEnd:
+        - Angular: frameworks/Angular/README.md
+        - Electron: frameworks/Electron/README.md
+        - Ionic: frameworks/Ionic/README.md
+      - BackEnd:
+        - PHP-Laravel: frameworks/PHP-Laravel/README.md
+        - Spring-Boot: frameworks/Spring-Boot/README.md
   - Lenguajes de programación:
       - Bash Script: languages/bashScript/README.md
       - Kotlin: languages/Kotlin/README.md
