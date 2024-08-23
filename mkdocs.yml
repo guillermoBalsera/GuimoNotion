@@ -1,4 +1,5 @@
 site_name: GuimoNotion
+repo_url: https://github.com/guillermoBalsera/Apuntes
 
 theme:
   name: material
@@ -41,5 +42,5 @@ nav:
 extra_css:
   - stylesheets/style.css
 
-copyright: >
-  Copyright &copy; 2024 - Guillermo Balsera
+#copyright: >
+#  Copyright &copy; 2024 - Guillermo Balsera
