@@ -1050,8 +1050,8 @@ export class AppModule {
 <h5 id="ngif-y-ngfor">ngIf y ngFor</h5>
 <pre><code class="language-typescript">nameList = [{name: 'name1', surname: 'surname1'}, {name: 'name2', surname: 'surname2'}];
 </code></pre>
-<pre><code class="language-html">&lt;ng-container *ngIf=&quot;nameList.length &gt; 0 &quot;&gt;
-    &lt;ng-container *ngFor=&quot;let item of list; index as i&quot;&gt;
+<pre><code class="language-html">&lt;ng-container *ngIf=&quot;nameList.length &gt; 0&quot;&gt;
+    &lt;ng-container *ngFor=&quot;let item of nameList; index as i&quot;&gt;
         &lt;p&gt; {{ i }} - {{ item.name }}&lt;/p&gt;
     &lt;/ng-container&gt;
 &lt;/ng-container&gt;
@@ -1062,6 +1062,31 @@ export class AppModule {
 <li>La variable <code>index</code> del ngFor representa el número de iteraciones, aunque no es obligatorio usarla es recomendable en muchas ocasiones.</li>
 </ul>
 <h5 id="if-y-for">@if y @for</h5>
+<pre><code class="language-html">@if (nameList.length &lt; 100) {      
+    @for (item of nameList; track item; 
+            let i = $index, first = $first, last = $last, 
+            odd = $odd, even = $even, count = $count) {
+        &lt;p&gt; {{ i }} - {{ item.name }} - {{ first }} - {{ last }} - {{ odd }} - {{ even }} - {{ count }} &lt;/p&gt;
+    }  
+    @empty {
+        &lt;li&gt;No hay items en la lista&lt;/li&gt;
+    }
+} @else {      
+    &lt;p&gt;Aquí hay demasiada gente&lt;/p&gt;    
+}
+</code></pre>
+<ul>
+<li><code>@if</code>: solo muestra los datos si la lista tiene menos de 100 elementos</li>
+<li><code>@for</code>: muestra un parrafo por cada elemento de la lista sobre la que se itera</li>
+<li><code>$index</code>: representa el número de iteración en el que se encuentra el elemento</li>
+<li><code>$first</code>: represente si es el primer elemento de la lista</li>
+<li><code>$last</code>: representa si es el último elemento de la lista</li>
+<li><code>$odd</code>: representa si la iteracion es impar con respecto al <code>$index</code></li>
+<li><code>$even</code>: representa si la iteracion es par con respecto al <code>$index</code></li>
+<li><code>$count</code>: representa el número de iteraciones totales</li>
+<li><code>@empty</code>: muestra los datos si la coleccioón sobre la que se está iterando está vacía</li>
+<li><code>@else</code>: muestra los datos si no se cumple la condición del <code>@if</code></li>
+</ul>
 
 
 
