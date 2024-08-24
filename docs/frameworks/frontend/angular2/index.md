@@ -98,6 +98,30 @@ name = 'William Shakespeare'
 
 > Para usar `ngModel` debemos importar `FormsModule` y añadirlo a las importaciones del `app-module.ts`
 
+#### Bucles y condicionales dentro del html
+
+Existen dos formas de hacer bucles y condicionales en el html:
+
+##### ngIf y ngFor
+
+```typescript
+nameList = [{name: 'name1', surname: 'surname1'}, {name: 'name2', surname: 'surname2'}];
+```
+
+```html
+<ng-container *ngIf="nameList.length > 0 ">
+    <ng-container *ngFor="let item of list; index as i">
+        <p> {{ i }} - {{ item.name }}</p>
+    </ng-container>
+</ng-container>
+```
+
+- ngIf solo muestra el contenido si la longitud de la lista es mayor que 0
+- ngFor: por cada elemento de la lista muestra una etiqueta <p> con el `name` del objeto sobre el que está iterando. 
+- La variable `index` del ngFor representa el número de iteraciones, aunque no es obligatorio usarla es recomendable en muchas ocasiones.
+
+##### @if y @for
+
 
 
 
