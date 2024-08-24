@@ -109,8 +109,8 @@ nameList = [{name: 'name1', surname: 'surname1'}, {name: 'name2', surname: 'surn
 ```
 
 ```html
-<ng-container *ngIf="nameList.length > 0 ">
-    <ng-container *ngFor="let item of list; index as i">
+<ng-container *ngIf="nameList.length > 0">
+    <ng-container *ngFor="let item of nameList; index as i">
         <p> {{ i }} - {{ item.name }}</p>
     </ng-container>
 </ng-container>
@@ -122,6 +122,31 @@ nameList = [{name: 'name1', surname: 'surname1'}, {name: 'name2', surname: 'surn
 
 ##### @if y @for
 
+```html
+@if (nameList.length < 100) {      
+    @for (item of nameList; track item; 
+            let i = $index, first = $first, last = $last, 
+            odd = $odd, even = $even, count = $count) {
+        <p> {{ i }} - {{ item.name }} - {{ first }} - {{ last }} - {{ odd }} - {{ even }} - {{ count }} </p>
+    }  
+    @empty {
+        <li>No hay items en la lista</li>
+    }
+} @else {      
+    <p>Aquí hay demasiada gente</p>    
+}
+```
+
+- `@if`: solo muestra los datos si la lista tiene menos de 100 elementos
+- `@for`: muestra un parrafo por cada elemento de la lista sobre la que se itera
+- `$index`: representa el número de iteración en el que se encuentra el elemento
+- `$first`: represente si es el primer elemento de la lista
+- `$last`: representa si es el último elemento de la lista
+- `$odd`: representa si la iteracion es impar con respecto al `$index`
+- `$even`: representa si la iteracion es par con respecto al `$index`
+- `$count`: representa el número de iteraciones totales
+- `@empty`: muestra los datos si la coleccioón sobre la que se está iterando está vacía
+- `@else`: muestra los datos si no se cumple la condición del `@if`
 
 
 
