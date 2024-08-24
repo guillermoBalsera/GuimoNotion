@@ -1,4 +1,7 @@
 site_name: GuimoNotion
+site_author: Guillermo Balsera Suárez
+site_description: Apuntes en español sobre distintas tecnologías de desarrrollo, desde lenguajes de programación hasta frameworks de frontend y backend.
+copyright: Copyright &copy; 2024 - Guillermo Balsera
 
 theme:
   name: material
@@ -38,8 +41,10 @@ nav:
       - Kotlin: languages/kotlin/index.md
       - Python: languages/python/index.md
   - Frontend:
-      - Angular: frameworks/frontend/angular/index.md
-      - Angular2: frameworks/frontend/angular2/index.md
+      - Angular:
+        - Instalación: frameworks/frontend/angular/index.md
+        - Componentes: frameworks/frontend/angular/components/index.md
+        - Rutas: frameworks/frontend/angular/routes/index.md
       - Electron: frameworks/frontend/electron/index.md
       - Ionic: frameworks/frontend/ionic/index.md
       - MkDocs: frameworks/frontend/mkdocs/index.md
@@ -59,12 +64,11 @@ markdown_extensions:
 
 extra:
   consent:
-    title: Cookie consent
+    title: Cookies
     description: >-
       Usamos cookies para reconocer tus visitas y preferencias repetidas, 
       así como para medir la efectividad de nuestra documentación y si 
       los usuarios encuentran lo que buscan. Con tu consentimiento, 
       nos ayudas a mejorar nuestra documentación.
 
-copyright: >
-  Copyright &copy; 2024 - Guillermo Balsera
+
