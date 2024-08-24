@@ -69,10 +69,10 @@ print(min(mi_lista))  # Output: 1
 ```
 
 ```python
-cadena = "Python"
+cadena = "python"
 print(max(cadena))  # Output: 'y'
 
-cadena = "Python"
+cadena = "python"
 print(min(cadena))  # Output: 'P'
 ```
 
@@ -618,7 +618,7 @@ with open("datos.csv", newline="") as archivo_csv:
 ```python
 with open("archivo.txt", "w") as archivo:
     archivo.write("Hola, mundo!\n")
-    archivo.write("Este es un archivo de texto generado por Python.\n")
+    archivo.write("Este es un archivo de texto generado por python.\n")
     archivo.write("Adiós, mundo!")
 ```
 

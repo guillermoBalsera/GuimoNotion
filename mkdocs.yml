@@ -24,20 +24,22 @@ theme:
 nav:
   - Inicio: index.md
   - Frameworks:
-      - FrontEnd:
-        - Angular: frameworks/FrontEnd/Angular/index.md
-        - Electron: frameworks/FrontEnd/Electron/index.md
-        - Ionic: frameworks/FrontEnd/Ionic/index.md
-        - MkDocs: frameworks/FrontEnd/mkdocs/index.md
+      - Frontend:
+        - Angular: frameworks/frontend/angular/index.md
+        - Angular2: frameworks/frontend/angular2/index.md
+        - Electron: frameworks/frontend/electron/index.md
+        - Ionic: frameworks/frontend/ionic/index.md
+        - MkDocs: frameworks/frontend/mkdocs/index.md
       - BackEnd:
-        - PHP-Laravel: frameworks/BackEnd/PHP-Laravel/index.md
-        - Spring-Boot: frameworks/BackEnd/Spring-Boot/index.md
+        - PHP-Laravel: frameworks/backend/php-laravel/index.md
+        - Spring-Boot: frameworks/backend/spring-boot/index.md
   - Lenguajes de programación:
       - Bash Script: languages/bashScript/index.md
-      - Kotlin: languages/Kotlin/index.md
-      - Python: languages/Python/index.md
+      - Kotlin: languages/kotlin/index.md
+      - Python: languages/python/index.md
   - Otros:
     - Markdown: others/markdown/index.md
+    - Node: others/node/index.md
 
 
 extra_css:

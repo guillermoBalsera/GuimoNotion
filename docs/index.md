@@ -1,6 +1,6 @@
 [//]: # (mkdocs gh-deploy)
 
-# Bienvenido a GuimoNotion  
+# Bienvenido a GuimoNotion
 
 ## Contenido del Sitio
 
@@ -39,11 +39,12 @@
 
 ### Otros
 
-| Nombre   | Usos más comunes                                                                | Características clave                                                                                  | Implementado |
-|----------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|--------------|
-| Markdown | Documentación, blogs, README files                                              | Sintaxis ligera para formatear texto plano, conversión a HTML                                          | X            |
-| HTML     | Estructuración y presentación de contenido en la web                            | Etiquetas para definir elementos como encabezados, párrafos, enlaces, etc.                             |              |
-| CSS      | Diseño y presentación de documentos web                                         | Controla el estilo visual de elementos HTML, incluye propiedades para colores, fuentes, márgenes, etc. |              |
-| XML      | Intercambio de datos entre aplicaciones, configuración                          | Estructura jerárquica con etiquetas personalizables, extensibilidad                                    |              |
-| JSON     | Intercambio de datos entre aplicaciones, configuración, almacenamiento de datos | Formato ligero y legible por humanos, basado en texto, usa una sintaxis de pares clave-valor           |              |
-| YAML     | Configuración de aplicaciones, intercambio de datos                             | Formato legible por humanos, jerarquía basada en indentación                                           |              |
+| Nombre   | Usos más comunes                                                                | Características clave                                                                                          | Implementado |
+|----------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------|
+| Markdown | Documentación, blogs, README files                                              | Sintaxis ligera para formatear texto plano, conversión a HTML                                                  | X            |
+| HTML     | Estructuración y presentación de contenido en la web                            | Etiquetas para definir elementos como encabezados, párrafos, enlaces, etc.                                     |              |
+| CSS      | Diseño y presentación de documentos web                                         | Controla el estilo visual de elementos HTML, incluye propiedades para colores, fuentes, márgenes, etc.         |              |
+| XML      | Intercambio de datos entre aplicaciones, configuración                          | Estructura jerárquica con etiquetas personalizables, extensibilidad                                            |              |
+| JSON     | Intercambio de datos entre aplicaciones, configuración, almacenamiento de datos | Formato ligero y legible por humanos, basado en texto, usa una sintaxis de pares clave-valor                   |              |
+| YAML     | Configuración de aplicaciones, intercambio de datos                             | Formato legible por humanos, jerarquía basada en indentación                                                   |              |
+| Node.js  | Desarrollo de aplicaciones web, servidores, herramientas de desarrollo          | Entorno de ejecución para JavaScript en el lado del servidor, permite el uso de JavaScript fuera del navegador | X            |
