@@ -55,10 +55,10 @@ La función range() se utiliza para generar una secuencia de números. Comúnmen
 range(inicio, fin, paso)
 ```
 
-> NOTE
-> inicio: El valor inicial de la secuencia (por defecto es 0).
-> fin: El valor final de la secuencia (no se incluye en la secuencia).
-> paso: El incremento entre los números (por defecto es 1).
+!!! note 
+    `inicio`: El valor inicial de la secuencia (por defecto es 0).  
+    `fin`: El valor final de la secuencia (no se incluye en la secuencia).  
+    `paso`: El incremento entre los números (por defecto es 1).  
 
 ### Max y Min
 
@@ -83,9 +83,9 @@ print(max(lista))  # Output: 'uva'
 lista = ["manzana", "banana", "cereza", "uva"]
 print(min(lista))  # Output: 'banana'
 ```
-
-> NOTE
-> Las comparaciones de cadenas de texto se hacen carácter por carácter en el orden de sus valores ASCII
+ 
+!!! note
+    Las comparaciones de cadenas de texto se hacen carácter por carácter en el orden de sus valores ASCII
 
 ### Sorted
 
@@ -109,8 +109,8 @@ print(list(combinados))  # Output: [('Juan', 30), ('Maria', 25), ('Pedro', 40)]
 
 ### Arrays
 
-> NOTE
-> Los elementos de las listas pueden ser de <u>distintos tipos</u>
+!!! note
+    Los elementos de las listas pueden ser de <u>distintos tipos</u>
 
 #### Declarar una lista vacia
 
@@ -158,8 +158,8 @@ if 3 in lista:
 
 ### Tuplas
 
-> Note
-> Son similares a las listas, pero son inmutables, es decir, **no se pueden modificar** después de haber sido creadas.
+!!! note
+    Son similares a las listas, pero son inmutables, es decir, **no se pueden modificar** después de haber sido creadas.
 
 #### Declarar una tupla
 
@@ -280,8 +280,8 @@ conjunto2 = {3, 4, 5}
 diferencia  = conjunto2.difference(conjunto1) # Output: {4, 5}
 ```
 
-> NOTE
-> Cuando hacemos `conjunto1.difference(conjunto2)`, obtenemos los elementos que están en _conjunto1_ pero no en _conjunto2_. Si hacemos `conjunto2.difference(conjunto1)` obtenemos los elementos que están en _conjunto2_ pero no en _conjunto1_.
+!!! note
+    Cuando hacemos `conjunto1.difference(conjunto2)`, obtenemos los elementos que están en _conjunto1_ pero no en _conjunto2_. Si hacemos `conjunto2.difference(conjunto1)` obtenemos los elementos que están en _conjunto2_ pero no en _conjunto1_.
 
 ## Estructuras de control
 
@@ -347,8 +347,8 @@ resultado = sumar(1, 2, 3, 4, 5)
 print(resultado)  # Output: 15
 ```
 
-> NOTE
-> Puedes pasar un número variable de argumentos a una función utilizando `*args`. Esto permite que una función acepte cualquier número de argumentos posicionales.
+!!! note
+    Puedes pasar un número variable de argumentos a una función utilizando `*args`. Esto permite que una función acepte cualquier número de argumentos posicionales.
 
 ### Argumentos de Palabras Clave Arbitrarios
 
@@ -360,8 +360,8 @@ def imprimir_informacion(**kwargs):
 imprimir_informacion(nombre="Juan", edad=30, ciudad="Ciudad de México")
 ```
 
-> NOTE
-> De manera similar al desempaquetado de argumentos, puedes pasar un número variable de argumentos de palabras clave utilizando `**kwargs`.
+!!! note
+    De manera similar al desempaquetado de argumentos, puedes pasar un número variable de argumentos de palabras clave utilizando `**kwargs`.
 
 ### Documentación de funciones
 
@@ -731,8 +731,8 @@ conexion.close()
 
 ### PostgreSQL
 
-> NOTE
-> Hay que instalar previamente _psycopg2_
+!!! note
+    Hay que instalar previamente _psycopg2_
 
 ```sh
 pip install psycopg2
@@ -805,8 +805,8 @@ Exception, psycopg2.Error
 
 ### MySQL
 
-> NOTE
-> Hay que instalar previamente _mysql-connector-python_
+!!! note
+    Hay que instalar previamente _mysql-connector-python_
 
 ```sh
 pip install mysql-connector-python
@@ -879,8 +879,8 @@ mysql.connector.Error
 
 ### MongoDB
 
-> NOTE
-> Hay que instalar previamente _pymongo_
+!!! note
+    Hay que instalar previamente _pymongo_
 
 ```sh
 pip install pymongo

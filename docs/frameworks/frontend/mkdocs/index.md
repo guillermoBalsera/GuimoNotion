@@ -1,10 +1,12 @@
 # Guía de Configuración de MkDocs
 
-¡Bienvenido a la guía de configuración de MkDocs! Aquí te explicamos cómo iniciar, configurar y personalizar tu proyecto de documentación usando MkDocs.
+¡Bienvenido a la guía de configuración de MkDocs! Aquí te explicamos cómo iniciar, configurar y personalizar tu proyecto
+de documentación usando MkDocs.
 
 ## Introducción
 
-[MkDocs](https://www.mkdocs.org/) es una herramienta de generación de sitios estáticos que se centra en la creación de documentación de proyectos. Es fácil de configurar y permite generar documentación elegante usando Markdown.
+[MkDocs](https://www.mkdocs.org/) es una herramienta de generación de sitios estáticos que se centra en la creación de
+documentación de proyectos. Es fácil de configurar y permite generar documentación elegante usando Markdown.
 
 ## Características Principales
 
@@ -88,7 +90,7 @@ Durante el desarrollo, puedes usar el servidor de desarrollo integrado de MkDocs
 mkdocs serve
 ```
 
-Esto abrirá un servidor en http://127.0.0.1:8000/ donde podrás ver tu sitio.
+Esto abrirá un servidor en http://127.0.0.1:8000/ o http://localhost:8000/ donde podrás ver tu sitio.
 
 ## Despliegue del Sitio
 
@@ -98,7 +100,50 @@ Para desplegar tu sitio, primero debes construirlo con el comando:
 mkdocs build
 ```
 
-Esto generará una carpeta site/ con todos los archivos estáticos de tu sitio. Puedes subir esta carpeta a cualquier servidor o servicio de hosting, como GitHub Pages.
+Esto generará una carpeta site/ con todos los archivos estáticos de tu sitio. Puedes subir esta carpeta a cualquier
+servidor o servicio de hosting, como GitHub Pages.
+
+## Admonitions
+
+Admonitions son bloques de contenido en documentación que se utilizan para resaltar y categorizar información
+importante, notas, advertencias o recomendaciones. Su propósito es captar la atención del lector y proporcionar contexto
+adicional de manera visualmente destacada. Estos bloques pueden variar en apariencia y estilo según el sistema de
+documentación o el tema que estés utilizando.
+
+Para instalarlas añadiremos a nuestro fichero `mkdocs.yml`:
+
+```yml
+markdown_extensions:
+  - admonition
+```
+
+Tipos de admonition:
+  - note
+  - abstract
+  - info
+  - tip
+  - success
+  - question
+  - warning
+  - failure
+  - danger
+  - bug
+  - example
+  - quote
+
+Se usan de la siguiente manera:
+
+```markdown
+!!! note
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+```
+
+!!! note
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
 
 ## Ejemplo Completo de mkdocs.yml
 
@@ -114,6 +159,14 @@ theme:
   favicon: 'img/logo.png'
   features:
     - content.code.copy
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+  font:
+    text: Rubik
+    code: Roboto Mono
 
 nav:
   - Inicio: index.md
@@ -122,10 +175,26 @@ nav:
       - Configuración: user-guide/configuration.md
   - Referencia: reference.md
   - Acerca de: about.md
+
+
+extra_css:
+  - stylesheets/style.css
+
+markdown_extensions:
+  - admonition
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >-
+      Usamos cookies para reconocer tus visitas y preferencias repetidas, 
+      así como para medir la efectividad de nuestra documentación y si 
+      los usuarios encuentran lo que buscan. Con tu consentimiento, 
+      nos ayudas a mejorar nuestra documentación.
 ```
-  
+
 ## Recursos Adicionales
 
 - [Documentación Oficial de MkDocs](https://www.mkdocs.org/)
-
-- [Tema Material para MkDocs](https://github.com/squidfunk/mkdocs-material)
+- [GitHub de Material para MkDocs](https://github.com/squidfunk/mkdocs-material)
+- [Página de Material para MkDocs](https://squidfunk.github.io/mkdocs-material/)

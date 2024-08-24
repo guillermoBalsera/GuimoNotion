@@ -1,5 +1,4 @@
 site_name: GuimoNotion
-repo_url: https://github.com/guillermoBalsera/Apuntes
 
 theme:
   name: material
@@ -8,42 +7,64 @@ theme:
   favicon: img/guimonotion.svg
   features:
     - content.code.copy
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
   font:
+    text: Rubik
     code: Roboto Mono
-    text: Roboto Mono
   palette:
     - scheme: default
+      primary: cyan
+      accent: cyan
       toggle:
         icon: material/brightness-2
         name: Switch to dark mode
     - scheme: slate
+      primary: teal
+      accent: teal
       toggle:
         icon: material/brightness-7
         name: Switch to light mode
 
+
 nav:
   - Inicio: index.md
-  - Frameworks:
-      - Frontend:
-        - Angular: frameworks/frontend/angular/index.md
-        - Angular2: frameworks/frontend/angular2/index.md
-        - Electron: frameworks/frontend/electron/index.md
-        - Ionic: frameworks/frontend/ionic/index.md
-        - MkDocs: frameworks/frontend/mkdocs/index.md
-      - BackEnd:
-        - PHP-Laravel: frameworks/backend/php-laravel/index.md
-        - Spring-Boot: frameworks/backend/spring-boot/index.md
-  - Lenguajes de programación:
+  - Lenguajes:
       - Bash Script: languages/bashScript/index.md
       - Kotlin: languages/kotlin/index.md
       - Python: languages/python/index.md
+  - Frontend:
+      - Angular: frameworks/frontend/angular/index.md
+      - Angular2: frameworks/frontend/angular2/index.md
+      - Electron: frameworks/frontend/electron/index.md
+      - Ionic: frameworks/frontend/ionic/index.md
+      - MkDocs: frameworks/frontend/mkdocs/index.md
+  - BackEnd:
+      - PHP-Laravel: frameworks/backend/php-laravel/index.md
+      - Spring-Boot: frameworks/backend/spring-boot/index.md
   - Otros:
-    - Markdown: others/markdown/index.md
-    - Node: others/node/index.md
+      - Markdown: others/markdown/index.md
+      - Node: others/node/index.md
 
 
 extra_css:
   - stylesheets/style.css
 
-#copyright: >
-#  Copyright &copy; 2024 - Guillermo Balsera
+markdown_extensions:
+  - admonition
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >-
+      Usamos cookies para reconocer tus visitas y preferencias repetidas, 
+      así como para medir la efectividad de nuestra documentación y si 
+      los usuarios encuentran lo que buscan. Con tu consentimiento, 
+      nos ayudas a mejorar nuestra documentación.
+
+copyright: >
+  Copyright &copy; 2024 - Guillermo Balsera

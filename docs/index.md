@@ -2,9 +2,7 @@
 
 # Bienvenido a GuimoNotion
 
-## Contenido del Sitio
-
-### Lenguajes de programación
+## Lenguajes de programación
 
 | Lenguaje | Interpretado | Usos más comunes                                                          | Implementado |
 |----------|--------------|---------------------------------------------------------------------------|--------------|
@@ -12,9 +10,9 @@
 | Java     | No           | Aplicaciones empresariales, desarrollo de Android, sistemas distribuidos  |              |
 | PHP      | Sí           | Desarrollo web, gestión de contenido (CMS), scripts del lado del servidor |              |
 
-### Frameworks
+## Frameworks
 
-#### FrontEnd
+### FrontEnd
 
 | Framework/Plataforma                  | Lenguaje Base         | Usos más comunes                                                                    | Implementado |
 |---------------------------------------|-----------------------|-------------------------------------------------------------------------------------|--------------|
@@ -27,7 +25,7 @@
 | WPF (Windows Presentation Foundation) | C#                    | Desarrollo de aplicaciones de escritorio para Windows con interfaces ricas          |              |
 | WPF (Windows Presentation Foundation) | C#                    | Desarrollo de aplicaciones de escritorio para Windows con interfaces ricas          |              |
 
-#### BackEnd
+### BackEnd
 
 | Framework    | Lenguaje Base | Usos más comunes                                                             | Implementado |
 |--------------|---------------|------------------------------------------------------------------------------|--------------|
@@ -37,7 +35,7 @@
 | ASP.NET Core | C#            | Desarrollo de aplicaciones web y servicios API, aplicaciones empresariales   |              |
 | FastAPI      | Python        | Desarrollo de API REST, aplicaciones de back-end de alto rendimiento         |              |
 
-### Otros
+## Otros
 
 | Nombre   | Usos más comunes                                                                | Características clave                                                                                          | Implementado |
 |----------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------|
