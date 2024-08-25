@@ -42,9 +42,11 @@ nav:
       - Python: languages/python/index.md
   - Frontend:
       - Angular:
-        - Instalación: frameworks/frontend/angular/index.md
+        - Introducción: frameworks/frontend/angular/index.md
+        - Instalación: frameworks/frontend/angular/installation/index.md
         - Componentes: frameworks/frontend/angular/components/index.md
         - Rutas: frameworks/frontend/angular/routes/index.md
+        - Recursos adicionales: frameworks/frontend/angular/additional_resources/index.md
       - Electron: frameworks/frontend/electron/index.md
       - Ionic: frameworks/frontend/ionic/index.md
       - MkDocs: frameworks/frontend/mkdocs/index.md

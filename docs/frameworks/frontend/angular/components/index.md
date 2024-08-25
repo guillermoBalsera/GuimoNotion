@@ -100,7 +100,7 @@ name = 'William Shakespeare'
 
 #### Bucles y condicionales dentro del html
 
-Existen dos formas de hacer bucles y condicionales en el html:
+Existen dos formas de hacer bucles y condicionales en el html que explicaremos mediante ejemplos:
 
 ##### ngIf y ngFor
 
