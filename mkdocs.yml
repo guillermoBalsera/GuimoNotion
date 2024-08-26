@@ -38,7 +38,7 @@ nav:
   - Inicio: index.md
   - Lenguajes:
       - Bash Script: languages/bashScript/index.md
-      - Kotlin: languages/kotlin/index.md
+#      - Kotlin: languages/kotlin/index.md
       - Python: languages/python/index.md
   - Frontend:
       - Angular:
@@ -47,16 +47,17 @@ nav:
         - Componentes: frameworks/frontend/angular/components/index.md
         - Rutas: frameworks/frontend/angular/routes/index.md
         - Recursos adicionales: frameworks/frontend/angular/additional_resources/index.md
-      - Electron: frameworks/frontend/electron/index.md
-      - Ionic: frameworks/frontend/ionic/index.md
+#      - Electron: frameworks/frontend/electron/index.md
+#      - Ionic: frameworks/frontend/ionic/index.md
       - MkDocs: frameworks/frontend/mkdocs/index.md
   - BackEnd:
       - PHP-Laravel: frameworks/backend/php-laravel/index.md
-      - Spring-Boot: frameworks/backend/spring-boot/index.md
+#      - Spring-Boot: frameworks/backend/spring-boot/index.md
   - Otros:
       - Markdown: others/markdown/index.md
       - Node: others/node/index.md
       - JSON: others/json/index.md
+      - XML: others/xml/index.md
       - YAML: others/yaml/index.md
 
 
@@ -66,13 +67,13 @@ extra_css:
 markdown_extensions:
   - admonition
 
-extra:
-  consent:
-    title: Cookies
-    description: >-
-      Usamos cookies para reconocer tus visitas y preferencias repetidas, 
-      así como para medir la efectividad de nuestra documentación y si 
-      los usuarios encuentran lo que buscan. Con tu consentimiento, 
-      nos ayudas a mejorar nuestra documentación.
+#extra:
+#  consent:
+#    title: Cookies
+#    description: >-
+#      Usamos cookies para reconocer tus visitas y preferencias repetidas,
+#      así como para medir la efectividad de nuestra documentación y si
+#      los usuarios encuentran lo que buscan. Con tu consentimiento,
+#      nos ayudas a mejorar nuestra documentación.
 
 
