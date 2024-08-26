@@ -67,13 +67,4 @@ extra_css:
 markdown_extensions:
   - admonition
 
-#extra:
-#  consent:
-#    title: Cookies
-#    description: >-
-#      Usamos cookies para reconocer tus visitas y preferencias repetidas,
-#      así como para medir la efectividad de nuestra documentación y si
-#      los usuarios encuentran lo que buscan. Con tu consentimiento,
-#      nos ayudas a mejorar nuestra documentación.
-
 
