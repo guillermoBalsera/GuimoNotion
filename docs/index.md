@@ -23,7 +23,6 @@
 | React                                 | JavaScript/TypeScript | Desarrollo de interfaces de usuario para aplicaciones web de una sola página (SPA)  |              |                     |
 | Android con Kotlin                    | Kotlin                | Desarrollo de aplicaciones móviles nativas para Android                             |              |                     |
 | WPF (Windows Presentation Foundation) | C#                    | Desarrollo de aplicaciones de escritorio para Windows con interfaces ricas          |              |                     |
-| WPF (Windows Presentation Foundation) | C#                    | Desarrollo de aplicaciones de escritorio para Windows con interfaces ricas          |              |                     |
 
 ### BackEnd
 
