@@ -50,7 +50,7 @@ JSON admite los siguientes tipos de datos:
 3. Las comas separan los pares clave/valor en un objeto y los elementos en un array.
 4. Los objetos y arrays pueden anidarse: Esto significa que un valor en un objeto puede ser otro objeto o un array, y viceversa.
 
-## Ejemplo Completo de JSON
+## Ejemplo de JSON
 
 ```json
 {
