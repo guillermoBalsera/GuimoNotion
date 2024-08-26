@@ -56,7 +56,8 @@ nav:
   - Otros:
       - Markdown: others/markdown/index.md
       - Node: others/node/index.md
-      - Json: others/json/index.md
+      - JSON: others/json/index.md
+      - YAML: others/yaml/index.md
 
 
 extra_css:
