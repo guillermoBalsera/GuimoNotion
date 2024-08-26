@@ -12,3 +12,24 @@ siempre espacios y no tabulaciones para evitar errores de sintaxis.
 - Listas (Arrays): Se indican con guiones (-) y se pueden anidar dentro de otros objetos.
 - Valores en lista sin clave-valor: Las listas también pueden contener valores simples sin formato de clave-valor.
 
+## Ejemplo Completo de YAML
+
+```yaml
+# Información básica de una persona
+persona:
+  nombre: Juan Pérez
+  edad: 30
+  direccion:
+    calle: "123 Calle Principal"
+    ciudad: "Ciudad Ejemplo"
+    pais: "País de Ejemplo"
+  telefonos:
+    - tipo: "casa"
+      numero: "123-456-7890"
+    - tipo: "trabajo"
+      numero: "098-765-4321"
+  habilidades:
+    - programación
+    - escritura
+    - cocina
+```
