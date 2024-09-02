@@ -62,5 +62,5 @@ Para iniciar el proyecto usamos el comando:
 ```sh 
 ng serve
 ```
-[node]: ../../../others/node/index.md
+[node]: ../../../../others/node/index.md
 
