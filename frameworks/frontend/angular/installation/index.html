@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1524,17 +1524,21 @@
 respectivos componentes.</p>
 <h2 id="instalar-angular">Instalar Angular</h2>
 <p>Para instalar Angular de forma global tenemos que utilizar el comando:</p>
-<pre><code class="language-sh">npm install -g @angular/cli
-</code></pre>
+<div class="codehilite"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@angular/cli
+</code></pre></div>
+
 <p>Para instalar Angular en un proyecto tenemos que utilizar el comando desde la terminal ubicándose en el proyecto:</p>
-<pre><code class="language-sh">npm install @angular/cli
-</code></pre>
+<div class="codehilite"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>@angular/cli
+</code></pre></div>
+
 <p>Verificamos la instalción son el comando:</p>
-<pre><code class="language-sh">ng version
-</code></pre>
+<div class="codehilite"><pre><span></span><code>ng<span class="w"> </span>version
+</code></pre></div>
+
 <p>Si no nos permite comprobar la versión de Angular utilizaremos el siguiente comando:</p>
-<pre><code class="language-sh">Set-ExecutionPolicy - ExecutionPolicy RemoteSigned -Scope CurrentUser
-</code></pre>
+<div class="codehilite"><pre><span></span><code>Set-ExecutionPolicy<span class="w"> </span>-<span class="w"> </span>ExecutionPolicy<span class="w"> </span>RemoteSigned<span class="w"> </span>-Scope<span class="w"> </span>CurrentUser
+</code></pre></div>
+
 <h2 id="creacion-de-un-nuevo-proyecto">Creación de un nuevo proyecto</h2>
 <p>Antes de crear nuestro proyecto debemos decidir que clase de proyecto queremos usar <em>standalone</em> o -clásico_:</p>
 <ul>
@@ -1546,16 +1550,18 @@ respectivos componentes.</p>
   para agrupar componentes, directivas, pipes, y servicios en unidades reutilizables.</li>
 </ul>
 <p>Para crear un nuevo proyecto standalone en Angular utilizamos en comando:</p>
-<pre><code class="language-sh">ng new nombreAplicacion
-</code></pre>
+<div class="codehilite"><pre><span></span><code>ng<span class="w"> </span>new<span class="w"> </span>nombreAplicacion
+</code></pre></div>
+
 <p>Si queremos crear un nuevo proyecto clásico:</p>
-<pre><code class="language-sh">ng new nombreAplicacion --standalone=false
-</code></pre>
+<div class="codehilite"><pre><span></span><code>ng<span class="w"> </span>new<span class="w"> </span>nombreAplicacion<span class="w"> </span>--standalone<span class="o">=</span><span class="nb">false</span>
+</code></pre></div>
+
 <p>El archivo <strong>package.json</strong> muestra las dependencias instaladas, la versión de angular y los comandos habilitados por
 Angular en el proyecto.</p>
 <p>Para iniciar el proyecto usamos el comando:</p>
-<pre><code class="language-sh">ng serve
-</code></pre>
+<div class="codehilite"><pre><span></span><code>ng<span class="w"> </span>serve
+</code></pre></div>
 
 
 

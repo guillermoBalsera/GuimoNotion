@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1725,103 +1725,115 @@
 
 <h1 id="kotlin">Kotlin</h1>
 <h2 id="tipos-de-variables">Tipos de variables</h2>
-<pre><code class="language-kotlin">val numero: Int = 10
-val pi: Double = 3.14
-val esVerdadero: Boolean = true
-val letra: Char = 'A'
-val texto: String = &quot;Kotlin es genial!&quot;
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">numero</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">pi</span><span class="p">:</span><span class="w"> </span><span class="kt">Double</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3.14</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">esVerdadero</span><span class="p">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">letra</span><span class="p">:</span><span class="w"> </span><span class="kt">Char</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;A&#39;</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">texto</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Kotlin es genial!&quot;</span>
+</code></pre></div>
+
 <p>En Kotlin, puedes declarar variables usando val o var:</p>
 <ul>
 <li><code>val</code>: Inmutable (como final en Java). No se puede reasignar.</li>
 <li><code>var</code>: Mutable. Se puede reasignar.</li>
 </ul>
-<pre><code class="language-kotlin">val nombre = &quot;Juan&quot;  // No puede ser cambiado
-var edad = 25        // Puede ser cambiado
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Juan&quot;</span><span class="w">  </span><span class="c1">// No puede ser cambiado</span>
+<span class="kd">var</span><span class="w"> </span><span class="nv">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">25</span><span class="w">        </span><span class="c1">// Puede ser cambiado</span>
+</code></pre></div>
+
 <h3 id="arrays-o-listas">Arrays o Listas</h3>
-<pre><code class="language-kotlin">val lista = listOf(&quot;Manzana&quot;, &quot;Banana&quot;, &quot;Cereza&quot;)
-println(lista[1])  // Banana
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">lista</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">listOf</span><span class="p">(</span><span class="s">&quot;Manzana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Banana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cereza&quot;</span><span class="p">)</span>
+<span class="n">println</span><span class="p">(</span><span class="n">lista</span><span class="o">[</span><span class="m">1</span><span class="o">]</span><span class="p">)</span><span class="w">  </span><span class="c1">// Banana</span>
+</code></pre></div>
+
 <h3 id="sets-o-conjuntos">Sets o conjuntos</h3>
-<pre><code class="language-kotlin">val conjunto = setOf(1, 2, 3, 2, 1)
-println(conjunto.size)  // 3
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">conjunto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">setOf</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="n">println</span><span class="p">(</span><span class="n">conjunto</span><span class="p">.</span><span class="na">size</span><span class="p">)</span><span class="w">  </span><span class="c1">// 3</span>
+</code></pre></div>
+
 <h3 id="maps-o-mapas">Maps o Mapas</h3>
-<pre><code class="language-kotlin">val mapa = mapOf(1 to &quot;Uno&quot;, 2 to &quot;Dos&quot;, 3 to &quot;Tres&quot;)
-println(mapa[2])  // Dos
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">mapa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mapOf</span><span class="p">(</span><span class="m">1</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="s">&quot;Uno&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="s">&quot;Dos&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="s">&quot;Tres&quot;</span><span class="p">)</span>
+<span class="n">println</span><span class="p">(</span><span class="n">mapa</span><span class="o">[</span><span class="m">2</span><span class="o">]</span><span class="p">)</span><span class="w">  </span><span class="c1">// Dos</span>
+</code></pre></div>
+
 <h2 id="estructuras-de-control">Estructuras de Control</h2>
 <h3 id="ifelse">If/Else</h3>
-<pre><code class="language-kotlin">val numero = 10
+<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">numero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span>
 
-if (numero &gt; 0) {
-    println(&quot;Número positivo&quot;)
-} else {
-    println(&quot;Número negativo&quot;)
-}
-</code></pre>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">numero</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Número positivo&quot;</span><span class="p">)</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Número negativo&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="when-switch">When (Switch)</h3>
-<pre><code class="language-kotlin">val dia = 3
+<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">dia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span>
 
-val diaSemana = when (dia) {
-    1 -&gt; &quot;Lunes&quot;
-    2 -&gt; &quot;Martes&quot;
-    3 -&gt; &quot;Miércoles&quot;
-    4 -&gt; &quot;Jueves&quot;
-    5 -&gt; &quot;Viernes&quot;
-    6 -&gt; &quot;Sábado&quot;
-    7 -&gt; &quot;Domingo&quot;
-    else -&gt; &quot;Día no válido&quot;
-}
+<span class="kd">val</span><span class="w"> </span><span class="nv">diaSemana</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="p">(</span><span class="n">dia</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="m">1</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s">&quot;Lunes&quot;</span>
+<span class="w">    </span><span class="m">2</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s">&quot;Martes&quot;</span>
+<span class="w">    </span><span class="m">3</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s">&quot;Miércoles&quot;</span>
+<span class="w">    </span><span class="m">4</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s">&quot;Jueves&quot;</span>
+<span class="w">    </span><span class="m">5</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s">&quot;Viernes&quot;</span>
+<span class="w">    </span><span class="m">6</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s">&quot;Sábado&quot;</span>
+<span class="w">    </span><span class="m">7</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s">&quot;Domingo&quot;</span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s">&quot;Día no válido&quot;</span>
+<span class="p">}</span>
 
-println(diaSemana)
-</code></pre>
+<span class="n">println</span><span class="p">(</span><span class="n">diaSemana</span><span class="p">)</span>
+</code></pre></div>
+
 <h3 id="for">For</h3>
-<pre><code class="language-kotlin">for (i in 1..5) {
-    println(i)
-}
-</code></pre>
-<h3 id="while">While</h3>
-<pre><code class="language-kotlin">var i = 1
+<div class="codehilite"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1.</span><span class="p">.</span><span class="m">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
 
-while (i &lt;= 5) {
-    println(i)
-    i++
-}
-</code></pre>
+<h3 id="while">While</h3>
+<div class="codehilite"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="w">    </span><span class="n">i</span><span class="o">++</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h2 id="funciones">Funciones</h2>
 <p>Las funciones en Kotlin se declaran con la palabra clave fun:</p>
-<pre><code class="language-kotlin">fun suma(a: Int, b: Int): Int {
-    return a + b
-}
+<div class="codehilite"><pre><span></span><code><span class="kd">fun</span><span class="w"> </span><span class="nf">suma</span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">):</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span>
+<span class="p">}</span>
 
-val resultado = suma(5, 10)
-println(resultado)  // 15
-</code></pre>
+<span class="kd">val</span><span class="w"> </span><span class="nv">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">suma</span><span class="p">(</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">)</span>
+<span class="n">println</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span><span class="w">  </span><span class="c1">// 15</span>
+</code></pre></div>
+
 <p>También puedes definir funciones de una sola línea:</p>
-<pre><code class="language-kotin">fun resta(a: Int, b: Int) = a - b
-</code></pre>
+<div class="codehilite"><pre><span></span><code>fun resta(a: Int, b: Int) = a - b
+</code></pre></div>
+
 <h2 id="clases-y-objetos">Clases y Objetos</h2>
 <p>Kotlin soporta la programación orientada a objetos:</p>
-<pre><code class="language-kotlin">class Persona(val nombre: String, var edad: Int)
+<div class="codehilite"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nc">Persona</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">nombre</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nv">edad</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">)</span>
 
-val persona = Persona(&quot;Juan&quot;, 25)
-println(persona.nombre)  // Juan
-println(persona.edad)    // 25
+<span class="kd">val</span><span class="w"> </span><span class="nv">persona</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Persona</span><span class="p">(</span><span class="s">&quot;Juan&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">25</span><span class="p">)</span>
+<span class="n">println</span><span class="p">(</span><span class="n">persona</span><span class="p">.</span><span class="na">nombre</span><span class="p">)</span><span class="w">  </span><span class="c1">// Juan</span>
+<span class="n">println</span><span class="p">(</span><span class="n">persona</span><span class="p">.</span><span class="na">edad</span><span class="p">)</span><span class="w">    </span><span class="c1">// 25</span>
 
-persona.edad = 26
-println(persona.edad)    // 26
-</code></pre>
+<span class="n">persona</span><span class="p">.</span><span class="na">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">26</span>
+<span class="n">println</span><span class="p">(</span><span class="n">persona</span><span class="p">.</span><span class="na">edad</span><span class="p">)</span><span class="w">    </span><span class="c1">// 26</span>
+</code></pre></div>
+
 <h2 id="null-safety">Null Safety</h2>
 <p>Kotlin maneja los valores nulos de manera segura para evitar excepciones de puntero nulo.</p>
-<pre><code class="language-kotlin">var nombre: String? = &quot;Juan&quot;
-nombre = null  // Esto es válido
+<div class="codehilite"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nv">nombre</span><span class="p">:</span><span class="w"> </span><span class="kt">String?</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Juan&quot;</span>
+<span class="n">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="w">  </span><span class="c1">// Esto es válido</span>
 
-// Uso seguro con null
-val longitud = nombre?.length ?: 0
-println(longitud)  // 0
-</code></pre>
+<span class="c1">// Uso seguro con null</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">longitud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nombre</span><span class="o">?.</span><span class="na">length</span><span class="w"> </span><span class="o">?:</span><span class="w"> </span><span class="m">0</span>
+<span class="n">println</span><span class="p">(</span><span class="n">longitud</span><span class="p">)</span><span class="w">  </span><span class="c1">// 0</span>
+</code></pre></div>
 
 
 

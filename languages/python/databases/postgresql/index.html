@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1613,47 +1613,56 @@
 <p class="admonition-title">Note</p>
 <p>Hay que instalar previamente <em>psycopg2</em></p>
 </div>
-<pre><code class="language-sh">pip install psycopg2
-</code></pre>
-<pre><code class="language-python">import psycopg2
-</code></pre>
-<h2 id="conectar-a-una-base-de-datos">Conectar a una base de datos</h2>
-<pre><code class="language-python">conexion = psycopg2.connect(
-    host=&quot;localhost&quot;,
-    database=&quot;nombre_de_la_base_de_datos&quot;,
-    user=&quot;nombre_de_usuario&quot;,
-    password=&quot;contraseña&quot;
-)
-</code></pre>
-<h2 id="crear-un-cursor">Crear un cursor</h2>
-<pre><code class="language-python">cursor = conexion.cursor()
-</code></pre>
-<h2 id="crear-una-tabla">Crear una tabla</h2>
-<pre><code class="language-python">cursor.execute(&quot;&quot;&quot;
-        CREATE TABLE IF NOT EXISTS usuarios (
-            id SERIAL PRIMARY KEY,
-            nombre TEXT,
-            edad INTEGER
-        )
-    &quot;&quot;&quot;)
-</code></pre>
-<h2 id="insertar-datos">Insertar datos</h2>
-<pre><code class="language-python">cursor.execute(&quot;INSERT INTO usuarios (nombre, edad) VALUES (%s, %s)&quot;, (&quot;Juan&quot;, 30))
-</code></pre>
-<h2 id="guardar-los-cambios">Guardar los cambios</h2>
-<pre><code class="language-python">conexion.commit()
-</code></pre>
-<h2 id="obtener-datos">Obtener datos</h2>
-<pre><code class="language-python">cursor.execute(&quot;SELECT * FROM usuarios&quot;)
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>psycopg2
+</code></pre></div>
 
-filas = cursor.fetchall()
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">psycopg2</span>
+</code></pre></div>
+
+<h2 id="conectar-a-una-base-de-datos">Conectar a una base de datos</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">conexion</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+    <span class="n">database</span><span class="o">=</span><span class="s2">&quot;nombre_de_la_base_de_datos&quot;</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="s2">&quot;nombre_de_usuario&quot;</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="s2">&quot;contraseña&quot;</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="crear-un-cursor">Crear un cursor</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">cursor</span> <span class="o">=</span> <span class="n">conexion</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+</code></pre></div>
+
+<h2 id="crear-una-tabla">Crear una tabla</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">        CREATE TABLE IF NOT EXISTS usuarios (</span>
+<span class="s2">            id SERIAL PRIMARY KEY,</span>
+<span class="s2">            nombre TEXT,</span>
+<span class="s2">            edad INTEGER</span>
+<span class="s2">        )</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="insertar-datos">Insertar datos</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO usuarios (nombre, edad) VALUES (</span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">)&quot;</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Juan&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">))</span>
+</code></pre></div>
+
+<h2 id="guardar-los-cambios">Guardar los cambios</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">conexion</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</code></pre></div>
+
+<h2 id="obtener-datos">Obtener datos</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM usuarios&quot;</span><span class="p">)</span>
+
+<span class="n">filas</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+</code></pre></div>
+
 <h2 id="cerrar-la-conexion">Cerrar la conexión</h2>
-<pre><code class="language-python">conexion.close()
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">conexion</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+
 <h2 id="excepciones">Excepciones</h2>
-<pre><code class="language-python">Exception, psycopg2.Error
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="ne">Exception</span><span class="p">,</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">Error</span>
+</code></pre></div>
 
 
 

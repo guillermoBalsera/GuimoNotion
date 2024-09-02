@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1586,45 +1586,49 @@
 
 <h1 id="rutas">Rutas</h1>
 <p>En el <code>app-routing.module.ts</code> se establecen las rutas de la siguiente manera:</p>
-<pre><code class="language-typescript">const routes = [
-    {
-        path: 'route',
-        component: Component
-    },
-    {
-        path: 'route',
-        component: Component
-    }
-];
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">routes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;route&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">Component</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;route&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">Component</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">];</span>
+</code></pre></div>
+
 <h2 id="ruta-por-defecto">Ruta por defecto</h2>
 <p>Para añadir una ruta por defecto:</p>
-<pre><code class="language-typescript">{
-    path: '', redirectTo: '/', pathMatch: 'full'
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">redirectTo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">pathMatch</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;full&#39;</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h2 id="rutas-hijas">Rutas hijas</h2>
 <p>Si se quiere establecer una ruta como hija de otra:</p>
-<pre><code class="language-typescript">const routes: Routes = [
-    {
-        path: 'father',
-        component: FatherComponent,
-        children: [
-            {
-                path: 'child',
-                component: ChildComponent
-            }
-        ]
-    }];
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">routes</span><span class="o">:</span><span class="w"> </span><span class="kt">Routes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;father&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">FatherComponent</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">children</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;child&#39;</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">ChildComponent</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}];</span>
+</code></pre></div>
+
 <p>De tal forma que la ruta para acceder al <code>component</code> sería <code>father/child</code>, además de que se aplicaría a través del
 <code>&lt;router-outlet&gt;&lt;/router-outlet&gt;</code> en caso de haberlo.</p>
 <h2 id="envio-de-informacion-en-la-ruta">Envio de información en la ruta</h2>
 <p>Si queremos enviar algún dato en la url para obtenerla en el componente al que se navega:</p>
-<pre><code class="language-typescript">{
-    path: 'detail/:detailInfo', component: DetailComponent
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;detail/:detailInfo&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">DetailComponent</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <p>La mejor forma de organizar las rutas de una web sería tener tres rutas principales:</p>
 <ul>
 <li>Login</li>
@@ -1635,22 +1639,26 @@
 <h2 id="navegacion">Navegación</h2>
 <h3 id="navegar-desde-html">Navegar desde html</h3>
 <p>Para navegar a una ruta usaremos: </p>
-<pre><code class="language-html">[routerLink]=&quot;['/route']&quot;
-</code></pre>
+<div class="codehilite"><pre><span></span><code>[routerLink]=&quot;[&#39;/route&#39;]&quot;
+</code></pre></div>
+
 <p>Para navegar a una ruta hija usaremos:</p>
-<pre><code class="language-html">[routerLink]=&quot;['/father/child']
-</code></pre>
+<div class="codehilite"><pre><span></span><code>[routerLink]=&quot;[&#39;/father/child&#39;]
+</code></pre></div>
+
 <p>Para enviar información en la ruta usaremos: </p>
-<pre><code class="language-html">[routerLink]=&quot;['/detail', detailInfo]&quot;`
-</code></pre>
+<div class="codehilite"><pre><span></span><code>[routerLink]=&quot;[&#39;/detail&#39;, detailInfo]&quot;`
+</code></pre></div>
+
 <p>Para acceder a los parámetros de la ruta primero se debe implementar:</p>
-<pre><code class="language-typescript">import {ActivatedRoute} from '@angular/router';
+<div class="codehilite"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">ActivatedRoute</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/router&#39;</span><span class="p">;</span>
 
-constructor(private route: ActivatedRoute) { }
+<span class="kr">constructor</span><span class="p">(</span><span class="k">private</span><span class="w"> </span><span class="nx">route</span><span class="o">:</span><span class="w"> </span><span class="kt">ActivatedRoute</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
 
-const routeParams = this.route.snapshot.paramMap;
-const detailInfo = routeParams.get('detailInfo');
-</code></pre>
+<span class="kd">const</span><span class="w"> </span><span class="nx">routeParams</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">route</span><span class="p">.</span><span class="nx">snapshot</span><span class="p">.</span><span class="nx">paramMap</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">detailInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">routeParams</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;detailInfo&#39;</span><span class="p">);</span>
+</code></pre></div>
+
 <h3 id="navegar-desde-typescript">Navegar desde typescript</h3>
 
 

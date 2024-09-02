@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1757,18 +1757,19 @@
 <p>Markdown es un lenguaje de marcado ligero que se utiliza para formatear texto. Es fácil de leer y escribir, y se convierte en HTML de manera sencilla.</p>
 <h2 id="encabezados">Encabezados</h2>
 <p>Puedes crear encabezados utilizando el símbolo <code>#</code>. El número de <code>#</code> indica el nivel del encabezado.</p>
-<pre><code class="language-markdown"># Encabezado 1
+<div class="codehilite"><pre><span></span><code><span class="gh"># Encabezado 1</span>
 
-## Encabezado 2
+<span class="gu">## Encabezado 2</span>
 
-### Encabezado 3
+<span class="gu">### Encabezado 3</span>
 
-#### Encabezado 4
+<span class="gu">#### Encabezado 4</span>
 
-##### Encabezado 5
+<span class="gu">##### Encabezado 5</span>
 
-###### Encabezado 6
-</code></pre>
+<span class="gu">###### Encabezado 6</span>
+</code></pre></div>
+
 <h2 id="enfasis">Énfasis</h2>
 <p>Puedes agregar énfasis al texto utilizando asteriscos * o guiones bajos _.</p>
 <ul>
@@ -1780,51 +1781,60 @@
 <p>Puedes anidar listas utilizando espacios o tabulaciones antes del marcador de la lista.</p>
 <h3 id="listas-ordenadas">Listas ordenadas</h3>
 <p>Utiliza números seguidos de un punto para crear listas ordenadas.</p>
-<pre><code class="language-markdown">1. Primer ítem
-2. Segundo ítem
-3. Tercer ítem
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="k">1.</span> Primer ítem
+<span class="k">2.</span> Segundo ítem
+<span class="k">3.</span> Tercer ítem
+</code></pre></div>
+
 <h3 id="listas-desordenadas">Listas desordenadas</h3>
 <p>Utiliza asteriscos *, signos más + o guiones - para listas desordenadas.</p>
-<pre><code class="language-markdown">- Primer ítem
-- Segundo ítem
-- Tercer ítem
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="k">-</span><span class="w"> </span>Primer ítem
+<span class="k">-</span><span class="w"> </span>Segundo ítem
+<span class="k">-</span><span class="w"> </span>Tercer ítem
+</code></pre></div>
+
 <h2 id="enlaces">Enlaces</h2>
 <p>Puedes crear enlaces utilizando corchetes [] para el texto del enlace y paréntesis () para la URL.</p>
-<pre><code class="language-markdown">[Texto del enlace](https://www.ejemplo.com)
-</code></pre>
-<p>Tambien se pueden crear atajos a los enlaces:</p>
-<pre><code class="language-markdown">[Nombre del enlace][Referencia al enlace]
+<div class="codehilite"><pre><span></span><code>[<span class="nt">Texto del enlace</span>](<span class="na">https://www.ejemplo.com</span>)
+</code></pre></div>
 
-[Referencia al enlace]: https://www.ejemplo.com
-</code></pre>
+<p>Tambien se pueden crear atajos a los enlaces:</p>
+<div class="codehilite"><pre><span></span><code>[<span class="nt">Nombre del enlace</span>][<span class="nl">Referencia al enlace</span>]
+
+[<span class="nl">Referencia al enlace</span>]: <span class="na">https://www.ejemplo.com</span>
+</code></pre></div>
+
 <h2 id="citas">Citas</h2>
 <p>Para crear citas, utiliza el símbolo &gt;.</p>
-<pre><code class="language-markdown">&gt; Esta es una cita.
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="k">&gt; </span><span class="ge">Esta es una cita.</span>
+</code></pre></div>
+
 <p>También existen citas especiales que se embellecen en github</p>
-<pre><code class="language-markdown">&gt; [!NOTE]
-&gt; Esta es una cita.
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="k">&gt; </span><span class="ge">[!NOTE]</span>
+<span class="k">&gt; </span><span class="ge">Esta es una cita.</span>
+</code></pre></div>
+
 <h2 id="tablas">Tablas</h2>
 <p>Puedes crear tablas utilizando guiones - para la línea de encabezado y barras verticales | para separar columnas.</p>
-<pre><code class="language-markdown">| Encabezado 1  | Encabezado 2  |
+<div class="codehilite"><pre><span></span><code>| Encabezado 1  | Encabezado 2  |
 | ------------- | ------------- |
 | Fila 1, Col 1 | Fila 1, Col 2 |
 | Fila 2, Col 1 | Fila 2, Col 2 |
-</code></pre>
+</code></pre></div>
+
 <h2 id="codigo">Código</h2>
 <h3 id="codigo-en-linea">Código en Línea</h3>
 <p>Para código en línea, usa comillas simples invertidas `.</p>
-<pre><code class="language-markdown">Este es un ejemplo de `código en línea`.
-</code></pre>
+<div class="codehilite"><pre><span></span><code>Este es un ejemplo de <span class="sb">`código en línea`</span>.
+</code></pre></div>
+
 <h3 id="bloques-de-codigo">Bloques de Código</h3>
 <p>Para bloques de código, utiliza tres comillas simples invertidas ``` antes y después del código. Puedes especificar el lenguaje de programación para resaltado de sintaxis.</p>
-<pre><code class="language-markdown">```java
-System.out.println(&quot;Hola mund0&quot;);
-```
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="sb">```java</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hola mund0&quot;</span><span class="p">);</span>
+<span class="sb">```</span>
+</code></pre></div>
+
 <blockquote>
 <p>Para mostrar un bloque de código de markdown dentro de un bloque de código simplemnete se usan mas comillas simples invertidas en el bloque de código externo.</p>
 </blockquote>
@@ -1910,12 +1920,13 @@ System.out.println(&quot;Hola mund0&quot;);
 </table>
 <h2 id="lineas-horizontales">Líneas horizontales</h2>
 <p>Para agregar una línea horizontal, utiliza tres o más guiones, asteriscos, o guiones bajos.</p>
-<pre><code class="language-markdown">---
-</code></pre>
+<div class="codehilite"><pre><span></span><code>---
+</code></pre></div>
+
 <h2 id="escapando-caracteres">Escapando caracteres</h2>
 <p>Si necesitas usar un carácter especial literalmente, escápalo con una barra invertida .</p>
-<pre><code class="language-markdown">\*Este texto no estará en cursiva\*
-</code></pre>
+<div class="codehilite"><pre><span></span><code>\*Este texto no estará en cursiva\*
+</code></pre></div>
 
 
 
