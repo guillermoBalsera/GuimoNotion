@@ -1,8 +1,17 @@
 # Bienvenido a GuimoNotion
 
-??? abstract "Última modificación"
+??? abstract "Últimas modificaciones"
 
-    02/09/2024 - Añadir guía de `Bash Scripting`
+    - 02/09/2024 - Añadir información de las últimas modificaciones a la página de inicio 
+    - 02/09/2024 - Añadir guía de `Bash Scripting`
+    - 02/09/2024 - Arreglar error
+    - 02/09/2024 - Arreglar error
+    - 02/09/2024 - Añadir ciclos de vida a la guía de `Angular`
+    - 02/09/2024 - Arreglar error
+    - 02/09/2024 - Arreglar error
+    - 02/09/2024 - Añadir guía de `Kotlin`
+    - 02/09/2024 - Eliminar `tags` de la página de inicio
+    - 02/09/2024 - Añadir `Bash Scripting` a la página de inicio
 
 ## Lenguajes de programación
 
