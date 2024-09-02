@@ -1,7 +1,7 @@
 ---
 tags:
-  - In development
-  - Pending review
+- In development
+- Pending review
 ---
 
 # Funcionalidades básicas
@@ -38,19 +38,19 @@ print(len(mi_lista))  # Output: 5
 ## Type
 
 ```python
-print(type(123))          # Output: <class 'int'>
-print(type(3.14))         # Output: <class 'float'>
-print(type("Hola"))       # Output: <class 'str'>
-print(type([1, 2, 3]))    # Output: <class 'list'>
+print(type(123))  # Output: <class 'int'>
+print(type(3.14))  # Output: <class 'float'>
+print(type("Hola"))  # Output: <class 'str'>
+print(type([1, 2, 3]))  # Output: <class 'list'>
 ```
 
 ## Conversión de tipos
 
 ```python
-print(int("123"))       # Output: 123
-print(float("3.14"))    # Output: 3.14
-print(str(123))         # Output: '123'
-print(list("Hola"))     # Output: ['H', 'o', 'l', 'a']
+print(int("123"))  # Output: 123
+print(float("3.14"))  # Output: 3.14
+print(str(123))  # Output: '123'
+print(list("Hola"))  # Output: ['H', 'o', 'l', 'a']
 ```
 
 ## Range
@@ -61,10 +61,10 @@ La función range() se utiliza para generar una secuencia de números. Comúnmen
 range(inicio, fin, paso)
 ```
 
-!!! note 
-    `inicio`: El valor inicial de la secuencia (por defecto es 0).  
-    `fin`: El valor final de la secuencia (no se incluye en la secuencia).  
-    `paso`: El incremento entre los números (por defecto es 1).  
+!!! note
+`inicio`: El valor inicial de la secuencia (por defecto es 0).  
+`fin`: El valor final de la secuencia (no se incluye en la secuencia).  
+`paso`: El incremento entre los números (por defecto es 1).
 
 ## Max y Min
 
@@ -89,9 +89,9 @@ print(max(lista))  # Output: 'uva'
 lista = ["manzana", "banana", "cereza", "uva"]
 print(min(lista))  # Output: 'banana'
 ```
- 
+
 !!! note
-    Las comparaciones de cadenas de texto se hacen carácter por carácter en el orden de sus valores ASCII
+Las comparaciones de cadenas de texto se hacen carácter por carácter en el orden de sus valores ASCII
 
 ## Sorted
 

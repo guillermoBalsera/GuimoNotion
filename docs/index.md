@@ -1,4 +1,8 @@
-[//]: # (mkdocs gh-deploy)
+---
+tags:
+- In development
+- 02/09/2024
+---
 
 # Bienvenido a GuimoNotion
 
@@ -7,7 +11,7 @@
 | Lenguaje         | Interpretado | Usos más comunes                                                          | Implementado | Última modificación |
 |------------------|--------------|---------------------------------------------------------------------------|--------------|---------------------|
 | Java             | No           | Aplicaciones empresariales, desarrollo de Android, sistemas distribuidos  |              |                     |
-| [Python][python] | Sí           | Ciencia de datos, desarrollo web, automatización de scripts               | X            | 20-08-2024          |
+| [Python][python] | Sí           | Ciencia de datos, desarrollo web, automatización de scripts               | X            | 02-09-2024          |
 | PHP              | Sí           | Desarrollo web, gestión de contenido (CMS), scripts del lado del servidor |              |                     |
 
 ## Frameworks
