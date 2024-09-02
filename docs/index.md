@@ -8,12 +8,12 @@ tags:
 
 ## Lenguajes de programación
 
-| Lenguaje         | Interpretado | Usos más comunes                                                          | Implementado | Última modificación |
-|------------------|--------------|---------------------------------------------------------------------------|--------------|---------------------|
-| Bash Script      | Sí           | Automatización de tareas, administración de sistemas, scripts de shell    | X            | 02-09-2024          |
-| Java             | No           | Aplicaciones empresariales, desarrollo de Android, sistemas distribuidos  |              |                     |
-| [Python][python] | Sí           | Ciencia de datos, desarrollo web, automatización de scripts               | X            | 02-09-2024          |
-| PHP              | Sí           | Desarrollo web, gestión de contenido (CMS), scripts del lado del servidor |              |                     |
+| Lenguaje            | Interpretado | Usos más comunes                                                          | Implementado | Última modificación |
+|---------------------|--------------|---------------------------------------------------------------------------|--------------|---------------------|
+| [Bash Script][bash] | Sí           | Automatización de tareas, administración de sistemas, scripts de shell    | X            | 02-09-2024          |
+| Java                | No           | Aplicaciones empresariales, desarrollo de Android, sistemas distribuidos  |              |                     |
+| [Python][python]    | Sí           | Ciencia de datos, desarrollo web, automatización de scripts               | X            | 02-09-2024          |
+| PHP                 | Sí           | Desarrollo web, gestión de contenido (CMS), scripts del lado del servidor |              |                     |
 
 ## Frameworks
 
@@ -52,6 +52,8 @@ tags:
 | [YAML][yaml]         | Configuración de aplicaciones, intercambio de datos                             | Formato legible por humanos, jerarquía basada en indentación                                                   | X            | 26-08-2024          |
 
 [python]: ./languages/python/index.md
+
+[bash]: ./languages/bashScript/index.md
 
 [angular]: ./frameworks/frontend/angular/index.md
 
