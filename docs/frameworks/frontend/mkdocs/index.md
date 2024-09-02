@@ -116,21 +116,25 @@ Para instalarlas añadiremos a nuestro fichero `mkdocs.yml`:
 ```yml
 markdown_extensions:
   - admonition
+  - pymdownx.details
 ```
 
 Tipos de admonition:
-  - note
-  - abstract
-  - info
-  - tip
-  - success
-  - question
-  - warning
-  - failure
-  - danger
-  - bug
-  - example
-  - quote
+
+- note :material-pencil-circle:
+- abstract
+- info
+- tip
+- success
+- question
+- warning
+- failure
+- danger
+- bug
+- example
+- quote
+
+
 
 Se usan de la siguiente manera:
 

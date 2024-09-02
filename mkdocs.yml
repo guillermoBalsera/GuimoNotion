@@ -4,9 +4,10 @@ site_description: Apuntes en español sobre distintas tecnologías de desarrroll
 copyright: Copyright &copy; 2024 - Guillermo Balsera
 
 markdown_extensions:
-  - admonition
   - codehilite
+  - admonition
   - pymdownx.superfences
+  - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
 
@@ -84,6 +85,7 @@ nav:
           - Recursos adicionales: frameworks/frontend/angular/additional_resources/index.md
 #      - Electron: frameworks/frontend/electron/index.md
 #      - Ionic: frameworks/frontend/ionic/index.md
+#      - React: frameworks/frontend/react/index.md
       - MkDocs: frameworks/frontend/mkdocs/index.md
   - BackEnd:
       - PHP-Laravel: frameworks/backend/php-laravel/index.md

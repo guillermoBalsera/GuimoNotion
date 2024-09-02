@@ -1,6 +1,5 @@
 ---
 tags:
-  - Finished
   - Pending review
   - 24/08/2024
 ---
