@@ -19,7 +19,7 @@
         <link rel="next" href="../python/">
       
       
-      <link rel="icon" href="../../img/guimonotion.svg">
+      <link rel="icon" href="../../assets/guimonotion.svg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
     
     
@@ -96,7 +96,7 @@
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
     <a href="../.." title="GuimoNotion" class="md-header__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../img/guimonotion.svg" alt="logo">
+  <img src="../../assets/guimonotion.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -327,7 +327,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="GuimoNotion" class="md-nav__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../img/guimonotion.svg" alt="logo">
+  <img src="../../assets/guimonotion.svg" alt="logo">
 
     </a>
     GuimoNotion
@@ -1252,6 +1252,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../../frameworks/frontend/angular/databinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frameworks/frontend/angular/input_output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input y Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frameworks/frontend/angular/projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proyección de contenido
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frameworks/frontend/angular/life_cicle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ciclos de vida
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../frameworks/frontend/angular/routes/" class="md-nav__link">
         
   
@@ -1725,40 +1809,35 @@
 
 <h1 id="kotlin">Kotlin</h1>
 <h2 id="tipos-de-variables">Tipos de variables</h2>
-<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">numero</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">numero</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span>
 <span class="kd">val</span><span class="w"> </span><span class="nv">pi</span><span class="p">:</span><span class="w"> </span><span class="kt">Double</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3.14</span>
 <span class="kd">val</span><span class="w"> </span><span class="nv">esVerdadero</span><span class="p">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
 <span class="kd">val</span><span class="w"> </span><span class="nv">letra</span><span class="p">:</span><span class="w"> </span><span class="kt">Char</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;A&#39;</span>
 <span class="kd">val</span><span class="w"> </span><span class="nv">texto</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Kotlin es genial!&quot;</span>
 </code></pre></div>
-
 <p>En Kotlin, puedes declarar variables usando val o var:</p>
 <ul>
 <li><code>val</code>: Inmutable (como final en Java). No se puede reasignar.</li>
 <li><code>var</code>: Mutable. Se puede reasignar.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Juan&quot;</span><span class="w">  </span><span class="c1">// No puede ser cambiado</span>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Juan&quot;</span><span class="w">  </span><span class="c1">// No puede ser cambiado</span>
 <span class="kd">var</span><span class="w"> </span><span class="nv">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">25</span><span class="w">        </span><span class="c1">// Puede ser cambiado</span>
 </code></pre></div>
-
 <h3 id="arrays-o-listas">Arrays o Listas</h3>
-<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">lista</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">listOf</span><span class="p">(</span><span class="s">&quot;Manzana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Banana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cereza&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">lista</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">listOf</span><span class="p">(</span><span class="s">&quot;Manzana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Banana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cereza&quot;</span><span class="p">)</span>
 <span class="n">println</span><span class="p">(</span><span class="n">lista</span><span class="o">[</span><span class="m">1</span><span class="o">]</span><span class="p">)</span><span class="w">  </span><span class="c1">// Banana</span>
 </code></pre></div>
-
 <h3 id="sets-o-conjuntos">Sets o conjuntos</h3>
-<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">conjunto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">setOf</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">conjunto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">setOf</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
 <span class="n">println</span><span class="p">(</span><span class="n">conjunto</span><span class="p">.</span><span class="na">size</span><span class="p">)</span><span class="w">  </span><span class="c1">// 3</span>
 </code></pre></div>
-
 <h3 id="maps-o-mapas">Maps o Mapas</h3>
-<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">mapa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mapOf</span><span class="p">(</span><span class="m">1</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="s">&quot;Uno&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="s">&quot;Dos&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="s">&quot;Tres&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">mapa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mapOf</span><span class="p">(</span><span class="m">1</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="s">&quot;Uno&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="s">&quot;Dos&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="s">&quot;Tres&quot;</span><span class="p">)</span>
 <span class="n">println</span><span class="p">(</span><span class="n">mapa</span><span class="o">[</span><span class="m">2</span><span class="o">]</span><span class="p">)</span><span class="w">  </span><span class="c1">// Dos</span>
 </code></pre></div>
-
 <h2 id="estructuras-de-control">Estructuras de Control</h2>
 <h3 id="ifelse">If/Else</h3>
-<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">numero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">numero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span>
 
 <span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">numero</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Número positivo&quot;</span><span class="p">)</span>
@@ -1766,9 +1845,8 @@
 <span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Número negativo&quot;</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="when-switch">When (Switch)</h3>
-<div class="codehilite"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">dia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">dia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span>
 
 <span class="kd">val</span><span class="w"> </span><span class="nv">diaSemana</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="p">(</span><span class="n">dia</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="m">1</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s">&quot;Lunes&quot;</span>
@@ -1783,39 +1861,34 @@
 
 <span class="n">println</span><span class="p">(</span><span class="n">diaSemana</span><span class="p">)</span>
 </code></pre></div>
-
 <h3 id="for">For</h3>
-<div class="codehilite"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1.</span><span class="p">.</span><span class="m">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1.</span><span class="p">.</span><span class="m">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="while">While</h3>
-<div class="codehilite"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
 
 <span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="w">    </span><span class="n">i</span><span class="o">++</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="funciones">Funciones</h2>
 <p>Las funciones en Kotlin se declaran con la palabra clave fun:</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">fun</span><span class="w"> </span><span class="nf">suma</span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">):</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">fun</span><span class="w"> </span><span class="nf">suma</span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">):</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span>
 <span class="p">}</span>
 
 <span class="kd">val</span><span class="w"> </span><span class="nv">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">suma</span><span class="p">(</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">)</span>
 <span class="n">println</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span><span class="w">  </span><span class="c1">// 15</span>
 </code></pre></div>
-
 <p>También puedes definir funciones de una sola línea:</p>
-<div class="codehilite"><pre><span></span><code>fun resta(a: Int, b: Int) = a - b
+<div class="highlight"><pre><span></span><code>fun resta(a: Int, b: Int) = a - b
 </code></pre></div>
-
 <h2 id="clases-y-objetos">Clases y Objetos</h2>
 <p>Kotlin soporta la programación orientada a objetos:</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nc">Persona</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">nombre</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nv">edad</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nc">Persona</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">nombre</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nv">edad</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">)</span>
 
 <span class="kd">val</span><span class="w"> </span><span class="nv">persona</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Persona</span><span class="p">(</span><span class="s">&quot;Juan&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">25</span><span class="p">)</span>
 <span class="n">println</span><span class="p">(</span><span class="n">persona</span><span class="p">.</span><span class="na">nombre</span><span class="p">)</span><span class="w">  </span><span class="c1">// Juan</span>
@@ -1824,10 +1897,9 @@
 <span class="n">persona</span><span class="p">.</span><span class="na">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">26</span>
 <span class="n">println</span><span class="p">(</span><span class="n">persona</span><span class="p">.</span><span class="na">edad</span><span class="p">)</span><span class="w">    </span><span class="c1">// 26</span>
 </code></pre></div>
-
 <h2 id="null-safety">Null Safety</h2>
 <p>Kotlin maneja los valores nulos de manera segura para evitar excepciones de puntero nulo.</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nv">nombre</span><span class="p">:</span><span class="w"> </span><span class="kt">String?</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Juan&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nv">nombre</span><span class="p">:</span><span class="w"> </span><span class="kt">String?</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Juan&quot;</span>
 <span class="n">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="w">  </span><span class="c1">// Esto es válido</span>
 
 <span class="c1">// Uso seguro con null</span>

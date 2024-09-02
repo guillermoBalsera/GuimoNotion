@@ -13,13 +13,13 @@
       
       
       
-        <link rel="prev" href="../components/">
+        <link rel="prev" href="../life_cicle/">
       
       
         <link rel="next" href="../additional_resources/">
       
       
-      <link rel="icon" href="../../../../img/guimonotion.svg">
+      <link rel="icon" href="../../../../assets/guimonotion.svg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
     
     
@@ -96,7 +96,7 @@
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
     <a href="../../../.." title="GuimoNotion" class="md-header__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -329,7 +329,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../../.." title="GuimoNotion" class="md-nav__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     GuimoNotion
@@ -1093,6 +1093,90 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../databinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../input_output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input y Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proyección de contenido
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../life_cicle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ciclos de vida
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1586,7 +1670,7 @@
 
 <h1 id="rutas">Rutas</h1>
 <p>En el <code>app-routing.module.ts</code> se establecen las rutas de la siguiente manera:</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">routes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">routes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;route&#39;</span><span class="p">,</span>
 <span class="w">        </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">Component</span>
@@ -1597,17 +1681,15 @@
 <span class="w">    </span><span class="p">}</span>
 <span class="p">];</span>
 </code></pre></div>
-
 <h2 id="ruta-por-defecto">Ruta por defecto</h2>
 <p>Para añadir una ruta por defecto:</p>
-<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">redirectTo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">pathMatch</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;full&#39;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="rutas-hijas">Rutas hijas</h2>
 <p>Si se quiere establecer una ruta como hija de otra:</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">routes</span><span class="o">:</span><span class="w"> </span><span class="kt">Routes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">routes</span><span class="o">:</span><span class="w"> </span><span class="kt">Routes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;father&#39;</span><span class="p">,</span>
 <span class="w">        </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">FatherComponent</span><span class="p">,</span>
@@ -1619,16 +1701,14 @@
 <span class="w">        </span><span class="p">]</span>
 <span class="w">    </span><span class="p">}];</span>
 </code></pre></div>
-
 <p>De tal forma que la ruta para acceder al <code>component</code> sería <code>father/child</code>, además de que se aplicaría a través del
 <code>&lt;router-outlet&gt;&lt;/router-outlet&gt;</code> en caso de haberlo.</p>
 <h2 id="envio-de-informacion-en-la-ruta">Envio de información en la ruta</h2>
 <p>Si queremos enviar algún dato en la url para obtenerla en el componente al que se navega:</p>
-<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;detail/:detailInfo&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">DetailComponent</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>La mejor forma de organizar las rutas de una web sería tener tres rutas principales:</p>
 <ul>
 <li>Login</li>
@@ -1639,26 +1719,22 @@
 <h2 id="navegacion">Navegación</h2>
 <h3 id="navegar-desde-html">Navegar desde html</h3>
 <p>Para navegar a una ruta usaremos: </p>
-<div class="codehilite"><pre><span></span><code>[routerLink]=&quot;[&#39;/route&#39;]&quot;
+<div class="highlight"><pre><span></span><code>[routerLink]=&quot;[&#39;/route&#39;]&quot;
 </code></pre></div>
-
 <p>Para navegar a una ruta hija usaremos:</p>
-<div class="codehilite"><pre><span></span><code>[routerLink]=&quot;[&#39;/father/child&#39;]
+<div class="highlight"><pre><span></span><code>[routerLink]=&quot;[&#39;/father/child&#39;]
 </code></pre></div>
-
 <p>Para enviar información en la ruta usaremos: </p>
-<div class="codehilite"><pre><span></span><code>[routerLink]=&quot;[&#39;/detail&#39;, detailInfo]&quot;`
+<div class="highlight"><pre><span></span><code>[routerLink]=&quot;[&#39;/detail&#39;, detailInfo]&quot;`
 </code></pre></div>
-
 <p>Para acceder a los parámetros de la ruta primero se debe implementar:</p>
-<div class="codehilite"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">ActivatedRoute</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/router&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">ActivatedRoute</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@angular/router&#39;</span><span class="p">;</span>
 
 <span class="kr">constructor</span><span class="p">(</span><span class="k">private</span><span class="w"> </span><span class="nx">route</span><span class="o">:</span><span class="w"> </span><span class="kt">ActivatedRoute</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">routeParams</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">route</span><span class="p">.</span><span class="nx">snapshot</span><span class="p">.</span><span class="nx">paramMap</span><span class="p">;</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">detailInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">routeParams</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;detailInfo&#39;</span><span class="p">);</span>
 </code></pre></div>
-
 <h3 id="navegar-desde-typescript">Navegar desde typescript</h3>
 
 
