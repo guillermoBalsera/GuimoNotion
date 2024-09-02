@@ -1,9 +1,3 @@
----
-tags:
-  - In development
-  - 02/09/2024
----
-
 # Bienvenido a GuimoNotion
 
 ## Lenguajes de programación
