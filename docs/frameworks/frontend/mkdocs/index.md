@@ -1,3 +1,9 @@
+---
+tags:
+  - Finished
+  - 20/08/2024
+---
+
 # Introducción
 
 [MkDocs](https://www.mkdocs.org/) es una herramienta de generación de sitios estáticos que se centra en la creación de

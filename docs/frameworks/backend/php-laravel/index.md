@@ -1,3 +1,9 @@
+---
+tags:
+  - Pending review
+  - 20/08/2024
+---
+
 # PHP-Laravel
 
 ## Instalación de Laravel y creación de un nuevo proyecto

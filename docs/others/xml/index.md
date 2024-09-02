@@ -1,3 +1,9 @@
+---
+tags:
+  - Finished
+  - 26/08/2024
+---
+
 # XML(Extensive Markup Language)
 
 XML (Extensible Markup Language) es un lenguaje de marcado diseñado para almacenar y transportar datos. A diferencia de

@@ -1,7 +1,9 @@
 ---
 tags:
-- In development
-- Pending review
+  - In development
+  - Pending review
+  - Interpreted
+  - 02/09/2024
 ---
 
 # Funcionalidades básicas

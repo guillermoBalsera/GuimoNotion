@@ -1,3 +1,9 @@
+---
+tags:
+  - Finished
+  - 24/08/2024
+---
+
 # Markdown
 
 Markdown es un lenguaje de marcado ligero que se utiliza para formatear texto. Es fácil de leer y escribir, y se convierte en HTML de manera sencilla.

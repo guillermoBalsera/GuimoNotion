@@ -1,3 +1,9 @@
+---
+tags:
+  - Finished
+  - 26/08/2024
+---
+
 # YAML (YAML Ain't Markup Language)
 
 YAML es un formato de serialización de datos muy legible y fácil de escribir, especialmente útil para archivos de

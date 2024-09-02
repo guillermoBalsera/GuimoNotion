@@ -1,7 +1,7 @@
 ---
 tags:
-- In development
-- 02/09/2024
+  - In development
+  - 02/09/2024
 ---
 
 # Bienvenido a GuimoNotion
@@ -10,6 +10,7 @@ tags:
 
 | Lenguaje         | Interpretado | Usos más comunes                                                          | Implementado | Última modificación |
 |------------------|--------------|---------------------------------------------------------------------------|--------------|---------------------|
+| Bash Script      | Sí           | Automatización de tareas, administración de sistemas, scripts de shell    | X            | 02-09-2024          |
 | Java             | No           | Aplicaciones empresariales, desarrollo de Android, sistemas distribuidos  |              |                     |
 | [Python][python] | Sí           | Ciencia de datos, desarrollo web, automatización de scripts               | X            | 02-09-2024          |
 | PHP              | Sí           | Desarrollo web, gestión de contenido (CMS), scripts del lado del servidor |              |                     |
@@ -46,7 +47,7 @@ tags:
 | HTML                 | Estructuración y presentación de contenido en la web                            | Etiquetas para definir elementos como encabezados, párrafos, enlaces, etc.                                     |              |                     |
 | [JSON][json]         | Intercambio de datos entre aplicaciones, configuración, almacenamiento de datos | Formato ligero y legible por humanos, basado en texto, usa una sintaxis de pares clave-valor                   | X            | 26-08-2024          |
 | [Markdown][markdown] | Documentación, blogs, README files                                              | Sintaxis ligera para formatear texto plano, conversión a HTML                                                  | X            | 24-08-2024          |
-| [Node.js][node       | Desarrollo de aplicaciones web, servidores, herramientas de desarrollo          | Entorno de ejecución para JavaScript en el lado del servidor, permite el uso de JavaScript fuera del navegador | X            | 24-08-2024          |
+| [Node.js][node]      | Desarrollo de aplicaciones web, servidores, herramientas de desarrollo          | Entorno de ejecución para JavaScript en el lado del servidor, permite el uso de JavaScript fuera del navegador | X            | 24-08-2024          |
 | [XML][xml]           | Intercambio de datos entre aplicaciones, configuración                          | Estructura jerárquica con etiquetas personalizables, extensibilidad                                            | X            | 26-08-2024          |
 | [YAML][yaml]         | Configuración de aplicaciones, intercambio de datos                             | Formato legible por humanos, jerarquía basada en indentación                                                   | X            | 26-08-2024          |
 

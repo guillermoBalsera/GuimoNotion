@@ -1,3 +1,9 @@
+---
+tags:
+  - Finished
+  - 26/08/2024  
+---
+
 # JSON (JavaScript Object Notation)
 
 JSON es un formato de texto ligero para el intercambio de datos. Es fácil de leer y escribir para los seres humanos y
