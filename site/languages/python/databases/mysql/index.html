@@ -19,7 +19,7 @@
         <link rel="next" href="../mongodb/">
       
       
-      <link rel="icon" href="../../../../img/guimonotion.svg">
+      <link rel="icon" href="../../../../assets/guimonotion.svg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
     
     
@@ -96,7 +96,7 @@
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
     <a href="../../../.." title="GuimoNotion" class="md-header__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -327,7 +327,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../../.." title="GuimoNotion" class="md-nav__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     GuimoNotion
@@ -1208,6 +1208,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../frameworks/frontend/angular/databinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../frameworks/frontend/angular/input_output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input y Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../frameworks/frontend/angular/projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proyección de contenido
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../frameworks/frontend/angular/life_cicle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ciclos de vida
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../frameworks/frontend/angular/routes/" class="md-nav__link">
         
   
@@ -1613,27 +1697,23 @@
 <p class="admonition-title">Note</p>
 <p>Hay que instalar previamente <em>mysql-connector-python</em></p>
 </div>
-<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mysql-connector-python
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mysql-connector-python
 </code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">mysql.connector</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">mysql.connector</span>
 </code></pre></div>
-
 <h2 id="conectar-a-una-base-de-datos">Conectar a una base de datos</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">conexion</span> <span class="o">=</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+<div class="highlight"><pre><span></span><code><span class="n">conexion</span> <span class="o">=</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
     <span class="n">host</span><span class="o">=</span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
     <span class="n">database</span><span class="o">=</span><span class="s2">&quot;nombre_de_la_base_de_datos&quot;</span><span class="p">,</span>
     <span class="n">user</span><span class="o">=</span><span class="s2">&quot;nombre_de_usuario&quot;</span><span class="p">,</span>
     <span class="n">password</span><span class="o">=</span><span class="s2">&quot;contraseña&quot;</span>
 <span class="p">)</span>
 </code></pre></div>
-
 <h2 id="crear-un-cursor">Crear un cursor</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">cursor</span> <span class="o">=</span> <span class="n">conexion</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">cursor</span> <span class="o">=</span> <span class="n">conexion</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="crear-una-tabla">Crear una tabla</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">        CREATE TABLE IF NOT EXISTS usuarios (</span>
 <span class="s2">            id SERIAL PRIMARY KEY,</span>
 <span class="s2">            nombre TEXT,</span>
@@ -1641,27 +1721,22 @@
 <span class="s2">        )</span>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="insertar-datos">Insertar datos</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO usuarios (nombre, edad) VALUES (</span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">)&quot;</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Juan&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO usuarios (nombre, edad) VALUES (</span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">)&quot;</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Juan&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">))</span>
 </code></pre></div>
-
 <h2 id="guardar-los-cambios">Guardar los cambios</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">conexion</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">conexion</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="obtener-datos">Obtener datos</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM usuarios&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM usuarios&quot;</span><span class="p">)</span>
 
 <span class="n">filas</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="cerrar-la-conexion">Cerrar la conexión</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">conexion</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">conexion</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="excepciones">Excepciones</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">Error</span>
+<div class="highlight"><pre><span></span><code><span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">Error</span>
 </code></pre></div>
 
 

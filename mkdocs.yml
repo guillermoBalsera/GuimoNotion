@@ -3,11 +3,22 @@ site_author: Guillermo Balsera Suárez
 site_description: Apuntes en español sobre distintas tecnologías de desarrrollo, desde lenguajes de programación hasta frameworks de frontend y backend.
 copyright: Copyright &copy; 2024 - Guillermo Balsera
 
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - tags
+  - search
+
 theme:
   name: material
   language: es
-  logo: img/guimonotion.svg
-  favicon: img/guimonotion.svg
+  logo: assets/guimonotion.svg
+  favicon: assets/guimonotion.svg
   features:
     - content.code.copy
     - navigation.instant
@@ -35,14 +46,6 @@ theme:
 
 extra_css:
   - stylesheets/style.css
-
-markdown_extensions:
-  - admonition
-  - codehilite
-
-plugins:
-  - tags
-  - search
 
 nav:
   - Inicio: index.md
@@ -73,6 +76,10 @@ nav:
           - Introducción: frameworks/frontend/angular/index.md
           - Instalación: frameworks/frontend/angular/installation/index.md
           - Componentes: frameworks/frontend/angular/components/index.md
+          - Databinding: frameworks/frontend/angular/databinding/index.md
+          - Input y Output: frameworks/frontend/angular/input_output/index.md
+          - Proyección de contenido: frameworks/frontend/angular/projection/index.md
+          - Ciclos de vida: frameworks/frontend/angular/life_cicle/index.md
           - Rutas: frameworks/frontend/angular/routes/index.md
           - Recursos adicionales: frameworks/frontend/angular/additional_resources/index.md
 #      - Electron: frameworks/frontend/electron/index.md

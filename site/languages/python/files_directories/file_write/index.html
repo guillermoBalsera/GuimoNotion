@@ -19,7 +19,7 @@
         <link rel="next" href="../../databases/sqlite/">
       
       
-      <link rel="icon" href="../../../../img/guimonotion.svg">
+      <link rel="icon" href="../../../../assets/guimonotion.svg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
     
     
@@ -96,7 +96,7 @@
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
     <a href="../../../.." title="GuimoNotion" class="md-header__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -327,7 +327,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../../.." title="GuimoNotion" class="md-nav__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     GuimoNotion
@@ -1172,6 +1172,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../frameworks/frontend/angular/databinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../frameworks/frontend/angular/input_output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input y Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../frameworks/frontend/angular/projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proyección de contenido
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../frameworks/frontend/angular/life_cicle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ciclos de vida
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../frameworks/frontend/angular/routes/" class="md-nav__link">
         
   
@@ -1538,19 +1622,17 @@
 
 <h1 id="escritura-de-ficheros">Escritura de ficheros</h1>
 <h2 id="escribir-en-un-archivo-de-texto">Escribir en un archivo de texto</h2>
-<div class="codehilite"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;archivo.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;archivo.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
     <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Hola, mundo!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Este es un archivo de texto generado por python.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Adiós, mundo!&quot;</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="agregar-contenido-a-un-archivo-existente">Agregar contenido a un archivo existente</h2>
-<div class="codehilite"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;archivo.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;archivo.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
     <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">¡Esto se añade al final del archivo!&quot;</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="escribir-en-un-archivo-csv">Escribir en un archivo CSV</h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">csv</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="n">datos</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">[</span><span class="s2">&quot;Nombre&quot;</span><span class="p">,</span> <span class="s2">&quot;Edad&quot;</span><span class="p">,</span> <span class="s2">&quot;Ciudad&quot;</span><span class="p">],</span>
@@ -1565,9 +1647,8 @@
     <span class="k">for</span> <span class="n">fila</span> <span class="ow">in</span> <span class="n">datos</span><span class="p">:</span>
         <span class="n">escritor_csv</span><span class="o">.</span><span class="n">writerow</span><span class="p">(</span><span class="n">fila</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="pickle">Pickle</h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">pickle</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pickle</span>
 
 <span class="n">personas</span> <span class="o">=</span> <span class="p">[</span><span class="n">juan</span><span class="p">,</span> <span class="n">maria</span><span class="p">,</span> <span class="n">pedro</span><span class="p">]</span>
 

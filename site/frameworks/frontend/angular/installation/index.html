@@ -19,7 +19,7 @@
         <link rel="next" href="../components/">
       
       
-      <link rel="icon" href="../../../../img/guimonotion.svg">
+      <link rel="icon" href="../../../../assets/guimonotion.svg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
     
     
@@ -96,7 +96,7 @@
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
     <a href="../../../.." title="GuimoNotion" class="md-header__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -329,7 +329,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../../.." title="GuimoNotion" class="md-nav__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     GuimoNotion
@@ -1163,6 +1163,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../databinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../input_output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input y Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proyección de contenido
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../life_cicle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ciclos de vida
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../routes/" class="md-nav__link">
         
   
@@ -1524,21 +1608,17 @@
 respectivos componentes.</p>
 <h2 id="instalar-angular">Instalar Angular</h2>
 <p>Para instalar Angular de forma global tenemos que utilizar el comando:</p>
-<div class="codehilite"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@angular/cli
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@angular/cli
 </code></pre></div>
-
 <p>Para instalar Angular en un proyecto tenemos que utilizar el comando desde la terminal ubicándose en el proyecto:</p>
-<div class="codehilite"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>@angular/cli
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>@angular/cli
 </code></pre></div>
-
 <p>Verificamos la instalción son el comando:</p>
-<div class="codehilite"><pre><span></span><code>ng<span class="w"> </span>version
+<div class="highlight"><pre><span></span><code>ng<span class="w"> </span>version
 </code></pre></div>
-
 <p>Si no nos permite comprobar la versión de Angular utilizaremos el siguiente comando:</p>
-<div class="codehilite"><pre><span></span><code>Set-ExecutionPolicy<span class="w"> </span>-<span class="w"> </span>ExecutionPolicy<span class="w"> </span>RemoteSigned<span class="w"> </span>-Scope<span class="w"> </span>CurrentUser
+<div class="highlight"><pre><span></span><code>Set-ExecutionPolicy<span class="w"> </span>-<span class="w"> </span>ExecutionPolicy<span class="w"> </span>RemoteSigned<span class="w"> </span>-Scope<span class="w"> </span>CurrentUser
 </code></pre></div>
-
 <h2 id="creacion-de-un-nuevo-proyecto">Creación de un nuevo proyecto</h2>
 <p>Antes de crear nuestro proyecto debemos decidir que clase de proyecto queremos usar <em>standalone</em> o -clásico_:</p>
 <ul>
@@ -1550,17 +1630,15 @@ respectivos componentes.</p>
   para agrupar componentes, directivas, pipes, y servicios en unidades reutilizables.</li>
 </ul>
 <p>Para crear un nuevo proyecto standalone en Angular utilizamos en comando:</p>
-<div class="codehilite"><pre><span></span><code>ng<span class="w"> </span>new<span class="w"> </span>nombreAplicacion
+<div class="highlight"><pre><span></span><code>ng<span class="w"> </span>new<span class="w"> </span>nombreAplicacion
 </code></pre></div>
-
 <p>Si queremos crear un nuevo proyecto clásico:</p>
-<div class="codehilite"><pre><span></span><code>ng<span class="w"> </span>new<span class="w"> </span>nombreAplicacion<span class="w"> </span>--standalone<span class="o">=</span><span class="nb">false</span>
+<div class="highlight"><pre><span></span><code>ng<span class="w"> </span>new<span class="w"> </span>nombreAplicacion<span class="w"> </span>--standalone<span class="o">=</span><span class="nb">false</span>
 </code></pre></div>
-
 <p>El archivo <strong>package.json</strong> muestra las dependencias instaladas, la versión de angular y los comandos habilitados por
 Angular en el proyecto.</p>
 <p>Para iniciar el proyecto usamos el comando:</p>
-<div class="codehilite"><pre><span></span><code>ng<span class="w"> </span>serve
+<div class="highlight"><pre><span></span><code>ng<span class="w"> </span>serve
 </code></pre></div>
 
 

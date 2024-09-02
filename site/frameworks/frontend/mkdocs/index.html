@@ -19,7 +19,7 @@
         <link rel="next" href="../../backend/php-laravel/">
       
       
-      <link rel="icon" href="../../../img/guimonotion.svg">
+      <link rel="icon" href="../../../assets/guimonotion.svg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
     
     
@@ -96,7 +96,7 @@
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
     <a href="../../.." title="GuimoNotion" class="md-header__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -329,7 +329,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="GuimoNotion" class="md-nav__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     GuimoNotion
@@ -1094,6 +1094,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../angular/databinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../angular/input_output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input y Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../angular/projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proyección de contenido
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../angular/life_cicle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ciclos de vida
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../angular/routes/" class="md-nav__link">
         
   
@@ -1706,36 +1790,32 @@ documentación de proyectos. Es fácil de configurar y permite generar documenta
 </ul>
 <h2 id="instalacion">Instalación</h2>
 <p>Para instalar MkDocs, necesitas tener Python y <code>pip</code> instalados en tu sistema.</p>
-<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs
 </code></pre></div>
-
 <h2 id="verificar-la-instalacion">Verificar la Instalación</h2>
 <p>Para asegurarte de que MkDocs se ha instalado correctamente, ejecuta el siguiente comando:</p>
-<div class="codehilite"><pre><span></span><code>mkdocs<span class="w"> </span>--version
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>--version
 </code></pre></div>
-
 <p>Deberías ver la versión de MkDocs que has instalado.</p>
 <h2 id="creacion-de-un-proyecto-nuevo">Creación de un Proyecto Nuevo</h2>
 <p>Para crear un proyecto nuevo, usa el siguiente comando:</p>
-<div class="codehilite"><pre><span></span><code>mkdocs<span class="w"> </span>new<span class="w"> </span>nombre-de-tu-proyecto
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>new<span class="w"> </span>nombre-de-tu-proyecto
 </code></pre></div>
-
 <p>Esto creará una estructura básica de archivos y carpetas que puedes empezar a personalizar.</p>
 <h2 id="estructura-de-carpetas">Estructura de Carpetas</h2>
 <p>Un proyecto típico de MkDocs tendrá la siguiente estructura de carpetas:</p>
-<div class="codehilite"><pre><span></span><code>nombre-de-tu-proyecto/
+<div class="highlight"><pre><span></span><code>nombre-de-tu-proyecto/
 ├──<span class="w"> </span>docs/
 │<span class="w">   </span>└──<span class="w"> </span>index.md
 └──<span class="w"> </span>mkdocs.yml
 </code></pre></div>
-
 <ul>
 <li>docs/: Aquí es donde irán todos tus archivos de documentación en formato Markdown.</li>
 <li>mkdocs.yml: Este es el archivo de configuración principal de MkDocs.</li>
 </ul>
 <h2 id="configuracion-basica">Configuración Básica</h2>
 <p>El archivo mkdocs.yml es donde configurarás tu sitio de documentación. Aquí un ejemplo básico:</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Mi Proyecto</span>
+<div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Mi Proyecto</span>
 <span class="nt">theme</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
 
@@ -1743,28 +1823,24 @@ documentación de proyectos. Es fácil de configurar y permite generar documenta
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Inicio</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Acerca de</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">about.md</span>
 </code></pre></div>
-
 <h2 id="personalizacion">Personalización</h2>
 <p>Puedes personalizar tu sitio modificando el archivo mkdocs.yml. Algunas opciones comunes incluyen:</p>
 <ul>
 <li>Cambiar el tema: Hay varios temas disponibles que puedes usar.</li>
 <li>Añadir un favicon: Puedes añadir un ícono personalizado a tu sitio.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="nt">extra</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="nt">extra</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">favicon</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;img/logo.png&#39;</span>
 </code></pre></div>
-
 <h2 id="desarrollando-el-sitio">Desarrollando el Sitio</h2>
 <p>Durante el desarrollo, puedes usar el servidor de desarrollo integrado de MkDocs para ver los cambios en tiempo real:</p>
-<div class="codehilite"><pre><span></span><code>mkdocs<span class="w"> </span>serve
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
 </code></pre></div>
-
 <p>Esto abrirá un servidor en http://127.0.0.1:8000/ o http://localhost:8000/ donde podrás ver tu sitio.</p>
 <h2 id="despliegue-del-sitio">Despliegue del Sitio</h2>
 <p>Para desplegar tu sitio, primero debes construirlo con el comando:</p>
-<div class="codehilite"><pre><span></span><code>mkdocs<span class="w"> </span>build
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>build
 </code></pre></div>
-
 <p>Esto generará una carpeta site/ con todos los archivos estáticos de tu sitio. Puedes subir esta carpeta a cualquier
 servidor o servicio de hosting, como GitHub Pages.</p>
 <h2 id="admonitions">Admonitions</h2>
@@ -1773,10 +1849,9 @@ importante, notas, advertencias o recomendaciones. Su propósito es captar la at
 adicional de manera visualmente destacada. Estos bloques pueden variar en apariencia y estilo según el sistema de
 documentación o el tema que estés utilizando.</p>
 <p>Para instalarlas añadiremos a nuestro fichero <code>mkdocs.yml</code>:</p>
-<div class="codehilite"><pre><span></span><code>markdown_extensions:
-  <span class="k">-</span> admonition
+<div class="highlight"><pre><span></span><code>markdown_extensions:
+  - admonition
 </code></pre></div>
-
 <p>Tipos de admonition:
   - note
   - abstract
@@ -1791,12 +1866,11 @@ documentación o el tema que estés utilizando.</p>
   - example
   - quote</p>
 <p>Se usan de la siguiente manera:</p>
-<div class="codehilite"><pre><span></span><code>!!! note
+<div class="highlight"><pre><span></span><code>!!! note
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 </code></pre></div>
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
@@ -1805,7 +1879,7 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 <h2 id="ejemplo-completo-de-mkdocsyml">Ejemplo Completo de mkdocs.yml</h2>
 <p>Aquí tienes un ejemplo más completo de un archivo mkdocs.yml:  </p>
-<div class="codehilite"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Documentación de Ejemplo</span>
+<div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Documentación de Ejemplo</span>
 
 <span class="nt">theme</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
@@ -1847,7 +1921,6 @@ massa, nec semper lorem quam in massa.</p>
 <span class="w">      </span><span class="no">los usuarios encuentran lo que buscan. Con tu consentimiento, </span>
 <span class="w">      </span><span class="no">nos ayudas a mejorar nuestra documentación.</span>
 </code></pre></div>
-
 <h2 id="recursos-adicionales">Recursos Adicionales</h2>
 <ul>
 <li><a href="https://www.mkdocs.org/">Documentación Oficial de MkDocs</a></li>

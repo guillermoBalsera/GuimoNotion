@@ -19,7 +19,7 @@
         <link rel="next" href="file_read/">
       
       
-      <link rel="icon" href="../../../img/guimonotion.svg">
+      <link rel="icon" href="../../../assets/guimonotion.svg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
     
     
@@ -96,7 +96,7 @@
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
     <a href="../../.." title="GuimoNotion" class="md-header__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -327,7 +327,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="GuimoNotion" class="md-nav__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     GuimoNotion
@@ -1217,6 +1217,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../frameworks/frontend/angular/databinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../frameworks/frontend/angular/input_output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input y Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../frameworks/frontend/angular/projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proyección de contenido
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../frameworks/frontend/angular/life_cicle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ciclos de vida
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../frameworks/frontend/angular/routes/" class="md-nav__link">
         
   
@@ -1628,27 +1712,24 @@
 
 <h1 id="manejo-de-ficheros-y-directorios">Manejo de ficheros y directorios</h1>
 <h2 id="crear-un-directorio">Crear un directorio</h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 
 <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s2">&quot;nombre_directorio&quot;</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="crear-un-archivo">Crear un archivo</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">nombre_archivo</span> <span class="o">=</span> <span class="s2">&quot;nuevo_archivo.txt&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">nombre_archivo</span> <span class="o">=</span> <span class="s2">&quot;nuevo_archivo.txt&quot;</span>
 
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">nombre_archivo</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
     <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Este es el contenido del archivo.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="listar-el-contenido-de-un-directorio">Listar el contenido de un directorio</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">contenido_directorio</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">contenido_directorio</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>
 
 <span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">contenido_directorio</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">elemento</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="listar-el-contenido-de-un-directorio-y-el-contenido-de-sus-subdirectorios">Listar el contenido de un directorio y el contenido de sus subdirectorios</h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 
 <span class="k">def</span> <span class="nf">listar_contenido_directorio</span><span class="p">(</span><span class="n">directorio</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">directorio_actual</span><span class="p">,</span> <span class="n">subdirectorios</span><span class="p">,</span> <span class="n">archivos</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">directorio</span><span class="p">):</span>
@@ -1664,43 +1745,38 @@
 
 <span class="n">listar_contenido_directorio</span><span class="p">(</span><span class="n">directorio</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="renombrar-un-archivo-o-directorio">Renombrar un archivo o directorio</h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 
 <span class="n">nombre_original</span> <span class="o">=</span> <span class="s2">&quot;antiguo_nombre.txt&quot;</span>
 <span class="n">nuevo_nombre</span> <span class="o">=</span> <span class="s2">&quot;nuevo_nombre.txt&quot;</span>
 
 <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">nombre_original</span><span class="p">,</span> <span class="n">nuevo_nombre</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="eliminar-un-archivo">Eliminar un archivo</h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 
 <span class="n">nombre_archivo_a_eliminar</span> <span class="o">=</span> <span class="s2">&quot;archivo_a_eliminar.txt&quot;</span>
 
 <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">nombre_archivo_a_eliminar</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="eliminar-un-directorio-y-su-contenido">Eliminar un directorio y su contenido</h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">shutil</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">shutil</span>
 
 <span class="n">nombre_directorio_a_eliminar</span> <span class="o">=</span> <span class="s2">&quot;directorio_a_eliminar&quot;</span>
 
 <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">nombre_directorio_a_eliminar</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="mover-archivo">Mover archivo</h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">shutil</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">shutil</span>
 
 <span class="n">ubicacion_original</span> <span class="o">=</span> <span class="s2">&quot;ruta/al/archivo/original.txt&quot;</span>
 <span class="n">ubicacion_destino</span> <span class="o">=</span> <span class="s2">&quot;ruta/a/la/ubicacion/de/destino/archivo.txt&quot;</span>
 
 <span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">ubicacion_original</span><span class="p">,</span> <span class="n">ubicacion_destino</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="mover-directorio">Mover directorio</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">ubicacion_directorio_original</span> <span class="o">=</span> <span class="s2">&quot;ruta/al/directorio/original&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">ubicacion_directorio_original</span> <span class="o">=</span> <span class="s2">&quot;ruta/al/directorio/original&quot;</span>
 <span class="n">ubicacion_directorio_destino</span> <span class="o">=</span> <span class="s2">&quot;ruta/a/la/ubicacion/de/destino/directorio&quot;</span>
 
 <span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">ubicacion_directorio_original</span><span class="p">,</span> <span class="n">ubicacion_directorio_destino</span><span class="p">)</span>

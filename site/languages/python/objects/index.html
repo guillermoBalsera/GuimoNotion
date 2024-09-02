@@ -19,7 +19,7 @@
         <link rel="next" href="../files_directories/">
       
       
-      <link rel="icon" href="../../../img/guimonotion.svg">
+      <link rel="icon" href="../../../assets/guimonotion.svg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
     
     
@@ -96,7 +96,7 @@
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
     <a href="../../.." title="GuimoNotion" class="md-header__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -327,7 +327,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="GuimoNotion" class="md-nav__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     GuimoNotion
@@ -1197,6 +1197,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../frameworks/frontend/angular/databinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../frameworks/frontend/angular/input_output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input y Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../frameworks/frontend/angular/projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proyección de contenido
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../frameworks/frontend/angular/life_cicle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ciclos de vida
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../frameworks/frontend/angular/routes/" class="md-nav__link">
         
   
@@ -1590,7 +1674,7 @@
 
 <h1 id="objetos">Objetos</h1>
 <h2 id="definir-una-clase">Definir una clase</h2>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="nc">Persona</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Persona</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">):</span> <span class="c1"># Contructor</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">edad</span> <span class="o">=</span> <span class="n">edad</span>
@@ -1598,30 +1682,24 @@
     <span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, mi nombre es </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> y tengo </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">edad</span><span class="si">}</span><span class="s2"> años.&quot;</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="crear-un-objeto">Crear un objeto</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">juan</span> <span class="o">=</span> <span class="n">Persona</span><span class="p">(</span><span class="s2">&quot;Juan&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">juan</span> <span class="o">=</span> <span class="n">Persona</span><span class="p">(</span><span class="s2">&quot;Juan&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="acceder-a-los-atributos-del-objeto">Acceder a los atributos del objeto:</h2>
-<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">juan</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">juan</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="modificar-los-atributos-de-un-objeto">Modificar los atributos de un objeto</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">juan</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="s2">&quot;Juan Carlos&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">juan</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="s2">&quot;Juan Carlos&quot;</span>
 </code></pre></div>
-
 <h2 id="comprobar-si-un-objeto-tiene-un-atributo-especifico">Comprobar si un objeto tiene un atributo especifico</h2>
-<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">hasattr</span><span class="p">(</span><span class="n">juan</span><span class="p">,</span> <span class="s2">&quot;apellidos&quot;</span><span class="p">))</span> <span class="c1"># Output: False</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">hasattr</span><span class="p">(</span><span class="n">juan</span><span class="p">,</span> <span class="s2">&quot;apellidos&quot;</span><span class="p">))</span> <span class="c1"># Output: False</span>
 </code></pre></div>
-
 <h2 id="obtener-el-valor-de-un-atributo-si-existe-o-si-no-devolver-un-mensaje-predefinido">Obtener el valor de un atributo si existe o si no devolver un mensaje predefinido</h2>
-<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">juan</span><span class="p">,</span> <span class="s2">&quot;apellidos&quot;</span><span class="p">,</span> <span class="s2">&quot;El objeto &#39;juan&#39; tiene apellidos definidos&quot;</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">juan</span><span class="p">,</span> <span class="s2">&quot;apellidos&quot;</span><span class="p">,</span> <span class="s2">&quot;El objeto &#39;juan&#39; tiene apellidos definidos&quot;</span><span class="p">))</span>
 <span class="c1"># Output: El objeto &#39;juan&#39; no tiene apellidos definido</span>
 </code></pre></div>
-
 <h2 id="ordenar-objetos">Ordenar objetos</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">personas_ordenadas</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">personas</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">edad</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">personas_ordenadas</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">personas</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">edad</span><span class="p">)</span>
 
 <span class="n">personas</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">edad</span><span class="p">)</span>
 </code></pre></div>

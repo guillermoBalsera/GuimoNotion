@@ -19,7 +19,7 @@
         <link rel="next" href="../../control_structures/">
       
       
-      <link rel="icon" href="../../../../img/guimonotion.svg">
+      <link rel="icon" href="../../../../assets/guimonotion.svg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
     
     
@@ -96,7 +96,7 @@
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
     <a href="../../../.." title="GuimoNotion" class="md-header__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -327,7 +327,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../../.." title="GuimoNotion" class="md-nav__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../../../img/guimonotion.svg" alt="logo">
+  <img src="../../../../assets/guimonotion.svg" alt="logo">
 
     </a>
     GuimoNotion
@@ -1208,6 +1208,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../frameworks/frontend/angular/databinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Databinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../frameworks/frontend/angular/input_output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input y Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../frameworks/frontend/angular/projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proyección de contenido
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../frameworks/frontend/angular/life_cicle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ciclos de vida
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../frameworks/frontend/angular/routes/" class="md-nav__link">
         
   
@@ -1610,49 +1694,40 @@
 
 <h1 id="conjuntos">Conjuntos</h1>
 <h2 id="declarar-un-conjunto">Declarar un conjunto</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">mi_conjunto</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="n">mi_conjunto</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
 </code></pre></div>
-
 <h2 id="declarar-un-conjunto-vacio">Declarar un conjunto vacio</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">conjunto_vacio</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">conjunto_vacio</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="anadir-elementos-a-un-conjunto">Añadir elementos a un conjunto</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">mi_conjunto</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">mi_conjunto</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="eliminar-elementos-de-un-conjunto">Eliminar elementos de un conjunto</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">mi_conjunto</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">mi_conjunto</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="iteracion-sobre-un-conjunto">Iteracion sobre un conjunto</h2>
-<div class="codehilite"><pre><span></span><code><span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">mi_conjunto</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">mi_conjunto</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">elemento</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="unir-conjuntos">Unir conjuntos</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">conjunto1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="n">conjunto1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
 <span class="n">conjunto2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
 <span class="n">union</span> <span class="o">=</span> <span class="n">conjunto1</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">conjunto2</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="interseccion-entre-dos-conjuntos">Interseccion entre dos conjuntos</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">conjunto1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="n">conjunto1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
 <span class="n">conjunto2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
 <span class="n">interseccion</span> <span class="o">=</span> <span class="n">conjunto1</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">conjunto2</span><span class="p">)</span>  <span class="c1"># Output: 3</span>
 </code></pre></div>
-
 <h2 id="diferencia-entre-dos-conjuntos">Diferencia entre dos conjuntos</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">conjunto1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="n">conjunto1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
 <span class="n">conjunto2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
 <span class="n">diferencia</span> <span class="o">=</span> <span class="n">conjunto1</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">conjunto2</span><span class="p">)</span>  <span class="c1"># Output: {1, 2}</span>
 </code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="n">conjunto1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="n">conjunto1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
 <span class="n">conjunto2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
 <span class="n">diferencia</span> <span class="o">=</span> <span class="n">conjunto2</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">conjunto1</span><span class="p">)</span>  <span class="c1"># Output: {4, 5}</span>
 </code></pre></div>
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 </div>
