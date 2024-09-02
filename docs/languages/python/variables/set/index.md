@@ -62,6 +62,7 @@ diferencia = conjunto2.difference(conjunto1)  # Output: {4, 5}
 ```
 
 !!! note
-Cuando hacemos `conjunto1.difference(conjunto2)`, obtenemos los elementos que están en _conjunto1_ pero no en
-_conjunto2_. Si hacemos `conjunto2.difference(conjunto1)` obtenemos los elementos que están en _conjunto2_ pero no en
-_conjunto1_.
+
+    Cuando hacemos `conjunto1.difference(conjunto2)`, obtenemos los elementos que están en _conjunto1_ pero no en
+    _conjunto2_. Si hacemos `conjunto2.difference(conjunto1)` obtenemos los elementos que están en _conjunto2_ pero no en
+    _conjunto1_.

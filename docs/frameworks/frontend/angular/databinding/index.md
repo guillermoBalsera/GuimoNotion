@@ -31,6 +31,7 @@ name = 'William Shakespeare'
 ```
 
 !!! warning
+
     Para usar `ngModel` debemos importar `FormsModule` y añadirlo a las importaciones del `app-module.ts`
 
 ## Bucles y condicionales dentro del html

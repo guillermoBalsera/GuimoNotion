@@ -84,6 +84,7 @@ php artisan migrate
 ```
 
 !!! note
+
     Se migra por orden alfabético o por fecha de creación si no se han modificado los nombres de los archivos.
 
 ### Deshacer la última migración
@@ -133,19 +134,22 @@ php artisan make:model Nombre
 
 ### Especificar el nombre de la tabla en la base de datos
 
-La tabla es el plural del nombre del modelo creado, pero a veces no lo detecta bien asi que le cambiamos manualmente el nombre para que pueda encontrar la tabla.
+La tabla es el plural del nombre del modelo creado, pero a veces no lo detecta bien asi que le cambiamos manualmente el
+nombre para que pueda encontrar la tabla.
 
 ```php
 protected $table = 'tasks_lists';
 ```
 
-Con la primary key pasa algo parecido. Laravel asume que cada tabla tiene declarado un campo llamado `id`, pero en caso de que no sea así debemos sobreescribirlo.
+Con la primary key pasa algo parecido. Laravel asume que cada tabla tiene declarado un campo llamado `id`, pero en caso
+de que no sea así debemos sobreescribirlo.
 
 ```php
 protected $primaryKey = 'id';
 ```
 
-La propiedad `timestamps` nos permite crear los campos `updated_at` y `created_at` en la base de datos de forma automática en la base de datos.
+La propiedad `timestamps` nos permite crear los campos `updated_at` y `created_at` en la base de datos de forma
+automática en la base de datos.
 Estos campos se actualizan automaticamente al ejercer acciones de actualizado o creación de la fila.
 
 ```php
@@ -162,6 +166,7 @@ protected $fileable = [
 ```
 
 !!! note
+
     Se deben especificar también las **foreign keys**
 
 ### Relaciones
@@ -241,7 +246,8 @@ Para crear un **seeder** usaremos el comando:
 php artisan make:seeder NombreSeeder
 ```
 
-Se recomienda crear un **seeder** para cada tabla. En este **seeder** se creará un método `run` donde escribiremos los datos que queremos introducir en la base de datos.
+Se recomienda crear un **seeder** para cada tabla. En este **seeder** se creará un método `run` donde escribiremos los
+datos que queremos introducir en la base de datos.
 
 Desde la función `run` de la clase `DatabaseSeeder` llamaremos a los distintos **seeders**
 
@@ -291,7 +297,8 @@ Desde la función `run` de la clase **Seeder** podemos llamar al **factorie** de
 
 ## Resources
 
-Los **resources** son herramientas para dar forma a las respuestas _JSON_ de la _API_, de tal manera que nos permiten personalizar la presentación de los datos.
+Los **resources** son herramientas para dar forma a las respuestas _JSON_ de la _API_, de tal manera que nos permiten
+personalizar la presentación de los datos.
 
 Para crear un **resource** usaremos el comando:
 
@@ -337,7 +344,8 @@ Nos creará los métodos index, store, show, update y destroy vacios por defecto
 
 ### Validación de campos con request
 
-Para validar campos es recomendable el uso de **request**, que se trata de una clase donde establecemos una serie de reglas que deben cumplir los campos.
+Para validar campos es recomendable el uso de **request**, que se trata de una clase donde establecemos una serie de
+reglas que deben cumplir los campos.
 
 Si deseamos crear un **request** utilizamos el siguiente comando:
 

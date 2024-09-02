@@ -1,6 +1,7 @@
 # MongoDB
 
 !!! note
+
     Hay que instalar previamente _pymongo_
 
 ```sh

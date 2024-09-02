@@ -1,6 +1,7 @@
 # MySQL
 
 !!! note
+
     Hay que instalar previamente _mysql-connector-python_
 
 ```sh

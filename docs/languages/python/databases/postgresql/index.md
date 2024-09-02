@@ -1,6 +1,7 @@
 # PostgreSQL
 
 !!! note
+
     Hay que instalar previamente _psycopg2_
 
 ```sh

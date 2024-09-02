@@ -64,9 +64,10 @@ range(inicio, fin, paso)
 ```
 
 !!! note
-`inicio`: El valor inicial de la secuencia (por defecto es 0).  
-`fin`: El valor final de la secuencia (no se incluye en la secuencia).  
-`paso`: El incremento entre los números (por defecto es 1).
+
+    `inicio`: El valor inicial de la secuencia (por defecto es 0).  
+    `fin`: El valor final de la secuencia (no se incluye en la secuencia).  
+    `paso`: El incremento entre los números (por defecto es 1).
 
 ## Max y Min
 
@@ -93,7 +94,8 @@ print(min(lista))  # Output: 'banana'
 ```
 
 !!! note
-Las comparaciones de cadenas de texto se hacen carácter por carácter en el orden de sus valores ASCII
+
+    Las comparaciones de cadenas de texto se hacen carácter por carácter en el orden de sus valores ASCII
 
 ## Sorted
 

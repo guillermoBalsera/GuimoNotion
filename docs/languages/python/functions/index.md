@@ -30,6 +30,7 @@ print(resultado)  # Output: 15
 ```
 
 !!! note
+
     Puedes pasar un número variable de argumentos a una función utilizando `*args`. Esto permite que una función acepte cualquier número de argumentos posicionales.
 
 ## Argumentos de Palabras Clave Arbitrarios
@@ -43,6 +44,7 @@ imprimir_informacion(nombre="Juan", edad=30, ciudad="Ciudad de México")
 ```
 
 !!! note
+
     De manera similar al desempaquetado de argumentos, puedes pasar un número variable de argumentos de palabras clave utilizando `**kwargs`.
 
 ## Documentación de funciones
