@@ -2232,13 +2232,16 @@
 <div class="highlight"><pre><span></span><code>php artisan make:model Nombre
 </code></pre></div>
 <h3 id="especificar-el-nombre-de-la-tabla-en-la-base-de-datos">Especificar el nombre de la tabla en la base de datos</h3>
-<p>La tabla es el plural del nombre del modelo creado, pero a veces no lo detecta bien asi que le cambiamos manualmente el nombre para que pueda encontrar la tabla.</p>
+<p>La tabla es el plural del nombre del modelo creado, pero a veces no lo detecta bien asi que le cambiamos manualmente el
+nombre para que pueda encontrar la tabla.</p>
 <div class="highlight"><pre><span></span><code><span class="x">protected $table = &#39;tasks_lists&#39;;</span>
 </code></pre></div>
-<p>Con la primary key pasa algo parecido. Laravel asume que cada tabla tiene declarado un campo llamado <code>id</code>, pero en caso de que no sea así debemos sobreescribirlo.</p>
+<p>Con la primary key pasa algo parecido. Laravel asume que cada tabla tiene declarado un campo llamado <code>id</code>, pero en caso
+de que no sea así debemos sobreescribirlo.</p>
 <div class="highlight"><pre><span></span><code><span class="x">protected $primaryKey = &#39;id&#39;;</span>
 </code></pre></div>
-<p>La propiedad <code>timestamps</code> nos permite crear los campos <code>updated_at</code> y <code>created_at</code> en la base de datos de forma automática en la base de datos.
+<p>La propiedad <code>timestamps</code> nos permite crear los campos <code>updated_at</code> y <code>created_at</code> en la base de datos de forma
+automática en la base de datos.
 Estos campos se actualizan automaticamente al ejercer acciones de actualizado o creación de la fila.</p>
 <div class="highlight"><pre><span></span><code><span class="x">public $timestamps = false;</span>
 </code></pre></div>
@@ -2303,7 +2306,8 @@ Estos campos se actualizan automaticamente al ejercer acciones de actualizado o 
 <p>Para crear un <strong>seeder</strong> usaremos el comando:</p>
 <div class="highlight"><pre><span></span><code>php artisan make:seeder NombreSeeder
 </code></pre></div>
-<p>Se recomienda crear un <strong>seeder</strong> para cada tabla. En este <strong>seeder</strong> se creará un método <code>run</code> donde escribiremos los datos que queremos introducir en la base de datos.</p>
+<p>Se recomienda crear un <strong>seeder</strong> para cada tabla. En este <strong>seeder</strong> se creará un método <code>run</code> donde escribiremos los
+datos que queremos introducir en la base de datos.</p>
 <p>Desde la función <code>run</code> de la clase <code>DatabaseSeeder</code> llamaremos a los distintos <strong>seeders</strong></p>
 <div class="highlight"><pre><span></span><code><span class="x">$this-&gt;call(NombreSeeder::class);</span>
 </code></pre></div>
@@ -2333,7 +2337,8 @@ Estos campos se actualizan automaticamente al ejercer acciones de actualizado o 
 <div class="highlight"><pre><span></span><code><span class="x">\App\Models\Nombre::factory(número)-&gt;create();</span>
 </code></pre></div>
 <h2 id="resources">Resources</h2>
-<p>Los <strong>resources</strong> son herramientas para dar forma a las respuestas <em>JSON</em> de la <em>API</em>, de tal manera que nos permiten personalizar la presentación de los datos.</p>
+<p>Los <strong>resources</strong> son herramientas para dar forma a las respuestas <em>JSON</em> de la <em>API</em>, de tal manera que nos permiten
+personalizar la presentación de los datos.</p>
 <p>Para crear un <strong>resource</strong> usaremos el comando:</p>
 <div class="highlight"><pre><span></span><code>php artisan make:resource NombreResource
 </code></pre></div>
@@ -2361,7 +2366,8 @@ Estos campos se actualizan automaticamente al ejercer acciones de actualizado o 
 </code></pre></div>
 <p>Nos creará los métodos index, store, show, update y destroy vacios por defecto.</p>
 <h3 id="validacion-de-campos-con-request">Validación de campos con request</h3>
-<p>Para validar campos es recomendable el uso de <strong>request</strong>, que se trata de una clase donde establecemos una serie de reglas que deben cumplir los campos.</p>
+<p>Para validar campos es recomendable el uso de <strong>request</strong>, que se trata de una clase donde establecemos una serie de
+reglas que deben cumplir los campos.</p>
 <p>Si deseamos crear un <strong>request</strong> utilizamos el siguiente comando:</p>
 <div class="highlight"><pre><span></span><code>php artisan make:request CreateNombreRequest
 </code></pre></div>
