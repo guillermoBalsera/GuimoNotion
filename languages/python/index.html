@@ -555,6 +555,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#argumentos-de-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Argumentos de entrada
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1551,6 +1560,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#argumentos-de-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Argumentos de entrada
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1653,6 +1671,17 @@ print(sorted(mi_lista))  # Output: [1, 2, 3, 4, 5]
 edades = [30, 25, 40]
 combinados = zip(nombres, edades)
 print(list(combinados))  # Output: [('Juan', 30), ('Maria', 25), ('Pedro', 40)]
+</code></pre>
+<h2 id="argumentos-de-entrada">Argumentos de entrada</h2>
+<pre><code class="language-python">import argparse
+
+parser = argparse.ArgumentParser(description=&quot;Este script demuestra el uso de argparse.&quot;)
+
+parser.add_argument('nombre', type=str, help='Tu nombre', default=&quot;Pepito Grillo&quot;)
+parser.add_argument('-e, --edad', type=int, help='Tu edad', required=False)
+args = parser.parse_args()
+
+print(args.edad, args.nombre)
 </code></pre>
 
 
