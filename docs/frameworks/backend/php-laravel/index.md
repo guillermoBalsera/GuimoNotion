@@ -1,7 +1,7 @@
 ---
 tags:
   - Pending review
-  - 20/08/2024
+  - 02/09/2024
 ---
 
 # PHP-Laravel
@@ -83,8 +83,8 @@ Schema::create('users', function (Blueprint $table) {
 php artisan migrate
 ```
 
-> [!NOTE]
-> Se migra por orden alfabético o por fecha de creación si no se han modificado los nombres de los archivos.
+!!! note
+    Se migra por orden alfabético o por fecha de creación si no se han modificado los nombres de los archivos.
 
 ### Deshacer la última migración
 
@@ -112,7 +112,7 @@ php artisan migrate:status
 
 ## Configuración
 
-Hay que modificar el archivo _.env_ (Se encuentra en el directorio raiz):
+Hay que modificar el archivo `.env` (Se encuentra en el directorio raiz):
 
 ```php
 DB_CONNECTION=mysql
@@ -161,8 +161,8 @@ protected $fileable = [
 ];
 ```
 
-> [!NOTE]
-> Se deben especificar también las **foreign keys**
+!!! note
+    Se deben especificar también las **foreign keys**
 
 ### Relaciones
 
@@ -325,7 +325,7 @@ Para crear una **colection** usaremos el comando:
 php artisan make:resource ArticuloCollection
 ```
 
-# 9. Controladores
+## Controladores
 
 Para crear un **controlador** usaremos el comando:
 

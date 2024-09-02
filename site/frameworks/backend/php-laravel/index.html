@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1520,6 +1520,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#controladores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controladores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Controladores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacion-de-campos-con-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validación de campos con request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacion-de-campos-en-el-controlador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validación de campos en el controlador
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1979,6 +2012,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#controladores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controladores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Controladores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacion-de-campos-con-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validación de campos con request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacion-de-campos-en-el-controlador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validación de campos en el controlador
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2004,7 +2070,7 @@
     
     
     
-      <span class="md-tag">20/08/2024</span>
+      <span class="md-tag">02/09/2024</span>
     
   
 </nav>
@@ -2014,235 +2080,277 @@
 <h1 id="php-laravel">PHP-Laravel</h1>
 <h2 id="instalacion-de-laravel-y-creacion-de-un-nuevo-proyecto">Instalación de Laravel y creación de un nuevo proyecto</h2>
 <h3 id="instalar-laravel">Instalar Laravel</h3>
-<pre><code>composer global require laravel/installer
-</code></pre>
+<div class="codehilite"><pre><span></span><code>composer global require laravel/installer
+</code></pre></div>
+
 <h3 id="actualizar-laravel">Actualizar Laravel</h3>
-<pre><code>composer global update laravel/installer
-</code></pre>
+<div class="codehilite"><pre><span></span><code>composer global update laravel/installer
+</code></pre></div>
+
 <h3 id="version-de-laravel">Versión de Laravel</h3>
-<pre><code>laravel -v
-</code></pre>
+<div class="codehilite"><pre><span></span><code>laravel -v
+</code></pre></div>
+
 <h3 id="intalar-breeze">Intalar Breeze</h3>
-<pre><code>composer require laravel/breeze --dev
-</code></pre>
+<div class="codehilite"><pre><span></span><code>composer require laravel/breeze --dev
+</code></pre></div>
+
 <h3 id="crear-el-proyecto">Crear el proyecto</h3>
-<pre><code>composer create-project laravel/laravel APi_12
-</code></pre>
+<div class="codehilite"><pre><span></span><code>composer create-project laravel/laravel APi_12
+</code></pre></div>
+
 <p>Elegir la opcion <code>0</code> o <code>blame</code></p>
-<pre><code>php artisan breeze:install
-</code></pre>
-<pre><code>php artisan migrate
-</code></pre>
-<pre><code>npm install
-</code></pre>
-<pre><code>npm run dev
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan breeze:install
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>php artisan migrate
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>npm install
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>npm run dev
+</code></pre></div>
+
 <h2 id="migraciones">Migraciones</h2>
 <h3 id="crear-migracion">Crear migración</h3>
 <p>(Se deben crear en el orden en que se desea que se ejecuten)</p>
-<pre><code>php artisan:makemigration create_nombre_table
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan:makemigration create_nombre_table
+</code></pre></div>
+
 <h3 id="configurar-las-migraciones">Configurar las migraciones</h3>
-<pre><code class="language-php">Schema::create('users', function (Blueprint $table) {
-   $table-&gt;id();
-   $table-&gt;string('name');
-});
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">Schema::create(&#39;users&#39;, function (Blueprint $table) {</span>
+<span class="x">   $table-&gt;id();</span>
+<span class="x">   $table-&gt;string(&#39;name&#39;);</span>
+<span class="x">});</span>
+</code></pre></div>
+
 <h3 id="migrar">Migrar</h3>
 <p>(Se migra por orden alfabético)</p>
-<pre><code>php artisan migrate
-</code></pre>
-<blockquote>
-<p>[!NOTE]
-Se migra por orden alfabético o por fecha de creación si no se han modificado los nombres de los archivos.</p>
-</blockquote>
+<div class="codehilite"><pre><span></span><code>php artisan migrate
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Se migra por orden alfabético o por fecha de creación si no se han modificado los nombres de los archivos.</p>
+</div>
 <h3 id="deshacer-la-ultima-migracion">Deshacer la última migración</h3>
-<pre><code>php artisan migrate:rollback
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan migrate:rollback
+</code></pre></div>
+
 <h3 id="deshacer-todas-las-migraciones">Deshacer todas las migraciones</h3>
-<pre><code>php artisan migrate:reset
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan migrate:reset
+</code></pre></div>
+
 <h3 id="deshacer-todas-las-migraciones-y-migrar-de-nuevo">Deshacer todas las migraciones y migrar de nuevo</h3>
-<pre><code>php artisan migrate:fresh
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan migrate:fresh
+</code></pre></div>
+
 <h3 id="estado-de-las-migraciones">Estado de las migraciones</h3>
-<pre><code>php artisan migrate:status
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan migrate:status
+</code></pre></div>
+
 <h2 id="configuracion">Configuración</h2>
-<p>Hay que modificar el archivo <em>.env</em> (Se encuentra en el directorio raiz):</p>
-<pre><code class="language-php">DB_CONNECTION=mysql
-DB_HOST=localhost
-DB_PORT=3306
-DB_DATABASE=nombreBD*
-DB_USERNAME=*
-DB_PASSWORD=*
-</code></pre>
+<p>Hay que modificar el archivo <code>.env</code> (Se encuentra en el directorio raiz):</p>
+<div class="codehilite"><pre><span></span><code><span class="x">DB_CONNECTION=mysql</span>
+<span class="x">DB_HOST=localhost</span>
+<span class="x">DB_PORT=3306</span>
+<span class="x">DB_DATABASE=nombreBD*</span>
+<span class="x">DB_USERNAME=*</span>
+<span class="x">DB_PASSWORD=*</span>
+</code></pre></div>
+
 <h2 id="modelo">Modelo</h2>
 <h3 id="crear-nuevo-modelo">Crear nuevo modelo</h3>
-<pre><code>php artisan make:model Nombre
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan make:model Nombre
+</code></pre></div>
+
 <h3 id="especificar-el-nombre-de-la-tabla-en-la-base-de-datos">Especificar el nombre de la tabla en la base de datos</h3>
 <p>La tabla es el plural del nombre del modelo creado, pero a veces no lo detecta bien asi que le cambiamos manualmente el nombre para que pueda encontrar la tabla.</p>
-<pre><code class="language-php">protected $table = 'tasks_lists';
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">protected $table = &#39;tasks_lists&#39;;</span>
+</code></pre></div>
+
 <p>Con la primary key pasa algo parecido. Laravel asume que cada tabla tiene declarado un campo llamado <code>id</code>, pero en caso de que no sea así debemos sobreescribirlo.</p>
-<pre><code class="language-php">protected $primaryKey = 'id';
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">protected $primaryKey = &#39;id&#39;;</span>
+</code></pre></div>
+
 <p>La propiedad <code>timestamps</code> nos permite crear los campos <code>updated_at</code> y <code>created_at</code> en la base de datos de forma automática en la base de datos.
 Estos campos se actualizan automaticamente al ejercer acciones de actualizado o creación de la fila.</p>
-<pre><code class="language-php">public $timestamps = false;
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">public $timestamps = false;</span>
+</code></pre></div>
+
 <h3 id="atributos">Atributos</h3>
-<pre><code class="language-php">protected $fileable = [
-   'id',
-   'name'
-];
-</code></pre>
-<blockquote>
-<p>[!NOTE]
-Se deben especificar también las <strong>foreign keys</strong></p>
-</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="x">protected $fileable = [</span>
+<span class="x">   &#39;id&#39;,</span>
+<span class="x">   &#39;name&#39;</span>
+<span class="x">];</span>
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Se deben especificar también las <strong>foreign keys</strong></p>
+</div>
 <h3 id="relaciones">Relaciones</h3>
 <h4 id="one-to-one">One to One</h4>
 <p>Se debe crear una funcion <code>hasOne()</code> en uno de los modelos.</p>
-<pre><code class="language-php">class Libro extends Model {
-  public function portada() {
-    return $this-&gt;hasOne(Portada::class);
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">class Libro extends Model {</span>
+<span class="x">  public function portada() {</span>
+<span class="x">    return $this-&gt;hasOne(Portada::class);</span>
+<span class="x">  }</span>
+<span class="x">}</span>
+</code></pre></div>
+
 <p>Si se desea hacer la relación bidireccional debe agregarse al otro modelo el metodo <code>belongsTo()</code></p>
-<pre><code class="language-php">class Libro extends Model {
-  public function portada() {
-    return $this-&gt;hasOne(Portada::class);
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">class Libro extends Model {</span>
+<span class="x">  public function portada() {</span>
+<span class="x">    return $this-&gt;hasOne(Portada::class);</span>
+<span class="x">  }</span>
+<span class="x">}</span>
+</code></pre></div>
+
 <h4 id="one-to-many">One to Many</h4>
 <p>Se debe crear la función <code>hasMany()</code> en el modelo que posee varios objetos.</p>
-<pre><code class="language-php">class Autor extends Model
-{
-  public function libros(){
-    return $this-&gt;hasMany(Libro::class);
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">class Autor extends Model</span>
+<span class="x">{</span>
+<span class="x">  public function libros(){</span>
+<span class="x">    return $this-&gt;hasMany(Libro::class);</span>
+<span class="x">  }</span>
+<span class="x">}</span>
+</code></pre></div>
+
 <p>La relación inversa se establece creando la función <code>belongsTo()</code> en el otro modelo.</p>
-<pre><code class="language-php">class Libro extends Model {
-  public function autor() {
-    return $this-&gt;belongsTo(Autor::class);
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">class Libro extends Model {</span>
+<span class="x">  public function autor() {</span>
+<span class="x">    return $this-&gt;belongsTo(Autor::class);</span>
+<span class="x">  }</span>
+<span class="x">}</span>
+</code></pre></div>
+
 <h4 id="many-to-many">Many to Many</h4>
 <p>En los dos modelos debe definirse el metodo <code>belongToMany()</code></p>
-<pre><code class="language-php">class Libro extends Model {
-  public function bibliotecas() {
-    return $this-&gt;belongsToMany(Biblioteca::class);
-  }
-}
-</code></pre>
-<pre><code class="language-php">class Biblioteca extends Model {
-  public function libros() {
-    return $this-&gt;belongsToMany(Libro::class);
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">class Libro extends Model {</span>
+<span class="x">  public function bibliotecas() {</span>
+<span class="x">    return $this-&gt;belongsToMany(Biblioteca::class);</span>
+<span class="x">  }</span>
+<span class="x">}</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="x">class Biblioteca extends Model {</span>
+<span class="x">  public function libros() {</span>
+<span class="x">    return $this-&gt;belongsToMany(Libro::class);</span>
+<span class="x">  }</span>
+<span class="x">}</span>
+</code></pre></div>
+
 <h2 id="seeders">Seeders</h2>
 <p>Los <strong>seeders</strong> sirven para rellenar la base de datos con información inicial.</p>
 <p>Para crear un <strong>seeder</strong> usaremos el comando:</p>
-<pre><code>php artisan make:seeder NombreSeeder
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan make:seeder NombreSeeder
+</code></pre></div>
+
 <p>Se recomienda crear un <strong>seeder</strong> para cada tabla. En este <strong>seeder</strong> se creará un método <code>run</code> donde escribiremos los datos que queremos introducir en la base de datos.</p>
 <p>Desde la función <code>run</code> de la clase <code>DatabaseSeeder</code> llamaremos a los distintos <strong>seeders</strong></p>
-<pre><code class="language-php">$this-&gt;call(NombreSeeder::class);
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">$this-&gt;call(NombreSeeder::class);</span>
+</code></pre></div>
+
 <p>Para ejecutar la clase <code>DatabaseSeeder</code> usaremos el comando:</p>
-<pre><code>php artisan db:seed
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan db:seed
+</code></pre></div>
+
 <h2 id="factories">Factories</h2>
 <p>Los <strong>factories</strong> son clases que crean por nosotros datos ficticios automáticamente.</p>
 <p>Para crear un <strong>factorie</strong> usaremos el comando:</p>
-<pre><code>php artisan make:factorie NombreFactorie
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan make:factorie NombreFactorie
+</code></pre></div>
+
 <p>Se recomienda crear un <strong>factorie</strong> para cada clase.</p>
 <p>En este <strong>factorie</strong> debemos completar el atributo <code>model</code> y la función <code>definition()</code>.</p>
-<pre><code class="language-php">class NombreFactory extendes Factory {
-  protected $model = Nombre::class;
+<div class="codehilite"><pre><span></span><code><span class="x">class NombreFactory extendes Factory {</span>
+<span class="x">  protected $model = Nombre::class;</span>
 
-  public function definition() {
-    return [
-      'atributo' =&gt; fake()-&gt;name(),
-      'atributo' =&gt; fake()-&gt;name(),
-      'foreign_key' =&gt; ModeloForeignKey::all()-&gt;random()-&gt;id,
-    ];
-  }
-}
-</code></pre>
+<span class="x">  public function definition() {</span>
+<span class="x">    return [</span>
+<span class="x">      &#39;atributo&#39; =&gt; fake()-&gt;name(),</span>
+<span class="x">      &#39;atributo&#39; =&gt; fake()-&gt;name(),</span>
+<span class="x">      &#39;foreign_key&#39; =&gt; ModeloForeignKey::all()-&gt;random()-&gt;id,</span>
+<span class="x">    ];</span>
+<span class="x">  }</span>
+<span class="x">}</span>
+</code></pre></div>
+
 <p>Desde la función <code>run</code> de la clase <strong>Seeder</strong> podemos llamar al <strong>factorie</strong> de la siguiente forma:</p>
-<pre><code class="language-php">\App\Models\Nombre::factory(número)-&gt;create();
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">\App\Models\Nombre::factory(número)-&gt;create();</span>
+</code></pre></div>
+
 <h2 id="resources">Resources</h2>
 <p>Los <strong>resources</strong> son herramientas para dar forma a las respuestas <em>JSON</em> de la <em>API</em>, de tal manera que nos permiten personalizar la presentación de los datos.</p>
 <p>Para crear un <strong>resource</strong> usaremos el comando:</p>
-<pre><code>php artisan make:resource NombreResource
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan make:resource NombreResource
+</code></pre></div>
+
 <p>Puedes personalizar qué campos incluir, renombrarlos y agregar información adicional.</p>
-<pre><code class="language-php">public function toArray($request)
-{
-    return [
-        'id' =&gt; $this-&gt;id,
-        'titulo' =&gt; $this-&gt;titulo,
-        'contenido' =&gt; $this-&gt;contenido,
-        'fecha' =&gt; $this-&gt;created_at-&gt;format('Y-m-d'),
-        'clave_foranea' =&gt; $this-&gt;nombre_tabla,
-        'clave_foranea' =&gt; $this-&gt;nombre_tabla-&gt;campo_tabla
-    ];
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">public function toArray($request)</span>
+<span class="x">{</span>
+<span class="x">    return [</span>
+<span class="x">        &#39;id&#39; =&gt; $this-&gt;id,</span>
+<span class="x">        &#39;titulo&#39; =&gt; $this-&gt;titulo,</span>
+<span class="x">        &#39;contenido&#39; =&gt; $this-&gt;contenido,</span>
+<span class="x">        &#39;fecha&#39; =&gt; $this-&gt;created_at-&gt;format(&#39;Y-m-d&#39;),</span>
+<span class="x">        &#39;clave_foranea&#39; =&gt; $this-&gt;nombre_tabla,</span>
+<span class="x">        &#39;clave_foranea&#39; =&gt; $this-&gt;nombre_tabla-&gt;campo_tabla</span>
+<span class="x">    ];</span>
+<span class="x">}</span>
+</code></pre></div>
+
 <h2 id="collections">Collections</h2>
 <p>Las <strong>collections</strong> nos permiten transformar colecciones en respuestas <em>JSON</em> estructuradas.</p>
 <p>Para crear una <strong>colection</strong> usaremos el comando:</p>
-<pre><code>php artisan make:resource ArticuloCollection
-</code></pre>
-<h1 id="9-controladores">9. Controladores</h1>
+<div class="codehilite"><pre><span></span><code>php artisan make:resource ArticuloCollection
+</code></pre></div>
+
+<h2 id="controladores">Controladores</h2>
 <p>Para crear un <strong>controlador</strong> usaremos el comando:</p>
-<pre><code>php artisan make:controller NombreApiController --api
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan make:controller NombreApiController --api
+</code></pre></div>
+
 <p>Nos creará los métodos index, store, show, update y destroy vacios por defecto.</p>
 <h3 id="validacion-de-campos-con-request">Validación de campos con request</h3>
 <p>Para validar campos es recomendable el uso de <strong>request</strong>, que se trata de una clase donde establecemos una serie de reglas que deben cumplir los campos.</p>
 <p>Si deseamos crear un <strong>request</strong> utilizamos el siguiente comando:</p>
-<pre><code>php artisan make:request CreateNombreRequest
-</code></pre>
+<div class="codehilite"><pre><span></span><code>php artisan make:request CreateNombreRequest
+</code></pre></div>
+
 <p>Y dentro de la función <code>rules</code> personalizamos las reglas de validación:</p>
-<pre><code class="language-php">public function rules()
-    {
-        return [
-            'titulo' =&gt; 'required|string|max:255',
-            'contenido' =&gt; 'required|string',
-            // Otras reglas de validación según tus necesidades
-        ];
-    }
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">public function rules()</span>
+<span class="x">    {</span>
+<span class="x">        return [</span>
+<span class="x">            &#39;titulo&#39; =&gt; &#39;required|string|max:255&#39;,</span>
+<span class="x">            &#39;contenido&#39; =&gt; &#39;required|string&#39;,</span>
+<span class="x">            // Otras reglas de validación según tus necesidades</span>
+<span class="x">        ];</span>
+<span class="x">    }</span>
+</code></pre></div>
+
 <p>Tras esto no necesitariamos validar en el controlador directamente sino que implementariamos el siguiente código:</p>
-<pre><code class="language-php">public function store(CreateNombreRequest $request) {
-  return new NombreResource(Nombre::create($request-&gt;all()));
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="x">public function store(CreateNombreRequest $request) {</span>
+<span class="x">  return new NombreResource(Nombre::create($request-&gt;all()));</span>
+<span class="x">}</span>
+</code></pre></div>
+
 <h3 id="validacion-de-campos-en-el-controlador">Validación de campos en el controlador</h3>
 <p>Para validar campos en el controlador implementamos el siguiente código dentro de nuestra función:</p>
-<pre><code class="language-php">$validator = Validator::make($request-&gt;all(), [
-  &quot;id&quot; =&gt; &quot;required|exists:processes,id&quot;,
-  &quot;code&quot; =&gt; &quot;required|string|max:250&quot;,
-  &quot;description&quot; =&gt; &quot;required&quot;,
-  &quot;date&quot; =&gt; &quot;required&quot;,
-]);
+<div class="codehilite"><pre><span></span><code><span class="x">$validator = Validator::make($request-&gt;all(), [</span>
+<span class="x">  &quot;id&quot; =&gt; &quot;required|exists:processes,id&quot;,</span>
+<span class="x">  &quot;code&quot; =&gt; &quot;required|string|max:250&quot;,</span>
+<span class="x">  &quot;description&quot; =&gt; &quot;required&quot;,</span>
+<span class="x">  &quot;date&quot; =&gt; &quot;required&quot;,</span>
+<span class="x">]);</span>
 
-if ($validator-&gt;fails()) {
-  return response()-&gt;json($validator-&gt;errors(), 400);
-}
-</code></pre>
+<span class="x">if ($validator-&gt;fails()) {</span>
+<span class="x">  return response()-&gt;json($validator-&gt;errors(), 400);</span>
+<span class="x">}</span>
+</code></pre></div>
+
 <p>El <em>id</em> solo si es necesario comprobarlo si ese objeto existe en la base de datos para una actualización.</p>
 
 

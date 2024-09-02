@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1668,41 +1668,52 @@ escalables.</p>
 <p>Es recomendable el uso de <a href="https://github.com/nvm-sh/nvm">nvm</a> para el control de versiones, por lo que lo instalaremos en lugar del node.js. Si
 tenemos node.js instalado, lo mejor es desinstalarlo.</p>
 <p>Verifica la instalación de nvm con el comando:</p>
-<pre><code class="language-shell">nvm version
-</code></pre>
+<div class="codehilite"><pre><span></span><code>nvm<span class="w"> </span>version
+</code></pre></div>
+
 <p>Una vez instalado nvm instalamos la última versión o la que necesitemos para el proyecto en el que vamos a trabajar.</p>
 <p>Podemos obtener una lista de las versiones disponibles usando el comando:</p>
-<pre><code class="language-sh">nvm ls available
-</code></pre>
+<div class="codehilite"><pre><span></span><code>nvm<span class="w"> </span>ls<span class="w"> </span>available
+</code></pre></div>
+
 <p>Para instalar la versión de node utilizaremos el siguiente comando sustituyendo el número por la versión que nosotros
 deseemos:</p>
-<pre><code class="language-sh">nvm install 20.0.0
-</code></pre>
+<div class="codehilite"><pre><span></span><code>nvm<span class="w"> </span>install<span class="w"> </span><span class="m">20</span>.0.0
+</code></pre></div>
+
 <p>Para obtener una lista de las versiones disponibles instaladas previamente podemos utilizar el comando:</p>
-<pre><code class="language-sh">nvm ls
-</code></pre>
+<div class="codehilite"><pre><span></span><code>nvm<span class="w"> </span>ls
+</code></pre></div>
+
 <p>Para indicar que versión queremos utilizar usaremos el siguiente comando sustituyendo el número por la versión que
 nosotros deseemos usar de la lista de versiones disponibles ya instaladas previamente:</p>
-<pre><code class="language-sh">nvm use 20.0.0
-</code></pre>
+<div class="codehilite"><pre><span></span><code>nvm<span class="w"> </span>use<span class="w"> </span><span class="m">20</span>.0.0
+</code></pre></div>
+
 <p>Verifica que funciona con el comando:</p>
-<pre><code class="language-sh">npm -v
-</code></pre>
+<div class="codehilite"><pre><span></span><code>npm<span class="w"> </span>-v
+</code></pre></div>
+
 <h2 id="ejecutar-un-script">Ejecutar un script</h2>
-<pre><code class="language-shell">node app.js
-</code></pre>
+<div class="codehilite"><pre><span></span><code>node<span class="w"> </span>app.js
+</code></pre></div>
+
 <h2 id="inicializar-un-proyecto">Inicializar un proyecto</h2>
-<pre><code class="language-shell">npm init
-</code></pre>
+<div class="codehilite"><pre><span></span><code>npm<span class="w"> </span>init
+</code></pre></div>
+
 <h2 id="instalar-un-paquete">Instalar un paquete</h2>
-<pre><code class="language-shell">npm install &lt;nombre_paquete&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>&lt;nombre_paquete&gt;
+</code></pre></div>
+
 <h2 id="instalar-un-paquete-de-manera-global">Instalar un paquete de manera global</h2>
-<pre><code class="language-shell">npm install -g &lt;nombre_paquete&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>&lt;nombre_paquete&gt;
+</code></pre></div>
+
 <h2 id="desinstalar-un-paquete">Desinstalar un paquete</h2>
-<pre><code class="language-shell">npm uninstall &lt;nombre_paquete&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><code>npm<span class="w"> </span>uninstall<span class="w"> </span>&lt;nombre_paquete&gt;
+</code></pre></div>
+
 <h2 id="recursos-adicionales">Recursos Adicionales</h2>
 <ul>
 <li><a href="https://docs.npmjs.com/">Documentación de npm</a></li>

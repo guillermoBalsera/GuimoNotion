@@ -148,7 +148,7 @@ Se usan de la siguiente manera:
 
 ## Ejemplo Completo de mkdocs.yml
 
-Aquí tienes un ejemplo más completo de un archivo mkdocs.yml:
+Aquí tienes un ejemplo más completo de un archivo mkdocs.yml:  
 
 ```yaml
 site_name: Documentación de Ejemplo

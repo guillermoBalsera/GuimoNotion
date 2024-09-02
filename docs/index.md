@@ -31,7 +31,7 @@
 | ASP.NET Core           | C#            | Desarrollo de aplicaciones web y servicios API, aplicaciones empresariales   |              |                     |
 | Express.js             | JavaScript    | Desarrollo del lado del servidor, API REST, aplicaciones de back-end ligeras |              |                     |
 | FastAPI                | Python        | Desarrollo de API REST, aplicaciones de back-end de alto rendimiento         |              |                     |
-| [PHP Laravel][laravel] | PHP           | Desarrollo web de back-end, aplicaciones CRUD, API REST                      |      X       |     20-08-2024      |
+| [PHP Laravel][laravel] | PHP           | Desarrollo web de back-end, aplicaciones CRUD, API REST                      |      X       |     02-09-2024      |
 | Spring Boot            | Java          | Desarrollo de aplicaciones empresariales, microservicios                     |              |                     |
 
 ## Otros

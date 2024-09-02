@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1706,57 +1706,65 @@ documentación de proyectos. Es fácil de configurar y permite generar documenta
 </ul>
 <h2 id="instalacion">Instalación</h2>
 <p>Para instalar MkDocs, necesitas tener Python y <code>pip</code> instalados en tu sistema.</p>
-<pre><code class="language-bash">pip install mkdocs
-</code></pre>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs
+</code></pre></div>
+
 <h2 id="verificar-la-instalacion">Verificar la Instalación</h2>
 <p>Para asegurarte de que MkDocs se ha instalado correctamente, ejecuta el siguiente comando:</p>
-<pre><code class="language-bash">mkdocs --version
-</code></pre>
+<div class="codehilite"><pre><span></span><code>mkdocs<span class="w"> </span>--version
+</code></pre></div>
+
 <p>Deberías ver la versión de MkDocs que has instalado.</p>
 <h2 id="creacion-de-un-proyecto-nuevo">Creación de un Proyecto Nuevo</h2>
 <p>Para crear un proyecto nuevo, usa el siguiente comando:</p>
-<pre><code class="language-bash">mkdocs new nombre-de-tu-proyecto
-</code></pre>
+<div class="codehilite"><pre><span></span><code>mkdocs<span class="w"> </span>new<span class="w"> </span>nombre-de-tu-proyecto
+</code></pre></div>
+
 <p>Esto creará una estructura básica de archivos y carpetas que puedes empezar a personalizar.</p>
 <h2 id="estructura-de-carpetas">Estructura de Carpetas</h2>
 <p>Un proyecto típico de MkDocs tendrá la siguiente estructura de carpetas:</p>
-<pre><code class="language-shell">nombre-de-tu-proyecto/
-├── docs/
-│   └── index.md
-└── mkdocs.yml
-</code></pre>
+<div class="codehilite"><pre><span></span><code>nombre-de-tu-proyecto/
+├──<span class="w"> </span>docs/
+│<span class="w">   </span>└──<span class="w"> </span>index.md
+└──<span class="w"> </span>mkdocs.yml
+</code></pre></div>
+
 <ul>
 <li>docs/: Aquí es donde irán todos tus archivos de documentación en formato Markdown.</li>
 <li>mkdocs.yml: Este es el archivo de configuración principal de MkDocs.</li>
 </ul>
 <h2 id="configuracion-basica">Configuración Básica</h2>
 <p>El archivo mkdocs.yml es donde configurarás tu sitio de documentación. Aquí un ejemplo básico:</p>
-<pre><code class="language-yaml">site_name: Mi Proyecto
-theme:
-  name: material
+<div class="codehilite"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Mi Proyecto</span>
+<span class="nt">theme</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
 
-nav:
-  - Inicio: index.md
-  - Acerca de: about.md
-</code></pre>
+<span class="nt">nav</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Inicio</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Acerca de</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">about.md</span>
+</code></pre></div>
+
 <h2 id="personalizacion">Personalización</h2>
 <p>Puedes personalizar tu sitio modificando el archivo mkdocs.yml. Algunas opciones comunes incluyen:</p>
 <ul>
 <li>Cambiar el tema: Hay varios temas disponibles que puedes usar.</li>
 <li>Añadir un favicon: Puedes añadir un ícono personalizado a tu sitio.</li>
 </ul>
-<pre><code class="language-yaml">extra:
-  favicon: 'img/logo.png'
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nt">extra</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">favicon</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;img/logo.png&#39;</span>
+</code></pre></div>
+
 <h2 id="desarrollando-el-sitio">Desarrollando el Sitio</h2>
 <p>Durante el desarrollo, puedes usar el servidor de desarrollo integrado de MkDocs para ver los cambios en tiempo real:</p>
-<pre><code class="language-bash">mkdocs serve
-</code></pre>
+<div class="codehilite"><pre><span></span><code>mkdocs<span class="w"> </span>serve
+</code></pre></div>
+
 <p>Esto abrirá un servidor en http://127.0.0.1:8000/ o http://localhost:8000/ donde podrás ver tu sitio.</p>
 <h2 id="despliegue-del-sitio">Despliegue del Sitio</h2>
 <p>Para desplegar tu sitio, primero debes construirlo con el comando:</p>
-<pre><code class="language-bash">mkdocs build
-</code></pre>
+<div class="codehilite"><pre><span></span><code>mkdocs<span class="w"> </span>build
+</code></pre></div>
+
 <p>Esto generará una carpeta site/ con todos los archivos estáticos de tu sitio. Puedes subir esta carpeta a cualquier
 servidor o servicio de hosting, como GitHub Pages.</p>
 <h2 id="admonitions">Admonitions</h2>
@@ -1765,9 +1773,10 @@ importante, notas, advertencias o recomendaciones. Su propósito es captar la at
 adicional de manera visualmente destacada. Estos bloques pueden variar en apariencia y estilo según el sistema de
 documentación o el tema que estés utilizando.</p>
 <p>Para instalarlas añadiremos a nuestro fichero <code>mkdocs.yml</code>:</p>
-<pre><code class="language-yml">markdown_extensions:
-  - admonition
-</code></pre>
+<div class="codehilite"><pre><span></span><code>markdown_extensions:
+  <span class="k">-</span> admonition
+</code></pre></div>
+
 <p>Tipos de admonition:
   - note
   - abstract
@@ -1782,11 +1791,12 @@ documentación o el tema que estés utilizando.</p>
   - example
   - quote</p>
 <p>Se usan de la siguiente manera:</p>
-<pre><code class="language-markdown">!!! note
+<div class="codehilite"><pre><span></span><code>!!! note
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
-</code></pre>
+</code></pre></div>
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
@@ -1794,49 +1804,50 @@ nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
 massa, nec semper lorem quam in massa.</p>
 </div>
 <h2 id="ejemplo-completo-de-mkdocsyml">Ejemplo Completo de mkdocs.yml</h2>
-<p>Aquí tienes un ejemplo más completo de un archivo mkdocs.yml:</p>
-<pre><code class="language-yaml">site_name: Documentación de Ejemplo
+<p>Aquí tienes un ejemplo más completo de un archivo mkdocs.yml:  </p>
+<div class="codehilite"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Documentación de Ejemplo</span>
 
-theme:
-  name: material
-  language: es
-  logo: img/logo.png
-  favicon: 'img/logo.png'
-  features:
-    - content.code.copy
-    - navigation.instant
-    - navigation.instant.progress
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.top
-  font:
-    text: Rubik
-    code: Roboto Mono
+<span class="nt">theme</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
+<span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">es</span>
+<span class="w">  </span><span class="nt">logo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">img/logo.png</span>
+<span class="w">  </span><span class="nt">favicon</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;img/logo.png&#39;</span>
+<span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.copy</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.instant</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.instant.progress</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.tracking</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.tabs</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.top</span>
+<span class="w">  </span><span class="nt">font</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Rubik</span>
+<span class="w">    </span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Roboto Mono</span>
 
-nav:
-  - Inicio: index.md
-  - Guía de Usuario:
-      - Instalación: user-guide/installation.md
-      - Configuración: user-guide/configuration.md
-  - Referencia: reference.md
-  - Acerca de: about.md
+<span class="nt">nav</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Inicio</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Guía de Usuario</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Instalación</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user-guide/installation.md</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Configuración</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user-guide/configuration.md</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Referencia</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">reference.md</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Acerca de</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">about.md</span>
 
 
-extra_css:
-  - stylesheets/style.css
+<span class="nt">extra_css</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stylesheets/style.css</span>
 
-markdown_extensions:
-  - admonition
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
 
-extra:
-  consent:
-    title: Cookie consent
-    description: &gt;-
-      Usamos cookies para reconocer tus visitas y preferencias repetidas, 
-      así como para medir la efectividad de nuestra documentación y si 
-      los usuarios encuentran lo que buscan. Con tu consentimiento, 
-      nos ayudas a mejorar nuestra documentación.
-</code></pre>
+<span class="nt">extra</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">consent</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Cookie consent</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">&gt;-</span>
+<span class="w">      </span><span class="no">Usamos cookies para reconocer tus visitas y preferencias repetidas, </span>
+<span class="w">      </span><span class="no">así como para medir la efectividad de nuestra documentación y si </span>
+<span class="w">      </span><span class="no">los usuarios encuentran lo que buscan. Con tu consentimiento, </span>
+<span class="w">      </span><span class="no">nos ayudas a mejorar nuestra documentación.</span>
+</code></pre></div>
+
 <h2 id="recursos-adicionales">Recursos Adicionales</h2>
 <ul>
 <li><a href="https://www.mkdocs.org/">Documentación Oficial de MkDocs</a></li>

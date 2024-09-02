@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1610,40 +1610,49 @@
 
 <h1 id="conjuntos">Conjuntos</h1>
 <h2 id="declarar-un-conjunto">Declarar un conjunto</h2>
-<pre><code class="language-python">mi_conjunto = {1, 2, 3, 4, 5}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">mi_conjunto</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+</code></pre></div>
+
 <h2 id="declarar-un-conjunto-vacio">Declarar un conjunto vacio</h2>
-<pre><code class="language-python">conjunto_vacio = set()
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">conjunto_vacio</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+</code></pre></div>
+
 <h2 id="anadir-elementos-a-un-conjunto">Añadir elementos a un conjunto</h2>
-<pre><code class="language-python">mi_conjunto.add(6)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">mi_conjunto</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="eliminar-elementos-de-un-conjunto">Eliminar elementos de un conjunto</h2>
-<pre><code class="language-python">mi_conjunto.remove(3)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">mi_conjunto</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="iteracion-sobre-un-conjunto">Iteracion sobre un conjunto</h2>
-<pre><code class="language-python">for elemento in mi_conjunto:
-    print(elemento)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">mi_conjunto</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">elemento</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="unir-conjuntos">Unir conjuntos</h2>
-<pre><code class="language-python">conjunto1 = {1, 2, 3}
-conjunto2 = {3, 4, 5}
-union = conjunto1.union(conjunto2)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">conjunto1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">conjunto2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<span class="n">union</span> <span class="o">=</span> <span class="n">conjunto1</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">conjunto2</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="interseccion-entre-dos-conjuntos">Interseccion entre dos conjuntos</h2>
-<pre><code class="language-python">conjunto1 = {1, 2, 3}
-conjunto2 = {3, 4, 5}
-interseccion = conjunto1.intersection(conjunto2)  # Output: 3
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">conjunto1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">conjunto2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<span class="n">interseccion</span> <span class="o">=</span> <span class="n">conjunto1</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">conjunto2</span><span class="p">)</span>  <span class="c1"># Output: 3</span>
+</code></pre></div>
+
 <h2 id="diferencia-entre-dos-conjuntos">Diferencia entre dos conjuntos</h2>
-<pre><code class="language-python">conjunto1 = {1, 2, 3}
-conjunto2 = {3, 4, 5}
-diferencia = conjunto1.difference(conjunto2)  # Output: {1, 2}
-</code></pre>
-<pre><code class="language-python">conjunto1 = {1, 2, 3}
-conjunto2 = {3, 4, 5}
-diferencia = conjunto2.difference(conjunto1)  # Output: {4, 5}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">conjunto1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">conjunto2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<span class="n">diferencia</span> <span class="o">=</span> <span class="n">conjunto1</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">conjunto2</span><span class="p">)</span>  <span class="c1"># Output: {1, 2}</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">conjunto1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">conjunto2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<span class="n">diferencia</span> <span class="o">=</span> <span class="n">conjunto2</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">conjunto1</span><span class="p">)</span>  <span class="c1"># Output: {4, 5}</span>
+</code></pre></div>
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 </div>

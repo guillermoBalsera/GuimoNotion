@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1628,75 +1628,83 @@
 
 <h1 id="manejo-de-ficheros-y-directorios">Manejo de ficheros y directorios</h1>
 <h2 id="crear-un-directorio">Crear un directorio</h2>
-<pre><code class="language-python">import os
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 
-os.makedirs(&quot;nombre_directorio&quot;)
-</code></pre>
+<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s2">&quot;nombre_directorio&quot;</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="crear-un-archivo">Crear un archivo</h2>
-<pre><code class="language-python">nombre_archivo = &quot;nuevo_archivo.txt&quot;
+<div class="codehilite"><pre><span></span><code><span class="n">nombre_archivo</span> <span class="o">=</span> <span class="s2">&quot;nuevo_archivo.txt&quot;</span>
 
-with open(nombre_archivo, 'w') as archivo:
-    archivo.write(&quot;Este es el contenido del archivo.\n&quot;)
-</code></pre>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">nombre_archivo</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Este es el contenido del archivo.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="listar-el-contenido-de-un-directorio">Listar el contenido de un directorio</h2>
-<pre><code class="language-python">contenido_directorio = os.listdir()
+<div class="codehilite"><pre><span></span><code><span class="n">contenido_directorio</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>
 
-for elemento in contenido_directorio:
-    print(elemento)
-</code></pre>
+<span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">contenido_directorio</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">elemento</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="listar-el-contenido-de-un-directorio-y-el-contenido-de-sus-subdirectorios">Listar el contenido de un directorio y el contenido de sus subdirectorios</h2>
-<pre><code class="language-python">import os
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 
-def listar_contenido_directorio(directorio):
-    for directorio_actual, subdirectorios, archivos in os.walk(directorio):
-        print(f&quot;Contenido de {directorio_actual}:&quot;)
+<span class="k">def</span> <span class="nf">listar_contenido_directorio</span><span class="p">(</span><span class="n">directorio</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">directorio_actual</span><span class="p">,</span> <span class="n">subdirectorios</span><span class="p">,</span> <span class="n">archivos</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">directorio</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Contenido de </span><span class="si">{</span><span class="n">directorio_actual</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
 
-        for archivo in archivos:
-            print(os.path.join(directorio_actual, archivo))
+        <span class="k">for</span> <span class="n">archivo</span> <span class="ow">in</span> <span class="n">archivos</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directorio_actual</span><span class="p">,</span> <span class="n">archivo</span><span class="p">))</span>
 
-        for subdirectorio in subdirectorios:
-            print(os.path.join(directorio_actual, subdirectorio))
+        <span class="k">for</span> <span class="n">subdirectorio</span> <span class="ow">in</span> <span class="n">subdirectorios</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directorio_actual</span><span class="p">,</span> <span class="n">subdirectorio</span><span class="p">))</span>
 
-directorio = &quot;ruta/al/directorio&quot;
+<span class="n">directorio</span> <span class="o">=</span> <span class="s2">&quot;ruta/al/directorio&quot;</span>
 
-listar_contenido_directorio(directorio)
-</code></pre>
+<span class="n">listar_contenido_directorio</span><span class="p">(</span><span class="n">directorio</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="renombrar-un-archivo-o-directorio">Renombrar un archivo o directorio</h2>
-<pre><code class="language-python">import os
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 
-nombre_original = &quot;antiguo_nombre.txt&quot;
-nuevo_nombre = &quot;nuevo_nombre.txt&quot;
+<span class="n">nombre_original</span> <span class="o">=</span> <span class="s2">&quot;antiguo_nombre.txt&quot;</span>
+<span class="n">nuevo_nombre</span> <span class="o">=</span> <span class="s2">&quot;nuevo_nombre.txt&quot;</span>
 
-os.rename(nombre_original, nuevo_nombre)
-</code></pre>
+<span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">nombre_original</span><span class="p">,</span> <span class="n">nuevo_nombre</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="eliminar-un-archivo">Eliminar un archivo</h2>
-<pre><code class="language-python">import os
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 
-nombre_archivo_a_eliminar = &quot;archivo_a_eliminar.txt&quot;
+<span class="n">nombre_archivo_a_eliminar</span> <span class="o">=</span> <span class="s2">&quot;archivo_a_eliminar.txt&quot;</span>
 
-os.remove(nombre_archivo_a_eliminar)
-</code></pre>
+<span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">nombre_archivo_a_eliminar</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="eliminar-un-directorio-y-su-contenido">Eliminar un directorio y su contenido</h2>
-<pre><code class="language-python">import shutil
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">shutil</span>
 
-nombre_directorio_a_eliminar = &quot;directorio_a_eliminar&quot;
+<span class="n">nombre_directorio_a_eliminar</span> <span class="o">=</span> <span class="s2">&quot;directorio_a_eliminar&quot;</span>
 
-shutil.rmtree(nombre_directorio_a_eliminar)
-</code></pre>
+<span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">nombre_directorio_a_eliminar</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="mover-archivo">Mover archivo</h2>
-<pre><code class="language-python">import shutil
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">shutil</span>
 
-ubicacion_original = &quot;ruta/al/archivo/original.txt&quot;
-ubicacion_destino = &quot;ruta/a/la/ubicacion/de/destino/archivo.txt&quot;
+<span class="n">ubicacion_original</span> <span class="o">=</span> <span class="s2">&quot;ruta/al/archivo/original.txt&quot;</span>
+<span class="n">ubicacion_destino</span> <span class="o">=</span> <span class="s2">&quot;ruta/a/la/ubicacion/de/destino/archivo.txt&quot;</span>
 
-shutil.move(ubicacion_original, ubicacion_destino)
-</code></pre>
+<span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">ubicacion_original</span><span class="p">,</span> <span class="n">ubicacion_destino</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="mover-directorio">Mover directorio</h2>
-<pre><code class="language-python">ubicacion_directorio_original = &quot;ruta/al/directorio/original&quot;
-ubicacion_directorio_destino = &quot;ruta/a/la/ubicacion/de/destino/directorio&quot;
+<div class="codehilite"><pre><span></span><code><span class="n">ubicacion_directorio_original</span> <span class="o">=</span> <span class="s2">&quot;ruta/al/directorio/original&quot;</span>
+<span class="n">ubicacion_directorio_destino</span> <span class="o">=</span> <span class="s2">&quot;ruta/a/la/ubicacion/de/destino/directorio&quot;</span>
 
-shutil.move(ubicacion_directorio_original, ubicacion_directorio_destino)
-</code></pre>
+<span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">ubicacion_directorio_original</span><span class="p">,</span> <span class="n">ubicacion_directorio_destino</span><span class="p">)</span>
+</code></pre></div>
 
 
 

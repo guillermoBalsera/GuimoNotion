@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1624,105 +1624,118 @@
 
 <h2 id="componentes">Componentes</h2>
 <p>Para generar un nuevo <em>component</em> usamos el comando:</p>
-<pre><code class="language-sh">ng generate component directorio/nombreComponente
-</code></pre>
+<div class="codehilite"><pre><span></span><code>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>directorio/nombreComponente
+</code></pre></div>
+
 <h3 id="estructura-de-un-componente">Estructura de un componente</h3>
-<pre><code class="language-typescript">@Component({
-    standalone: true, /* standalone representa si se trata de un componente standalone o clásico en caso de no aparecer */
-    selector: 'app-component', /* selector representa la forma de llamar al componente desde el html de otro */
-    templateUrl: './component.component.html', /* templateUrl representa la url donde se ubica la template del componente */
-    styleUrl: './component.component.css', /* styleUrl representa la url donde se ubica el archivo que define los estilos del componente */
-})
-export class Component {
-    /* Aquí se define el comportamiento del componente */
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="kd">@Component</span><span class="p">({</span>
+<span class="w">    </span><span class="nx">standalone</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span><span class="w"> </span><span class="cm">/* standalone representa si se trata de un componente standalone o clásico en caso de no aparecer */</span>
+<span class="w">    </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;app-component&#39;</span><span class="p">,</span><span class="w"> </span><span class="cm">/* selector representa la forma de llamar al componente desde el html de otro */</span>
+<span class="w">    </span><span class="nx">templateUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./component.component.html&#39;</span><span class="p">,</span><span class="w"> </span><span class="cm">/* templateUrl representa la url donde se ubica la template del componente */</span>
+<span class="w">    </span><span class="nx">styleUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./component.component.css&#39;</span><span class="p">,</span><span class="w"> </span><span class="cm">/* styleUrl representa la url donde se ubica el archivo que define los estilos del componente */</span>
+<span class="p">})</span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="cm">/* Aquí se define el comportamiento del componente */</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="llamar-a-un-componente-desde-otro">LLamar a un componente desde otro</h3>
 <p>Si el proyecto es standalone debemos importar el componente que vamos a usar dentro del componente desde el que lo
 llamaremos:</p>
-<pre><code class="language-typescript">import {Component} from './todo-list-item.component.ts';
+<div class="codehilite"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">Component</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./todo-list-item.component.ts&#39;</span><span class="p">;</span>
 
-@Component({
-    standalone: true,
-    imports: [Component],
-    template: `
-    &lt;ul&gt;
-      &lt;app-component&gt;&lt;/app-component&gt;
-    &lt;/ul&gt;
-  `,
-})
-export class MainComponent {
-}
-</code></pre>
+<span class="kd">@Component</span><span class="p">({</span>
+<span class="w">    </span><span class="nx">standalone</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">Component</span><span class="p">],</span>
+<span class="w">    </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">    &lt;ul&gt;</span>
+<span class="sb">      &lt;app-component&gt;&lt;/app-component&gt;</span>
+<span class="sb">    &lt;/ul&gt;</span>
+<span class="sb">  `</span><span class="p">,</span>
+<span class="p">})</span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">MainComponent</span><span class="w"> </span><span class="p">{</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <p>Si el proyecto es clásico debemos importar el componente en <code>app-module.ts</code></p>
-<pre><code class="language-typescript">import {Component} from './todo-list-item.component.ts';
+<div class="codehilite"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">Component</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./todo-list-item.component.ts&#39;</span><span class="p">;</span>
 
-@NgModule({
-    declarations: [
-        AppComponent,
-        Component
-        /* Debe declararse para poder ser usado en el proyecto y sus componentes */
-    ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
-})
-export class AppModule {
-}
-</code></pre>
+<span class="kd">@NgModule</span><span class="p">({</span>
+<span class="w">    </span><span class="nx">declarations</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="nx">AppComponent</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Component</span>
+<span class="w">        </span><span class="cm">/* Debe declararse para poder ser usado en el proyecto y sus componentes */</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="nx">BrowserModule</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">AppRoutingModule</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nx">providers</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">    </span><span class="nx">bootstrap</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">AppComponent</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">AppModule</span><span class="w"> </span><span class="p">{</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="manipulacion-del-html">Manipulación del html</h3>
 <p>Para mostrar datos en el html usaremos:</p>
-<pre><code class="language-typescript">title = 'this is the title';
-</code></pre>
-<pre><code class="language-html">&lt;h1&gt; {{ title }} &lt;/h1&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nx">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;this is the title&#39;</span><span class="p">;</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span> {{ title }} <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</code></pre></div>
+
 <p>Si queremos usar una variable dentro de una etiqueta html para alterar el estilo:</p>
-<pre><code class="language-typescript">color = 'red';
-</code></pre>
-<pre><code class="language-html">&lt;p [style.color]=&quot;color&quot;&gt;&lt;/p&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nx">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;red&#39;</span><span class="p">;</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span> <span class="err">[</span><span class="na">style</span><span class="err">.</span><span class="na">color</span><span class="err">]=&quot;</span><span class="na">color</span><span class="err">&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+
 <p>Si queremos mostrar un dato en el html y que a su vez si en el html se modifica se actualice nuestra variable en el typescript
 , se utiliza <code>two-way-databiding</code>:</p>
-<pre><code class="language-typescript">name = 'William Shakespeare'
-</code></pre>
-<pre><code class="language-html">&lt;input type=&quot;text&quot; [(ngModel)]=&quot;name&quot;&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;William Shakespeare&#39;</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&quot;</span><span class="na">name</span><span class="err">&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+
 <blockquote>
 <p>Para usar <code>ngModel</code> debemos importar <code>FormsModule</code> y añadirlo a las importaciones del <code>app-module.ts</code></p>
 </blockquote>
 <h4 id="bucles-y-condicionales-dentro-del-html">Bucles y condicionales dentro del html</h4>
 <p>Existen dos formas de hacer bucles y condicionales en el html que explicaremos mediante ejemplos:</p>
 <h5 id="ngif-y-ngfor">ngIf y ngFor</h5>
-<pre><code class="language-typescript">nameList = [{name: 'name1', surname: 'surname1'}, {name: 'name2', surname: 'surname2'}];
-</code></pre>
-<pre><code class="language-html">&lt;ng-container *ngIf=&quot;nameList.length &gt; 0&quot;&gt;
-    &lt;ng-container *ngFor=&quot;let item of nameList; index as i&quot;&gt;
-        &lt;p&gt; {{ i }} - {{ item.name }}&lt;/p&gt;
-    &lt;/ng-container&gt;
-&lt;/ng-container&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nx">nameList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[{</span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;name1&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">surname</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;surname1&#39;</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;name2&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">surname</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;surname2&#39;</span><span class="p">}];</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ng-container</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&quot;nameList.length &gt; 0&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ng-container</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&quot;let item of nameList; index as i&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span> {{ i }} - {{ item.name }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ng-container</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ng-container</span><span class="p">&gt;</span>
+</code></pre></div>
+
 <ul>
 <li>ngIf solo muestra el contenido si la longitud de la lista es mayor que 0</li>
 <li>ngFor: por cada elemento de la lista muestra una etiqueta <p> con el <code>name</code> del objeto sobre el que está iterando. </li>
 <li>La variable <code>index</code> del ngFor representa el número de iteraciones, aunque no es obligatorio usarla es recomendable en muchas ocasiones.</li>
 </ul>
 <h5 id="if-y-for">@if y @for</h5>
-<pre><code class="language-html">@if (nameList.length &lt; 100) {      
-    @for (item of nameList; track item; 
-            let i = $index, first = $first, last = $last, 
-            odd = $odd, even = $even, count = $count) {
-        &lt;p&gt; {{ i }} - {{ item.name }} - {{ first }} - {{ last }} - {{ odd }} - {{ even }} - {{ count }} &lt;/p&gt;
+<div class="codehilite"><pre><span></span><code>@if (nameList.length <span class="p">&lt;</span> <span class="nt">100</span><span class="err">)</span> <span class="err">{</span>      
+    <span class="err">@</span><span class="na">for</span> <span class="err">(</span><span class="na">item</span> <span class="na">of</span> <span class="na">nameList</span><span class="err">;</span> <span class="na">track</span> <span class="na">item</span><span class="err">;</span> 
+            <span class="na">let</span> <span class="na">i </span><span class="o">=</span> <span class="s">$index,</span> <span class="na">first </span><span class="o">=</span> <span class="s">$first,</span> <span class="na">last </span><span class="o">=</span> <span class="s">$last,</span> 
+            <span class="na">odd </span><span class="o">=</span> <span class="s">$odd,</span> <span class="na">even </span><span class="o">=</span> <span class="s">$even,</span> <span class="na">count </span><span class="o">=</span> <span class="s">$count)</span> <span class="err">{</span>
+        <span class="err">&lt;</span><span class="na">p</span><span class="p">&gt;</span> {{ i }} - {{ item.name }} - {{ first }} - {{ last }} - {{ odd }} - {{ even }} - {{ count }} <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
     }  
     @empty {
-        &lt;li&gt;No hay items en la lista&lt;/li&gt;
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>No hay items en la lista<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
     }
 } @else {      
-    &lt;p&gt;Aquí hay demasiada gente&lt;/p&gt;    
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Aquí hay demasiada gente<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>    
 }
-</code></pre>
+</code></pre></div>
+
 <ul>
 <li><code>@if</code>: solo muestra los datos si la lista tiene menos de 100 elementos</li>
 <li><code>@for</code>: muestra un parrafo por cada elemento de la lista sobre la que se itera</li>

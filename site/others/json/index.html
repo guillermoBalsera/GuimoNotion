@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1593,25 +1593,27 @@ ejemplo, entre un servidor y un cliente).</p>
 <p>JSON se compone de dos estructuras principales:</p>
 <p>Objetos: Una colección desordenada de pares clave/valor. Las claves son cadenas (strings) y los valores pueden ser de
    varios tipos (número, cadena, objeto, array, booleano o null).</p>
-<pre><code class="language-json">{
-  &quot;nombre&quot;: &quot;Juan&quot;,
-  &quot;edad&quot;: 30,
-  &quot;casado&quot;: true,
-  &quot;hijos&quot;: [&quot;Ana&quot;, &quot;Pablo&quot;],
-  &quot;direccion&quot;: {
-    &quot;calle&quot;: &quot;Calle Falsa 123&quot;,
-    &quot;ciudad&quot;: &quot;Madrid&quot;
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Juan&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;edad&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;casado&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;hijos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Ana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Pablo&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;direccion&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;calle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Calle Falsa 123&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ciudad&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Madrid&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <p>Arrays: Una lista ordenada de valores, que pueden ser de cualquier tipo (número, cadena, objeto, array, booleano o
    null).</p>
-<pre><code class="language-json">[
-  &quot;manzana&quot;,
-  &quot;plátano&quot;,
-  &quot;naranja&quot;
-]
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">[</span>
+<span class="w">  </span><span class="s2">&quot;manzana&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;plátano&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;naranja&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+
 <h2 id="tipos-de-datos-en-json">Tipos de Datos en JSON</h2>
 <p>JSON admite los siguientes tipos de datos:</p>
 <ul>
@@ -1630,28 +1632,29 @@ ejemplo, entre un servidor y un cliente).</p>
 <li>Los objetos y arrays pueden anidarse: Esto significa que un valor en un objeto puede ser otro objeto o un array, y viceversa.</li>
 </ol>
 <h2 id="ejemplo-de-json">Ejemplo de JSON</h2>
-<pre><code class="language-json">{
-  &quot;nombre&quot;: &quot;María&quot;,
-  &quot;edad&quot;: 25,
-  &quot;esEstudiante&quot;: false,
-  &quot;cursos&quot;: [&quot;Matemáticas&quot;, &quot;Física&quot;, &quot;Química&quot;],
-  &quot;direccion&quot;: {
-    &quot;calle&quot;: &quot;Avenida Siempreviva&quot;,
-    &quot;numero&quot;: 742,
-    &quot;ciudad&quot;: &quot;Springfield&quot;
-  },
-  &quot;amigos&quot;: [
-    {
-      &quot;nombre&quot;: &quot;Luisa&quot;,
-      &quot;edad&quot;: 24
-    },
-    {
-      &quot;nombre&quot;: &quot;Pedro&quot;,
-      &quot;edad&quot;: 27
-    }
-  ]
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;María&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;edad&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;esEstudiante&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;cursos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Matemáticas&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Física&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Química&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;direccion&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;calle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Avenida Siempreviva&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;numero&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">742</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ciudad&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Springfield&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;amigos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Luisa&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;edad&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pedro&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;edad&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">27</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h2 id="ventajas-de-json">Ventajas de JSON</h2>
 <ul>
 <li>Ligero: JSON es menos pesado en comparación con otros formatos de intercambio de datos como XML.</li>

@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1538,39 +1538,42 @@
 
 <h1 id="escritura-de-ficheros">Escritura de ficheros</h1>
 <h2 id="escribir-en-un-archivo-de-texto">Escribir en un archivo de texto</h2>
-<pre><code class="language-python">with open(&quot;archivo.txt&quot;, &quot;w&quot;) as archivo:
-    archivo.write(&quot;Hola, mundo!\n&quot;)
-    archivo.write(&quot;Este es un archivo de texto generado por python.\n&quot;)
-    archivo.write(&quot;Adiós, mundo!&quot;)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;archivo.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Hola, mundo!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Este es un archivo de texto generado por python.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Adiós, mundo!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="agregar-contenido-a-un-archivo-existente">Agregar contenido a un archivo existente</h2>
-<pre><code class="language-python">with open(&quot;archivo.txt&quot;, &quot;a&quot;) as archivo:
-    archivo.write(&quot;\n¡Esto se añade al final del archivo!&quot;)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;archivo.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">¡Esto se añade al final del archivo!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="escribir-en-un-archivo-csv">Escribir en un archivo CSV</h2>
-<pre><code class="language-python">import csv
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">csv</span>
 
-datos = [
-    [&quot;Nombre&quot;, &quot;Edad&quot;, &quot;Ciudad&quot;],
-    [&quot;Juan&quot;, 30, &quot;Ciudad de México&quot;],
-    [&quot;María&quot;, 25, &quot;Guadalajara&quot;],
-    [&quot;Pedro&quot;, 40, &quot;Monterrey&quot;]
-]
+<span class="n">datos</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">&quot;Nombre&quot;</span><span class="p">,</span> <span class="s2">&quot;Edad&quot;</span><span class="p">,</span> <span class="s2">&quot;Ciudad&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Juan&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;Ciudad de México&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;María&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;Guadalajara&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Pedro&quot;</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="s2">&quot;Monterrey&quot;</span><span class="p">]</span>
+<span class="p">]</span>
 
-with open(&quot;datos.csv&quot;, &quot;w&quot;, newline=&quot;&quot;) as archivo_csv:
-    escritor_csv = csv.writer(archivo_csv)
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;datos.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo_csv</span><span class="p">:</span>
+    <span class="n">escritor_csv</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">archivo_csv</span><span class="p">)</span>
 
-    for fila in datos:
-        escritor_csv.writerow(fila)
-</code></pre>
+    <span class="k">for</span> <span class="n">fila</span> <span class="ow">in</span> <span class="n">datos</span><span class="p">:</span>
+        <span class="n">escritor_csv</span><span class="o">.</span><span class="n">writerow</span><span class="p">(</span><span class="n">fila</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="pickle">Pickle</h2>
-<pre><code class="language-python">import pickle
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">pickle</span>
 
-personas = [juan, maria, pedro]
+<span class="n">personas</span> <span class="o">=</span> <span class="p">[</span><span class="n">juan</span><span class="p">,</span> <span class="n">maria</span><span class="p">,</span> <span class="n">pedro</span><span class="p">]</span>
 
-with open(&quot;objetos.pkl&quot;, &quot;wb&quot;) as archivo:
-    pickle.dump(personas, archivo)
-</code></pre>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;objetos.pkl&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">personas</span><span class="p">,</span> <span class="n">archivo</span><span class="p">)</span>
+</code></pre></div>
 
 
 

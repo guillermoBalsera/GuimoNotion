@@ -126,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2Z"/></svg>
       </label>
     
@@ -136,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -1673,37 +1673,45 @@
 
 <h1 id="funcionalidades-basicas">Funcionalidades básicas</h1>
 <h2 id="print">Print</h2>
-<pre><code class="language-python">print(&quot;Hola mundo&quot;)
-</code></pre>
-<pre><code class="language-python">print(&quot;Primera línea\nSegunda línea\nTercera línea&quot;)
-</code></pre>
-<pre><code class="language-python">print(&quot;Primera línea&quot;, end=&quot; &quot;)
-print(&quot;Segunda línea&quot;, end=&quot; &quot;)
-print(&quot;Tercera línea&quot;)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hola mundo&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Primera línea</span><span class="se">\n</span><span class="s2">Segunda línea</span><span class="se">\n</span><span class="s2">Tercera línea&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Primera línea&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Segunda línea&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tercera línea&quot;</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="input">Input</h2>
-<pre><code class="language-python">nombre = input(&quot;¿Cuál es tu nombre? &quot;)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu nombre? &quot;</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="longitud">Longitud</h2>
-<pre><code class="language-python">mi_lista = [1, 2, 3, 4, 5]
-print(len(mi_lista))  # Output: 5
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">mi_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mi_lista</span><span class="p">))</span>  <span class="c1"># Output: 5</span>
+</code></pre></div>
+
 <h2 id="type">Type</h2>
-<pre><code class="language-python">print(type(123))  # Output: &lt;class 'int'&gt;
-print(type(3.14))  # Output: &lt;class 'float'&gt;
-print(type(&quot;Hola&quot;))  # Output: &lt;class 'str'&gt;
-print(type([1, 2, 3]))  # Output: &lt;class 'list'&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">123</span><span class="p">))</span>  <span class="c1"># Output: &lt;class &#39;int&#39;&gt;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">3.14</span><span class="p">))</span>  <span class="c1"># Output: &lt;class &#39;float&#39;&gt;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;Hola&quot;</span><span class="p">))</span>  <span class="c1"># Output: &lt;class &#39;str&#39;&gt;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>  <span class="c1"># Output: &lt;class &#39;list&#39;&gt;</span>
+</code></pre></div>
+
 <h2 id="conversion-de-tipos">Conversión de tipos</h2>
-<pre><code class="language-python">print(int(&quot;123&quot;))  # Output: 123
-print(float(&quot;3.14&quot;))  # Output: 3.14
-print(str(123))  # Output: '123'
-print(list(&quot;Hola&quot;))  # Output: ['H', 'o', 'l', 'a']
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s2">&quot;123&quot;</span><span class="p">))</span>  <span class="c1"># Output: 123</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="s2">&quot;3.14&quot;</span><span class="p">))</span>  <span class="c1"># Output: 3.14</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">123</span><span class="p">))</span>  <span class="c1"># Output: &#39;123&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="s2">&quot;Hola&quot;</span><span class="p">))</span>  <span class="c1"># Output: [&#39;H&#39;, &#39;o&#39;, &#39;l&#39;, &#39;a&#39;]</span>
+</code></pre></div>
+
 <h2 id="range">Range</h2>
 <p>La función range() se utiliza para generar una secuencia de números. Comúnmente se usa en bucles for.</p>
-<pre><code class="language-python">range(inicio, fin, paso)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nb">range</span><span class="p">(</span><span class="n">inicio</span><span class="p">,</span> <span class="n">fin</span><span class="p">,</span> <span class="n">paso</span><span class="p">)</span>
+</code></pre></div>
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 </div>
@@ -1711,48 +1719,53 @@ print(list(&quot;Hola&quot;))  # Output: ['H', 'o', 'l', 'a']
 <code>fin</code>: El valor final de la secuencia (no se incluye en la secuencia).<br />
 <code>paso</code>: El incremento entre los números (por defecto es 1).</p>
 <h2 id="max-y-min">Max y Min</h2>
-<pre><code class="language-python">mi_lista = [1, 2, 3, 4, 5]
-print(max(mi_lista))  # Output: 5
-print(min(mi_lista))  # Output: 1
-</code></pre>
-<pre><code class="language-python">cadena = &quot;python&quot;
-print(max(cadena))  # Output: 'y'
+<div class="codehilite"><pre><span></span><code><span class="n">mi_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">mi_lista</span><span class="p">))</span>  <span class="c1"># Output: 5</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">mi_lista</span><span class="p">))</span>  <span class="c1"># Output: 1</span>
+</code></pre></div>
 
-cadena = &quot;python&quot;
-print(min(cadena))  # Output: 'P'
-</code></pre>
-<pre><code class="language-python">lista = [&quot;manzana&quot;, &quot;banana&quot;, &quot;cereza&quot;, &quot;uva&quot;]
-print(max(lista))  # Output: 'uva'
+<div class="codehilite"><pre><span></span><code><span class="n">cadena</span> <span class="o">=</span> <span class="s2">&quot;python&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">cadena</span><span class="p">))</span>  <span class="c1"># Output: &#39;y&#39;</span>
 
-lista = [&quot;manzana&quot;, &quot;banana&quot;, &quot;cereza&quot;, &quot;uva&quot;]
-print(min(lista))  # Output: 'banana'
-</code></pre>
+<span class="n">cadena</span> <span class="o">=</span> <span class="s2">&quot;python&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">cadena</span><span class="p">))</span>  <span class="c1"># Output: &#39;P&#39;</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;manzana&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cereza&quot;</span><span class="p">,</span> <span class="s2">&quot;uva&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>  <span class="c1"># Output: &#39;uva&#39;</span>
+
+<span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;manzana&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cereza&quot;</span><span class="p">,</span> <span class="s2">&quot;uva&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>  <span class="c1"># Output: &#39;banana&#39;</span>
+</code></pre></div>
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 </div>
 <p>Las comparaciones de cadenas de texto se hacen carácter por carácter en el orden de sus valores ASCII</p>
 <h2 id="sorted">Sorted</h2>
-<pre><code class="language-python">mi_lista = [5, 2, 3, 1, 4]
-print(sorted(mi_lista))  # Output: [1, 2, 3, 4, 5]
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">mi_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">mi_lista</span><span class="p">))</span>  <span class="c1"># Output: [1, 2, 3, 4, 5]</span>
+</code></pre></div>
+
 <h2 id="zip">Zip</h2>
 <p>La función zip() combina varios iterables, emparejando elementos en tuplas.</p>
-<pre><code class="language-python">nombres = [&quot;Juan&quot;, &quot;Maria&quot;, &quot;Pedro&quot;]
-edades = [30, 25, 40]
-combinados = zip(nombres, edades)
-print(list(combinados))  # Output: [('Juan', 30), ('Maria', 25), ('Pedro', 40)]
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">nombres</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Juan&quot;</span><span class="p">,</span> <span class="s2">&quot;Maria&quot;</span><span class="p">,</span> <span class="s2">&quot;Pedro&quot;</span><span class="p">]</span>
+<span class="n">edades</span> <span class="o">=</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+<span class="n">combinados</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">nombres</span><span class="p">,</span> <span class="n">edades</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">combinados</span><span class="p">))</span>  <span class="c1"># Output: [(&#39;Juan&#39;, 30), (&#39;Maria&#39;, 25), (&#39;Pedro&#39;, 40)]</span>
+</code></pre></div>
+
 <h2 id="argumentos-de-entrada">Argumentos de entrada</h2>
-<pre><code class="language-python">import argparse
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">argparse</span>
 
-parser = argparse.ArgumentParser(description=&quot;Este script demuestra el uso de argparse.&quot;)
+<span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Este script demuestra el uso de argparse.&quot;</span><span class="p">)</span>
 
-parser.add_argument('nombre', type=str, help='Tu nombre', default=&quot;Pepito Grillo&quot;)
-parser.add_argument('-e, --edad', type=int, help='Tu edad', required=False)
-args = parser.parse_args()
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;nombre&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Tu nombre&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;Pepito Grillo&quot;</span><span class="p">)</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-e, --edad&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Tu edad&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
 
-print(args.edad, args.nombre)
-</code></pre>
+<span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">edad</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
+</code></pre></div>
 
 
 

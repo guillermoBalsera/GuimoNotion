@@ -25,19 +25,20 @@ theme:
       accent: cyan
       toggle:
         icon: material/brightness-2
-        name: Switch to dark mode
+        name: Cambiar a modo oscuro
     - scheme: slate
       primary: teal
       accent: teal
       toggle:
         icon: material/brightness-7
-        name: Switch to light mode
+        name: Cambiar a modo claro
 
 extra_css:
   - stylesheets/style.css
 
 markdown_extensions:
   - admonition
+  - codehilite
 
 plugins:
   - tags
