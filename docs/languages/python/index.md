@@ -110,3 +110,17 @@ edades = [30, 25, 40]
 combinados = zip(nombres, edades)
 print(list(combinados))  # Output: [('Juan', 30), ('Maria', 25), ('Pedro', 40)]
 ```
+
+## Argumentos de entrada
+
+```python
+import argparse
+
+parser = argparse.ArgumentParser(description="Este script demuestra el uso de argparse.")
+
+parser.add_argument('nombre', type=str, help='Tu nombre', default="Pepito Grillo")
+parser.add_argument('-e, --edad', type=int, help='Tu edad', required=False)
+args = parser.parse_args()
+
+print(args.edad, args.nombre)
+```

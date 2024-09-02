@@ -13,25 +13,25 @@
       
       
       
-        <link rel="prev" href="../bashScript/">
+        <link rel="prev" href="../sqlite/">
       
       
-        <link rel="next" href="variables/array/">
+        <link rel="next" href="../mysql/">
       
       
-      <link rel="icon" href="../../img/guimonotion.svg">
+      <link rel="icon" href="../../../../img/guimonotion.svg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
     
     
       
-        <title>Introducción - GuimoNotion</title>
+        <title>PostgreSQL - GuimoNotion</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.3cba04c6.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/style.css">
+      <link rel="stylesheet" href="../../../../stylesheets/style.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#funcionalidades-basicas" class="md-skip">
+        <a href="#postgresql" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="../.." title="GuimoNotion" class="md-header__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
+    <a href="../../../.." title="GuimoNotion" class="md-header__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../img/guimonotion.svg" alt="logo">
+  <img src="../../../../img/guimonotion.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introducción
+              PostgreSQL
             
           </span>
         </div>
@@ -165,7 +165,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
     
@@ -186,7 +186,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../bashScript/" class="md-tabs__link">
+        <a href="../../../bashScript/" class="md-tabs__link">
           
   
   Lenguajes
@@ -210,7 +210,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../frameworks/frontend/angular/" class="md-tabs__link">
+        <a href="../../../../frameworks/frontend/angular/" class="md-tabs__link">
           
   
   Frontend
@@ -231,7 +231,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../frameworks/backend/php-laravel/" class="md-tabs__link">
+        <a href="../../../../frameworks/backend/php-laravel/" class="md-tabs__link">
           
   
   BackEnd
@@ -249,7 +249,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../others/markdown/" class="md-tabs__link">
+        <a href="../../../../others/markdown/" class="md-tabs__link">
           
   
   Otros
@@ -288,9 +288,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="GuimoNotion" class="md-nav__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
+    <a href="../../../.." title="GuimoNotion" class="md-nav__button md-logo" aria-label="GuimoNotion" data-md-component="logo">
       
-  <img src="../../img/guimonotion.svg" alt="logo">
+  <img src="../../../../img/guimonotion.svg" alt="logo">
 
     </a>
     GuimoNotion
@@ -305,7 +305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -368,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bashScript/" class="md-nav__link">
+      <a href="../../../bashScript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,30 +426,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Introducción
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -458,116 +438,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#print" class="md-nav__link">
-    <span class="md-ellipsis">
-      Print
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    <span class="md-ellipsis">
-      Input
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#longitud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Longitud
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#type" class="md-nav__link">
-    <span class="md-ellipsis">
-      Type
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conversion-de-tipos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conversión de tipos
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#range" class="md-nav__link">
-    <span class="md-ellipsis">
-      Range
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#max-y-min" class="md-nav__link">
-    <span class="md-ellipsis">
-      Max y Min
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sorted" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sorted
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Zip
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#argumentos-de-entrada" class="md-nav__link">
-    <span class="md-ellipsis">
-      Argumentos de entrada
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -618,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variables/array/" class="md-nav__link">
+      <a href="../../variables/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -639,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variables/tuple/" class="md-nav__link">
+      <a href="../../variables/tuple/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variables/dictionary/" class="md-nav__link">
+      <a href="../../variables/dictionary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -681,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variables/set/" class="md-nav__link">
+      <a href="../../variables/set/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -710,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="control_structures/" class="md-nav__link">
+      <a href="../../control_structures/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -731,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="functions/" class="md-nav__link">
+      <a href="../../functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -752,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objects/" class="md-nav__link">
+      <a href="../../objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -811,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="files_directories/" class="md-nav__link">
+      <a href="../../files_directories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -832,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="files_directories/file_read/" class="md-nav__link">
+      <a href="../../files_directories/file_read/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -853,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="files_directories/file_write/" class="md-nav__link">
+      <a href="../../files_directories/file_write/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -879,6 +749,8 @@
                 
   
   
+    
+  
   
   
     
@@ -888,11 +760,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_7" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2_7" id="__nav_2_2_7_label" tabindex="0">
@@ -906,7 +778,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_7">
             <span class="md-nav__icon md-icon"></span>
             Bases de datos
@@ -920,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="databases/sqlite/" class="md-nav__link">
+      <a href="../sqlite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -938,10 +810,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="databases/postgresql/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PostgreSQL
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -950,6 +842,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conectar-a-una-base-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conectar a una base de datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-un-cursor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear un cursor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-una-tabla" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear una tabla
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insertar-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Insertar datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guardar-los-cambios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guardar los cambios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obtener-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obtener datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cerrar-la-conexion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cerrar la conexión
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#excepciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excepciones
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -962,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="databases/mysql/" class="md-nav__link">
+      <a href="../mysql/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -983,7 +967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="databases/mongodb/" class="md-nav__link">
+      <a href="../mongodb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1103,7 +1087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frameworks/frontend/angular/" class="md-nav__link">
+      <a href="../../../../frameworks/frontend/angular/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1124,7 +1108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frameworks/frontend/angular/installation/" class="md-nav__link">
+      <a href="../../../../frameworks/frontend/angular/installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1145,7 +1129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frameworks/frontend/angular/components/" class="md-nav__link">
+      <a href="../../../../frameworks/frontend/angular/components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1166,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frameworks/frontend/angular/routes/" class="md-nav__link">
+      <a href="../../../../frameworks/frontend/angular/routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1187,7 +1171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frameworks/frontend/angular/additional_resources/" class="md-nav__link">
+      <a href="../../../../frameworks/frontend/angular/additional_resources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1216,7 +1200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frameworks/frontend/mkdocs/" class="md-nav__link">
+      <a href="../../../../frameworks/frontend/mkdocs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1282,7 +1266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frameworks/backend/php-laravel/" class="md-nav__link">
+      <a href="../../../../frameworks/backend/php-laravel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1348,7 +1332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../others/markdown/" class="md-nav__link">
+      <a href="../../../../others/markdown/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1369,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../others/node/" class="md-nav__link">
+      <a href="../../../../others/node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1390,7 +1374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../others/json/" class="md-nav__link">
+      <a href="../../../../others/json/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1411,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../others/xml/" class="md-nav__link">
+      <a href="../../../../others/xml/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1432,7 +1416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../others/yaml/" class="md-nav__link">
+      <a href="../../../../others/yaml/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1480,90 +1464,72 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#print" class="md-nav__link">
+  <a href="#conectar-a-una-base-de-datos" class="md-nav__link">
     <span class="md-ellipsis">
-      Print
+      Conectar a una base de datos
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
+  <a href="#crear-un-cursor" class="md-nav__link">
     <span class="md-ellipsis">
-      Input
+      Crear un cursor
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#longitud" class="md-nav__link">
+  <a href="#crear-una-tabla" class="md-nav__link">
     <span class="md-ellipsis">
-      Longitud
+      Crear una tabla
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#type" class="md-nav__link">
+  <a href="#insertar-datos" class="md-nav__link">
     <span class="md-ellipsis">
-      Type
+      Insertar datos
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conversion-de-tipos" class="md-nav__link">
+  <a href="#guardar-los-cambios" class="md-nav__link">
     <span class="md-ellipsis">
-      Conversión de tipos
+      Guardar los cambios
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#range" class="md-nav__link">
+  <a href="#obtener-datos" class="md-nav__link">
     <span class="md-ellipsis">
-      Range
+      Obtener datos
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#max-y-min" class="md-nav__link">
+  <a href="#cerrar-la-conexion" class="md-nav__link">
     <span class="md-ellipsis">
-      Max y Min
+      Cerrar la conexión
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sorted" class="md-nav__link">
+  <a href="#excepciones" class="md-nav__link">
     <span class="md-ellipsis">
-      Sorted
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Zip
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#argumentos-de-entrada" class="md-nav__link">
-    <span class="md-ellipsis">
-      Argumentos de entrada
+      Excepciones
     </span>
   </a>
   
@@ -1582,106 +1548,53 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
-<nav class="md-tags" >
-  
-    
-    
-    
-      <span class="md-tag">In development</span>
-    
-  
-    
-    
-    
-      <span class="md-tag">Pending review</span>
-    
-  
-</nav>
 
 
-
-<h1 id="funcionalidades-basicas">Funcionalidades básicas</h1>
-<h2 id="print">Print</h2>
-<pre><code class="language-python">print(&quot;Hola mundo&quot;)
-</code></pre>
-<pre><code class="language-python">print(&quot;Primera línea\nSegunda línea\nTercera línea&quot;)
-</code></pre>
-<pre><code class="language-python">print(&quot;Primera línea&quot;, end=&quot; &quot;)
-print(&quot;Segunda línea&quot;, end=&quot; &quot;)
-print(&quot;Tercera línea&quot;)
-</code></pre>
-<h2 id="input">Input</h2>
-<pre><code class="language-python">nombre = input(&quot;¿Cuál es tu nombre? &quot;)
-</code></pre>
-<h2 id="longitud">Longitud</h2>
-<pre><code class="language-python">mi_lista = [1, 2, 3, 4, 5]
-print(len(mi_lista))  # Output: 5
-</code></pre>
-<h2 id="type">Type</h2>
-<pre><code class="language-python">print(type(123))          # Output: &lt;class 'int'&gt;
-print(type(3.14))         # Output: &lt;class 'float'&gt;
-print(type(&quot;Hola&quot;))       # Output: &lt;class 'str'&gt;
-print(type([1, 2, 3]))    # Output: &lt;class 'list'&gt;
-</code></pre>
-<h2 id="conversion-de-tipos">Conversión de tipos</h2>
-<pre><code class="language-python">print(int(&quot;123&quot;))       # Output: 123
-print(float(&quot;3.14&quot;))    # Output: 3.14
-print(str(123))         # Output: '123'
-print(list(&quot;Hola&quot;))     # Output: ['H', 'o', 'l', 'a']
-</code></pre>
-<h2 id="range">Range</h2>
-<p>La función range() se utiliza para generar una secuencia de números. Comúnmente se usa en bucles for.</p>
-<pre><code class="language-python">range(inicio, fin, paso)
-</code></pre>
+<h1 id="postgresql">PostgreSQL</h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><code>inicio</code>: El valor inicial de la secuencia (por defecto es 0).<br />
-<code>fin</code>: El valor final de la secuencia (no se incluye en la secuencia).<br />
-<code>paso</code>: El incremento entre los números (por defecto es 1).  </p>
+<p>Hay que instalar previamente <em>psycopg2</em></p>
 </div>
-<h2 id="max-y-min">Max y Min</h2>
-<pre><code class="language-python">mi_lista = [1, 2, 3, 4, 5]
-print(max(mi_lista))  # Output: 5
-print(min(mi_lista))  # Output: 1
+<pre><code class="language-sh">pip install psycopg2
 </code></pre>
-<pre><code class="language-python">cadena = &quot;python&quot;
-print(max(cadena))  # Output: 'y'
-
-cadena = &quot;python&quot;
-print(min(cadena))  # Output: 'P'
+<pre><code class="language-python">import psycopg2
 </code></pre>
-<pre><code class="language-python">lista = [&quot;manzana&quot;, &quot;banana&quot;, &quot;cereza&quot;, &quot;uva&quot;]
-print(max(lista))  # Output: 'uva'
-
-lista = [&quot;manzana&quot;, &quot;banana&quot;, &quot;cereza&quot;, &quot;uva&quot;]
-print(min(lista))  # Output: 'banana'
+<h2 id="conectar-a-una-base-de-datos">Conectar a una base de datos</h2>
+<pre><code class="language-python">conexion = psycopg2.connect(
+    host=&quot;localhost&quot;,
+    database=&quot;nombre_de_la_base_de_datos&quot;,
+    user=&quot;nombre_de_usuario&quot;,
+    password=&quot;contraseña&quot;
+)
 </code></pre>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Las comparaciones de cadenas de texto se hacen carácter por carácter en el orden de sus valores ASCII</p>
-</div>
-<h2 id="sorted">Sorted</h2>
-<pre><code class="language-python">mi_lista = [5, 2, 3, 1, 4]
-print(sorted(mi_lista))  # Output: [1, 2, 3, 4, 5]
+<h2 id="crear-un-cursor">Crear un cursor</h2>
+<pre><code class="language-python">cursor = conexion.cursor()
 </code></pre>
-<h2 id="zip">Zip</h2>
-<p>La función zip() combina varios iterables, emparejando elementos en tuplas.</p>
-<pre><code class="language-python">nombres = [&quot;Juan&quot;, &quot;Maria&quot;, &quot;Pedro&quot;]
-edades = [30, 25, 40]
-combinados = zip(nombres, edades)
-print(list(combinados))  # Output: [('Juan', 30), ('Maria', 25), ('Pedro', 40)]
+<h2 id="crear-una-tabla">Crear una tabla</h2>
+<pre><code class="language-python">cursor.execute(&quot;&quot;&quot;
+        CREATE TABLE IF NOT EXISTS usuarios (
+            id SERIAL PRIMARY KEY,
+            nombre TEXT,
+            edad INTEGER
+        )
+    &quot;&quot;&quot;)
 </code></pre>
-<h2 id="argumentos-de-entrada">Argumentos de entrada</h2>
-<pre><code class="language-python">import argparse
+<h2 id="insertar-datos">Insertar datos</h2>
+<pre><code class="language-python">cursor.execute(&quot;INSERT INTO usuarios (nombre, edad) VALUES (%s, %s)&quot;, (&quot;Juan&quot;, 30))
+</code></pre>
+<h2 id="guardar-los-cambios">Guardar los cambios</h2>
+<pre><code class="language-python">conexion.commit()
+</code></pre>
+<h2 id="obtener-datos">Obtener datos</h2>
+<pre><code class="language-python">cursor.execute(&quot;SELECT * FROM usuarios&quot;)
 
-parser = argparse.ArgumentParser(description=&quot;Este script demuestra el uso de argparse.&quot;)
-
-parser.add_argument('nombre', type=str, help='Tu nombre', default=&quot;Pepito Grillo&quot;)
-parser.add_argument('-e, --edad', type=int, help='Tu edad', required=False)
-args = parser.parse_args()
-
-print(args.edad, args.nombre)
+filas = cursor.fetchall()
+</code></pre>
+<h2 id="cerrar-la-conexion">Cerrar la conexión</h2>
+<pre><code class="language-python">conexion.close()
+</code></pre>
+<h2 id="excepciones">Excepciones</h2>
+<pre><code class="language-python">Exception, psycopg2.Error
 </code></pre>
 
 
@@ -1689,9 +1602,6 @@ print(args.edad, args.nombre)
 
 
 
-
-  
-  
 
 
 
@@ -1738,10 +1648,10 @@ print(args.edad, args.nombre)
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.471ce7a9.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.471ce7a9.min.js"></script>
       
     
   </body>
