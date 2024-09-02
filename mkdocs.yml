@@ -33,38 +33,55 @@ theme:
         icon: material/brightness-7
         name: Switch to light mode
 
-
-nav:
-  - Inicio: index.md
-  - Lenguajes:
-      - Bash Script: languages/bashScript/index.md
-#      - Kotlin: languages/kotlin/index.md
-      - Python: languages/python/index.md
-  - Frontend:
-      - Angular:
-        - Introducción: frameworks/frontend/angular/index.md
-        - Instalación: frameworks/frontend/angular/installation/index.md
-        - Componentes: frameworks/frontend/angular/components/index.md
-        - Rutas: frameworks/frontend/angular/routes/index.md
-        - Recursos adicionales: frameworks/frontend/angular/additional_resources/index.md
-#      - Electron: frameworks/frontend/electron/index.md
-#      - Ionic: frameworks/frontend/ionic/index.md
-      - MkDocs: frameworks/frontend/mkdocs/index.md
-  - BackEnd:
-      - PHP-Laravel: frameworks/backend/php-laravel/index.md
-#      - Spring-Boot: frameworks/backend/spring-boot/index.md
-  - Otros:
-      - Markdown: others/markdown/index.md
-      - Node: others/node/index.md
-      - JSON: others/json/index.md
-      - XML: others/xml/index.md
-      - YAML: others/yaml/index.md
-
-
 extra_css:
   - stylesheets/style.css
 
 markdown_extensions:
   - admonition
 
+plugins:
+  - tags
 
+nav:
+  - Inicio: index.md
+  - Lenguajes:
+      - Bash Script: languages/bashScript/index.md
+      #      - Kotlin: languages/kotlin/index.md
+      - Python:
+          - Introducción: languages/python/index.md
+          - Variables:
+              - Listas o Arrays: languages/python/variables/array/index.md
+              - Tuplas o Tuples: languages/python/variables/tuple/index.md
+              - Diccionarios o Dictionaries: languages/python/variables/dictionary/index.md
+              - Conjuntos o Sets: languages/python/variables/set/index.md
+          - Estructuras de control: languages/python/control_structures/index.md
+          - Funciones: languages/python/functions/index.md
+          - Objectos: languages/python/objects/index.md
+          - Ficheros:
+              - Manejo de directorios: languages/python/files_directories/index.md
+              - Lectura de ficheros: languages/python/files_directories/file_read/index.md
+              - Escritura de ficheros: languages/python/files_directories/file_write/index.md
+          - Bases de datos:
+              - SQLite: languages/python/databases/sqlite/index.md
+              - PostgreSQL: languages/python/databases/postgresql/index.md
+              - MySQL: languages/python/databases/mysql/index.md
+              - MongoDB: languages/python/databases/mongodb/index.md
+  - Frontend:
+      - Angular:
+          - Introducción: frameworks/frontend/angular/index.md
+          - Instalación: frameworks/frontend/angular/installation/index.md
+          - Componentes: frameworks/frontend/angular/components/index.md
+          - Rutas: frameworks/frontend/angular/routes/index.md
+          - Recursos adicionales: frameworks/frontend/angular/additional_resources/index.md
+      #      - Electron: frameworks/frontend/electron/index.md
+      #      - Ionic: frameworks/frontend/ionic/index.md
+      - MkDocs: frameworks/frontend/mkdocs/index.md
+  - BackEnd:
+      - PHP-Laravel: frameworks/backend/php-laravel/index.md
+  #      - Spring-Boot: frameworks/backend/spring-boot/index.md
+  - Otros:
+      - Markdown: others/markdown/index.md
+      - Node: others/node/index.md
+      - JSON: others/json/index.md
+      - XML: others/xml/index.md
+      - YAML: others/yaml/index.md
