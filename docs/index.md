@@ -20,7 +20,7 @@
 | [Angular][angular]                    | TypeScript    | Desarrollo de aplicaciones web dinámicas y complejas                                |      X       |     25-08-2024      |
 | Electron                              | TypeScript    | Desarrollo de aplicaciones de escritorio multiplataforma utilizando tecnologías web |              |                     |
 | Ionic                                 | TypeScript    | Desarrollo de aplicaciones móviles híbridas utilizando tecnologías web              |              |                     |
-| [MkDocs][mkdocs]                      | Python        | Generación de sitios web de documentación estática a partir de Markdown             |      X       |     20-08-2024      |
+| [MkDocs][mkdocs]                      | Python        | Generación de sitios web de documentación estática a partir de Markdown             |      X       |     02-09-2024      |
 | React                                 | JavaScript    | Desarrollo de interfaces de usuario para aplicaciones web de una sola página (SPA)  |              |                     |
 | WPF (Windows Presentation Foundation) | C#            | Desarrollo de aplicaciones de escritorio para Windows con interfaces ricas          |              |                     |
 
