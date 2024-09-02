@@ -47,7 +47,7 @@ nav:
   - Inicio: index.md
   - Lenguajes:
       - Bash Script: languages/bashScript/index.md
-#      - Kotlin: languages/kotlin/index.md
+      - Kotlin: languages/kotlin/index.md
       - Python:
           - Introducción: languages/python/index.md
           - Variables:
