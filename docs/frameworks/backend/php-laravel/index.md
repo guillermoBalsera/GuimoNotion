@@ -26,16 +26,16 @@ composer global update laravel/installer
 laravel -v
 ```
 
-### Intalar Breeze
-
-```
-composer require laravel/breeze --dev
-```
-
 ### Crear el proyecto
 
 ```
 composer create-project laravel/laravel APi_12
+```
+
+### Intalar Breeze
+
+```
+composer require laravel/breeze --dev
 ```
 
 Elegir la opcion `0` o `blame`
@@ -63,7 +63,7 @@ npm run dev
 (Se deben crear en el orden en que se desea que se ejecuten)
 
 ```
-php artisan:makemigration create_nombre_table
+php artisan make:migration create_nombre_table
 ```
 
 ### Configurar las migraciones
