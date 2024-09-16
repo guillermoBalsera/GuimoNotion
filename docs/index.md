@@ -2,6 +2,7 @@
 
 ??? abstract "Últimas modificaciones"
 
+    - 16/09/2024 - Organizar `Laravel` en subcarpetas 
     - 13/09/2024 - Arreglar error en `Laravel` 
     - 02/09/2024 - Añadir información de las últimas modificaciones a la página de inicio 
     - 02/09/2024 - Añadir guía de `Bash Scripting`
@@ -11,7 +12,6 @@
     - 02/09/2024 - Arreglar error
     - 02/09/2024 - Arreglar error
     - 02/09/2024 - Añadir guía de `Kotlin`
-    - 02/09/2024 - Eliminar `tags` de la página de inicio
 
 ## Lenguajes de programación
 
@@ -44,7 +44,7 @@
 | ASP.NET Core           | C#            | Desarrollo de aplicaciones web y servicios API, aplicaciones empresariales   |              |                     |
 | Express.js             | JavaScript    | Desarrollo del lado del servidor, API REST, aplicaciones de back-end ligeras |              |                     |
 | FastAPI                | Python        | Desarrollo de API REST, aplicaciones de back-end de alto rendimiento         |              |                     |
-| [PHP Laravel][laravel] | PHP           | Desarrollo web de back-end, aplicaciones CRUD, API REST                      |      X       |     02/09/2024      |
+| [PHP Laravel][laravel] | PHP           | Desarrollo web de back-end, aplicaciones CRUD, API REST                      |      X       |     16/09/2024      |
 | Spring Boot            | Java          | Desarrollo de aplicaciones empresariales, microservicios                     |              |                     |
 
 ## Otros

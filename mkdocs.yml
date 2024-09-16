@@ -88,7 +88,15 @@ nav:
 #      - React: frameworks/frontend/react/index.md
       - MkDocs: frameworks/frontend/mkdocs/index.md
   - BackEnd:
-      - PHP-Laravel: frameworks/backend/php-laravel/index.md
+      - PHP-Laravel:
+          - Introducción: frameworks/backend/php-laravel/index.md
+          - Modelo: frameworks/backend/php-laravel/model/index.md
+          - Seeders: frameworks/backend/php-laravel/seeders/index.md
+          - Factories: frameworks/backend/php-laravel/factories/index.md
+          - Migraciones: frameworks/backend/php-laravel/migrations/index.md
+          - Resources: frameworks/backend/php-laravel/resources/index.md
+          - Collections: frameworks/backend/php-laravel/collections/index.md
+          - Controllers: frameworks/backend/php-laravel/controllers/index.md
 #      - Spring-Boot: frameworks/backend/spring-boot/index.md
   - Otros:
       - Markdown: others/markdown/index.md
