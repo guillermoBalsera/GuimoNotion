@@ -96,7 +96,8 @@ nav:
           - Migraciones: frameworks/backend/php-laravel/migrations/index.md
           - Resources: frameworks/backend/php-laravel/resources/index.md
           - Collections: frameworks/backend/php-laravel/collections/index.md
-          - Controllers: frameworks/backend/php-laravel/controllers/index.md
+          - Controllers: frameworks/backend/php-laravel/controllersView/index.md
+          - Controllers API REST: frameworks/backend/php-laravel/controllersAPI/index.md
 #      - Spring-Boot: frameworks/backend/spring-boot/index.md
   - Otros:
       - Markdown: others/markdown/index.md
