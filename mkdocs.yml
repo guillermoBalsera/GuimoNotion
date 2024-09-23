@@ -72,6 +72,9 @@ nav:
               - PostgreSQL: languages/python/databases/postgresql/index.md
               - MySQL: languages/python/databases/mysql/index.md
               - MongoDB: languages/python/databases/mongodb/index.md
+      - Java:
+          - Introducción: languages/java/index.md
+          - Estructuras de control: languages/java/control_structures/index.md
   - Frontend:
       - Angular:
           - Introducción: frameworks/frontend/angular/index.md

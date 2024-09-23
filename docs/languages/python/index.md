@@ -2,11 +2,10 @@
 tags:
   - In development
   - Pending review
-  - Interpreted
-  - 02/09/2024
+  - 23/09/2024
 ---
 
-# Funcionalidades básicas
+# Introducción
 
 ## Print
 

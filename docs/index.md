@@ -2,6 +2,8 @@
 
 ??? abstract "Últimas modificaciones"
 
+    - 23/09/2024 - Añadir guía de `Java`
+    - 23/09/2024 - Ajuste en los tags de la guía de `Python`
     - 16/09/2024 - Organizar `Laravel` en subcarpetas 
     - 13/09/2024 - Arreglar error en `Laravel` 
     - 02/09/2024 - Añadir información de las últimas modificaciones a la página de inicio 
@@ -11,14 +13,13 @@
     - 02/09/2024 - Añadir ciclos de vida a la guía de `Angular`
     - 02/09/2024 - Arreglar error
     - 02/09/2024 - Arreglar error
-    - 02/09/2024 - Añadir guía de `Kotlin`
 
 ## Lenguajes de programación
 
 | Lenguaje            | Interpretado | Usos más comunes                                                             | Implementado | Última modificación |
 |---------------------|:------------:|------------------------------------------------------------------------------|:------------:|:-------------------:|
 | [Bash Script][bash] |      Sí      | Automatización de tareas, administración de sistemas, scripts de shell       |      X       |     02/09/2024      |
-| Java                |      No      | Aplicaciones empresariales, desarrollo de Android, sistemas distribuidos     |              |                     |
+| [Java][java]        |      No      | Aplicaciones empresariales, desarrollo de Android, sistemas distribuidos     |      X       |     23/09/2024      |
 | [Kotlin][kotlin]    |      No      | Desarrollo de aplicaciones Android, desarrollo web, aplicaciones de servidor |      X       |     02/09/2024      |
 | [Python][python]    |      Sí      | Ciencia de datos, desarrollo web, automatización de scripts                  |      X       |     02/09/2024      |
 | PHP                 |      Sí      | Desarrollo web, gestión de contenido (CMS), scripts del lado del servidor    |              |                     |
@@ -62,6 +63,8 @@
 [python]: ./languages/python/index.md
 
 [kotlin]: ./languages/kotlin/index.md
+
+[java]: ./languages/java/index.md
 
 [bash]: ./languages/bashScript/index.md
 

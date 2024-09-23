@@ -1,6 +1,6 @@
 ---
 tags:
-  - Pending review
+  - In development
   - 16/09/2024
 ---
 
@@ -10,17 +10,19 @@ tags:
 
 ### Instalar Laravel
 
+Ejecuta el siguiente comando para instalar Laravel de manera global con Composer:
+
 ```
 composer global require laravel/installer
 ```
 
-### Actualizar Laravel
+Si ya tienes instalado el instalador y quieres asegurarte de estar usando la última versión, ejecuta:
 
 ```
 composer global update laravel/installer
 ```
 
-### Versión de Laravel
+Puedes comprobar que Laravel se haya instalado correctamente verificando su versión:
 
 ```
 laravel -v
