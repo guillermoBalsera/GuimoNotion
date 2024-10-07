@@ -13,7 +13,7 @@
       
       
       
-        <link rel="prev" href="../installation/">
+        <link rel="prev" href="../project_hierarchy/">
       
       
         <link rel="next" href="../databinding/">
@@ -1169,6 +1169,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../project_hierarchy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estructura del proyecto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1922,7 +1943,7 @@
   <h1>Componentes</h1>
 
 <h2 id="componentes">Componentes</h2>
-<p>Para generar un nuevo <em>component</em> usamos el comando:</p>
+<p>Para generar un nuevo <code>component</code> usamos el comando:</p>
 <div class="highlight"><pre><span></span><code>ng<span class="w"> </span>generate<span class="w"> </span>component<span class="w"> </span>directorio/nombreComponente
 </code></pre></div>
 <h3 id="estructura-de-un-componente">Estructura de un componente</h3>
@@ -1936,6 +1957,20 @@
 <span class="w">    </span><span class="cm">/* Aquí se define el comportamiento del componente */</span>
 <span class="p">}</span>
 </code></pre></div>
+<p>La template de un componente puede sustituirse directamente por html sin necesidad de un archivo html:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">@Component</span><span class="p">({</span>
+<span class="w">    </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;app-component&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">templateUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;h1&gt;Hello World!&lt;/h1&gt;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">styleUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./component.component.css&#39;</span><span class="p">,</span>
+<span class="p">})</span>
+<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="admonition note">
+<p>Es recomendable cambiar el nombre del selector a los componentes:
+<div class="highlight"><pre><span></span><code><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Component&#39;</span>
+</code></pre></div></p>
+</div>
 <h3 id="llamar-a-un-componente-desde-otro">LLamar a un componente desde otro</h3>
 <p>Si el proyecto es standalone debemos importar el componente que vamos a usar dentro del componente desde el que lo
 llamaremos:</p>
