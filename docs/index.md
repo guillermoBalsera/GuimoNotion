@@ -2,6 +2,7 @@
 
 ??? abstract "Últimas modificaciones"
 
+    - 07/10/2024 - Añadir `estructura de proyecto` a la guía de `Angular`
     - 23/09/2024 - Añadir guía de `Java`
     - 23/09/2024 - Ajuste en los tags de la guía de `Python`
     - 16/09/2024 - Organizar `Laravel` en subcarpetas 
@@ -11,7 +12,6 @@
     - 02/09/2024 - Arreglar error
     - 02/09/2024 - Arreglar error
     - 02/09/2024 - Añadir ciclos de vida a la guía de `Angular`
-    - 02/09/2024 - Arreglar error
     - 02/09/2024 - Arreglar error
 
 ## Lenguajes de programación
@@ -31,7 +31,7 @@
 | Framework/Plataforma                  | Lenguaje Base | Usos más comunes                                                                    | Implementado | Última modificación |
 |---------------------------------------|---------------|-------------------------------------------------------------------------------------|:------------:|:-------------------:|
 | Android con Kotlin                    | Kotlin        | Desarrollo de aplicaciones móviles nativas para Android                             |              |                     |
-| [Angular][angular]                    | TypeScript    | Desarrollo de aplicaciones web dinámicas y complejas                                |      X       |     02/09/2024      |
+| [Angular][angular]                    | TypeScript    | Desarrollo de aplicaciones web dinámicas y complejas                                |      X       |     07/10/2024      |
 | Electron                              | TypeScript    | Desarrollo de aplicaciones de escritorio multiplataforma utilizando tecnologías web |              |                     |
 | Ionic                                 | TypeScript    | Desarrollo de aplicaciones móviles híbridas utilizando tecnologías web              |              |                     |
 | [MkDocs][mkdocs]                      | Python        | Generación de sitios web de documentación estática a partir de Markdown             |      X       |     02/09/2024      |

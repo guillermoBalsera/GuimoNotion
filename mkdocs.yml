@@ -79,6 +79,7 @@ nav:
       - Angular:
           - Introducción: frameworks/frontend/angular/index.md
           - Instalación: frameworks/frontend/angular/installation/index.md
+          - Estructura del proyecto: frameworks/frontend/angular/project_hierarchy/index.md
           - Componentes: frameworks/frontend/angular/components/index.md
           - Databinding: frameworks/frontend/angular/databinding/index.md
           - Input y Output: frameworks/frontend/angular/input_output/index.md

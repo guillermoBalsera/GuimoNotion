@@ -1,6 +1,6 @@
 ## Componentes
 
-Para generar un nuevo *component* usamos el comando:
+Para generar un nuevo `component` usamos el comando:
 
 ```sh
 ng generate component directorio/nombreComponente
@@ -19,6 +19,26 @@ export class Component {
     /* Aquí se define el comportamiento del componente */
 }
 ```
+
+La template de un componente puede sustituirse directamente por html sin necesidad de un archivo html:
+
+```typescript
+@Component({
+    selector: 'app-component',
+    templateUrl: '<h1>Hello World!</h1>',
+    styleUrl: './component.component.css',
+})
+export class Component {
+}
+```
+
+!!! note ""
+    
+    Es recomendable cambiar el nombre del selector a los componentes:
+    ```typescript 
+    selector: 'Component'
+    ```
+
 
 ### LLamar a un componente desde otro
 
