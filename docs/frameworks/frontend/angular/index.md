@@ -38,4 +38,4 @@ proporciona herramientas para el manejo de datos, enrutamiento y pruebas, entre 
 
 
 [components]: ./components/index.md
-[databinding]: ./databinding/index.md
+[databinding]: components/databinding/index.md

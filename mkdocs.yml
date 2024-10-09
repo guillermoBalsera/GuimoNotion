@@ -80,12 +80,14 @@ nav:
           - Introducción: frameworks/frontend/angular/index.md
           - Instalación: frameworks/frontend/angular/installation/index.md
           - Estructura del proyecto: frameworks/frontend/angular/project_hierarchy/index.md
-          - Componentes: frameworks/frontend/angular/components/index.md
+          - Componentes:
+              - Introducción: frameworks/frontend/angular/components/index.md
+              - Databinding: frameworks/frontend/angular/components/databinding/index.md
+              - Input y Output: frameworks/frontend/angular/components/input_output/index.md
+              - Proyección de contenido: frameworks/frontend/angular/components/projection/index.md
+              - Ciclos de vida: frameworks/frontend/angular/components/life_cicle/index.md
+          - Servicios: frameworks/frontend/angular/services/index.md
           - Rutas: frameworks/frontend/angular/routes/index.md
-          - Databinding: frameworks/frontend/angular/databinding/index.md
-          - Input y Output: frameworks/frontend/angular/input_output/index.md
-          - Proyección de contenido: frameworks/frontend/angular/projection/index.md
-          - Ciclos de vida: frameworks/frontend/angular/life_cicle/index.md
           - Recursos adicionales: frameworks/frontend/angular/additional_resources/index.md
 #      - Electron: frameworks/frontend/electron/index.md
 #      - Ionic: frameworks/frontend/ionic/index.md
