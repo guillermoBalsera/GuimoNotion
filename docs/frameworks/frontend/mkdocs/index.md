@@ -163,7 +163,7 @@ theme:
   name: material
   language: es
   logo: img/logo.png
-  favicon: 'img/logo.png'
+  favicon: img/logo.png
   features:
     - content.code.copy
     - navigation.instant
