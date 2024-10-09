@@ -2,7 +2,7 @@
 tags:
   - In development
   - Pending review
-  - 02/09/2024
+  - 09/10/2024
 ---
 
 Angular es un framework de desarrollo web de código abierto mantenido por Google. Está diseñado para facilitar la

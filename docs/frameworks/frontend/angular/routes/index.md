@@ -91,11 +91,71 @@ Para acceder a los parámetros de la ruta primero se debe implementar:
 
 ```typescript
 import {ActivatedRoute} from '@angular/router';
+```
 
+```typescript
 constructor(private route: ActivatedRoute) { }
+```
 
+```typescript
 const routeParams = this.route.snapshot.paramMap;
 const detailInfo = routeParams.get('detailInfo');
 ```
 
 ### Navegar desde typescript
+
+La ruta debe ser en formato String y debe estar estructurada como se ha visto previamente en la navegación desde html.
+
+```typescript
+import {Router} from "@angular/router";
+```
+
+```typescript
+  constructor(private router: Router) { }
+```
+
+```typescript
+this.router.navigate([route])
+      .then(() => console.log(`Correct navigation: ${route}`))
+      .catch(err => console.log(`ERROR\t${err}`));
+```
+
+!!! tip ""
+
+    Es recomendable el uso de un servicio para utilizar la navegación desde typescript para evitar repetir codigo, 
+    dado que con el mismo método en un servicio podemos navegar desde todos lo componentes tan solo inyectando el 
+    servicio en el constructor del propio componente.
+
+Para enviar información en la ruta:
+
+```typescript
+this.router.navigate(['user', id])
+.then(() => console.log(`Correct navigation to user with id: ${id}`))
+.catch(err => console.log(`ERROR\t${err}`));
+```
+
+Obtendremos esta información del mismo modo que hemos visto anteriormente al enviar información por html.
+
+Otra forma de enviar información en la ruta sería con `query params`:
+
+```typescript
+this.router.navigate(['user'], { queryParams: { id: id, name: name } })
+  .then(() => console.log(`Correct navigation with query params: ${id}, ${name}`))
+  .catch(err => console.log(`ERROR\t${err}`));
+```
+
+Y obtendremos las variables:
+
+```typescript
+import {ActivatedRoute} from '@angular/router';
+```
+
+```typescript
+constructor(private route: ActivatedRoute) { }
+```
+
+```typescript
+this.route.queryParams.subscribe(params => {
+  this.id = params['id'];
+});
+```
