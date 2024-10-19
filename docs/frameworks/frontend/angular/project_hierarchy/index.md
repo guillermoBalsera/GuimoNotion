@@ -10,7 +10,7 @@ Se recomienda seguir la siguiente estructura:
 3. `MODELS`: usaremos esta carpeta para almacenar las interfaces de los objetos de nuestro modelo, tanto los utilizados
    por la propia aplicación como de los datos recibidos por nuestra API en caso de haberla.
 4. `PAGES`: se utiliza para almacenar las distintas páginas de nuestro proyecto. Se divide en dos subdirectios:
-    - `AUTH`: en el guardaremos todas las páginas correspondientes a la autentificación de usuario.
+    - `AUTH`: en el guardaremos todas las páginas correspondientes a la autentificación del usuario.
     - `MAIN`: guardaremos en el las páginas de las funcionalidades principales, aquellas que estén disponibles para el
       usuario una vez iniciada la sesión.
 5. `PIPES`: en el guardamos las pipes personalizadas.

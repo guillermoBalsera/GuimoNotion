@@ -89,9 +89,9 @@ nav:
           - Servicios: frameworks/frontend/angular/services/index.md
           - Rutas: frameworks/frontend/angular/routes/index.md
           - Recursos adicionales: frameworks/frontend/angular/additional_resources/index.md
+      - React: frameworks/frontend/react/index.md
 #      - Electron: frameworks/frontend/electron/index.md
 #      - Ionic: frameworks/frontend/ionic/index.md
-#      - React: frameworks/frontend/react/index.md
       - MkDocs: frameworks/frontend/mkdocs/index.md
   - BackEnd:
       - PHP-Laravel:
@@ -111,3 +111,4 @@ nav:
       - JSON: others/json/index.md
       - XML: others/xml/index.md
       - YAML: others/yaml/index.md
+      - Cases: others/cases/index.md

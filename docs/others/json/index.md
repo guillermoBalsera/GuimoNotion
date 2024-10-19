@@ -89,6 +89,10 @@ JSON admite los siguientes tipos de datos:
 
 ## Recursos adicionales
 
-- JSON.org: Sitio web oficial con una explicación detallada de JSON, sus especificaciones y ejemplos.
-- JSONLint: Una herramienta en línea para validar y formatear JSON.
+- [JSON.org][json-lint]: Sitio web oficial con una explicación detallada de JSON, sus especificaciones y ejemplos.
+- [JSONLint][json-lint]: Una herramienta en línea para validar y formatear JSON.
+- [JsonFormater][json-formatter]: Una herramienta en línea para validar y formatear JSON.
 
+[json-org]: https://www.json.org/json-en.html
+[json-lint]: https://jsonlint.com/
+[json-formatter]: https://jsonformatter.curiousconcept.com/

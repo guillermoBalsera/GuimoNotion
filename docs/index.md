@@ -2,6 +2,7 @@
 
 ??? abstract "Últimas modificaciones"
 
+    - 19/10/2024 - Añadir guía de `React`
     - 09/10/2024 - Completar la guía de `rutas` en `Angular`
     - 07/10/2024 - Añadir `estructura de proyecto` a la guía de `Angular`
     - 23/09/2024 - Añadir guía de `Java`
@@ -12,7 +13,6 @@
     - 02/09/2024 - Añadir guía de `Bash Scripting`
     - 02/09/2024 - Arreglar error
     - 02/09/2024 - Arreglar error
-    - 02/09/2024 - Añadir ciclos de vida a la guía de `Angular`
 
 ## Lenguajes de programación
 
@@ -35,7 +35,7 @@
 | Electron                              | TypeScript    | Desarrollo de aplicaciones de escritorio multiplataforma utilizando tecnologías web |              |                     |
 | Ionic                                 | TypeScript    | Desarrollo de aplicaciones móviles híbridas utilizando tecnologías web              |              |                     |
 | [MkDocs][mkdocs]                      | Python        | Generación de sitios web de documentación estática a partir de Markdown             |      X       |     02/09/2024      |
-| React                                 | JavaScript    | Desarrollo de interfaces de usuario para aplicaciones web de una sola página (SPA)  |              |                     |
+| [React][react]                        | JavaScript    | Desarrollo de interfaces de usuario para aplicaciones web de una sola página (SPA)  |      X       |     19/10/2024      |
 | WPF (Windows Presentation Foundation) | C#            | Desarrollo de aplicaciones de escritorio para Windows con interfaces ricas          |              |                     |
 
 ### BackEnd
@@ -69,6 +69,8 @@
 [bash]: ./languages/bashScript/index.md
 
 [angular]: ./frameworks/frontend/angular/index.md
+
+[react]: ./frameworks/frontend/react/index.md
 
 [mkdocs]: ./frameworks/frontend/mkdocs/index.md
 
