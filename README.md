@@ -6,3 +6,6 @@
 mkdocs gh-deploy
 ```
 
+```shell
+.\runner.bat
+```
