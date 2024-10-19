@@ -1,6 +1,6 @@
-# [GuimoNotion](https://guillermobalsera.github.io/GuimoNotion/)
+# [GuimoNotion][guimo-notion]
 
-> Developed with mkdocs using [Material theme](https://squidfunk.github.io/mkdocs-material/)
+> Developed with mkdocs using [Material theme][material-theme]
 
 ```shell
 mkdocs gh-deploy
@@ -9,3 +9,6 @@ mkdocs gh-deploy
 ```shell
 .\runner.bat
 ```
+
+[guimo-notion]: https://guillermobalsera.github.io/GuimoNotion/
+[material-theme]: https://squidfunk.github.io/mkdocs-material/
