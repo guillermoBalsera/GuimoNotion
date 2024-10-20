@@ -11,4 +11,5 @@ Las más populares son las siguientes.
 - PascalCase Todas las palabras empiezan con una mayúscula, incluyendo la primera letra. También es utilizado en lenguajes orientados a objetos, principalmente en la declaración.
 - snake_case: Las palabras son separadas con barras bajas o underscores. Muy utilizado en Python.
 
-No olvidemos que al final son sencillos acuerdos, estándares a la hora de escribir un lenguaje de programación. Por ello evita buscar una favorita, como buen desarrollador debes entender como usarlas y en que lenguaje vas a aplicarlas.
+No olvidemos que al final son sencillos acuerdos, estándares a la hora de escribir un lenguaje de programación. 
+Por ello evita buscar una favorita, como buen desarrollador debes entender como usarlas y en que lenguaje vas a aplicarlas.

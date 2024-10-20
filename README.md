@@ -3,6 +3,10 @@
 > Developed with mkdocs using [Material theme][material-theme]
 
 ```shell
+mkdocs serve
+```
+
+```shell
 mkdocs gh-deploy
 ```
 
