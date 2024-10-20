@@ -1489,6 +1489,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Componentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proyeccion-de-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proyección de contenido
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2036,6 +2060,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Componentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proyeccion-de-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proyección de contenido
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2093,6 +2141,54 @@ respectivos componentes.</p>
 </code></pre></div>
 <h2 id="componentes">Componentes</h2>
 <p>Los nombres de los componentes deben estar siempre en <a href="../../../others/cases/">PascalCase</a></p>
+<h3 id="proyeccion-de-contenido">Proyección de contenido</h3>
+<p>Cuando queremos proyectar contenido dentro de un componente debemos usar la palabra reservada <code>children</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">Card</span><span class="p">({</span><span class="nx">children</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="na">className</span><span class="o">=</span><span class="s">&quot;card&quot;</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">children</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">Card</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Este</span><span class="w"> </span><span class="nx">contenido</span><span class="w"> </span><span class="nx">se</span><span class="w"> </span><span class="nx">proyectará</span><span class="w"> </span><span class="nx">dentro</span><span class="w"> </span><span class="nx">del</span><span class="w"> </span><span class="nx">componente</span><span class="w"> </span><span class="nx">Card</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">Card</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Para pasar todos los props como un solo objeto se hace de la siguiente manera:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">Component</span><span class="w"> </span><span class="p">{</span><span class="na">...object</span><span class="p">}&gt;&lt;/</span><span class="nt">Component</span><span class="p">&gt;</span>
+<span class="p">)</span>
+</code></pre></div>
+<p>Aunque esto último no es una buena práctica.</p>
+<h3 id="estados">Estados</h3>
+<p>Es un estado interno que corresponde a cada componente individualmente.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">isFollowing</span><span class="p">,</span><span class="w"> </span><span class="nx">setIsFollowing</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">handleClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">setIsFollowing</span><span class="p">(</span><span class="o">!</span><span class="nx">isFollowing</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}&gt;</span><span class="nx">Button</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div>
+<div class="admonition note">
+<div class="codehilite"><pre><span></span><code>El DOM virtual hace que cuando se produce un cambio lo único que modifica en el DOM es la parte 
+que ha recibido un cambio.
+
+Cada vez que se realiza un cambio en un estado React identifica que debe renderizar de nuevo las 
+partes que han cambiado.
+
+La otra forma de volver a renderizar de nuevo un componente es que su componente padre se vuelva
+a renderizar.
+</code></pre></div>
+
+</div>
 
 
 
