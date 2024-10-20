@@ -94,14 +94,11 @@ const handleClick = () => {
 
 !!! note ""
 
-        El DOM virtual hace que cuando se produce un cambio lo único que modifica en el DOM es la parte 
-        que ha recibido un cambio.
+    El DOM virtual hace que cuando se produce un cambio lo único que modifica en el DOM es la parte que ha recibido un cambio.
 
-        Cada vez que se realiza un cambio en un estado React identifica que debe renderizar de nuevo las 
-        partes que han cambiado.
- 
-        La otra forma de volver a renderizar de nuevo un componente es que su componente padre se vuelva
-        a renderizar.
+    Cada vez que se realiza un cambio en un estado React identifica que debe renderizar de nuevo las partes que han cambiado.
+
+    La otra forma de volver a renderizar de nuevo un componente es que su componente padre se vuelva a renderizar.
 
 
 
