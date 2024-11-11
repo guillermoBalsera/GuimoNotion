@@ -1996,6 +1996,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../others/docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2170,7 +2191,8 @@ respectivos componentes.</p>
 <p>Es un estado interno que corresponde a cada componente individualmente.</p>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">isFollowing</span><span class="p">,</span><span class="w"> </span><span class="nx">setIsFollowing</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Le pasamos al useState el valor por defecto de la variable `isFollowing`</span>
+<span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">isFollowing</span><span class="p">,</span><span class="w"> </span><span class="nx">setIsFollowing</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">handleClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">setIsFollowing</span><span class="p">(</span><span class="o">!</span><span class="nx">isFollowing</span><span class="p">)</span>
 <span class="p">}</span>
