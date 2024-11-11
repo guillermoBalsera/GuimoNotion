@@ -112,3 +112,4 @@ nav:
       - XML: others/xml/index.md
       - YAML: others/yaml/index.md
       - Cases: others/cases/index.md
+      - Docker: others/docker/index.md

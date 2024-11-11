@@ -82,6 +82,7 @@ import { useState } from 'react';
 ```
 
 ```jsx
+// Le pasamos al useState el valor por defecto de la variable `isFollowing`
 const [isFollowing, setIsFollowing] = useState(false);
 const handleClick = () => {
     setIsFollowing(!isFollowing)

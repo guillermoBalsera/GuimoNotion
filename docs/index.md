@@ -2,6 +2,7 @@
 
 ??? abstract "Últimas modificaciones"
 
+    - 11/11/2024 - Añadir guía de `Docker`
     - 19/10/2024 - Añadir guía de `React`
     - 09/10/2024 - Completar la guía de `rutas` en `Angular`
     - 07/10/2024 - Añadir `estructura de proyecto` a la guía de `Angular`
@@ -11,8 +12,7 @@
     - 13/09/2024 - Arreglar error en `Laravel` 
     - 02/09/2024 - Añadir información de las últimas modificaciones a la página de inicio 
     - 02/09/2024 - Añadir guía de `Bash Scripting`
-    - 02/09/2024 - Arreglar error
-    - 02/09/2024 - Arreglar error
+    - 02/09/2024 - Arreglar error en la configuración
 
 ## Lenguajes de programación
 
@@ -59,6 +59,7 @@
 | [Node.js][node]      | Desarrollo de aplicaciones web, servidores, herramientas de desarrollo          | Entorno de ejecución para JavaScript en el lado del servidor, permite el uso de JavaScript fuera del navegador |      X       |     24/08/2024      |
 | [XML][xml]           | Intercambio de datos entre aplicaciones, configuración                          | Estructura jerárquica con etiquetas personalizables, extensibilidad                                            |      X       |     26/08/2024      |
 | [YAML][yaml]         | Configuración de aplicaciones, intercambio de datos                             | Formato legible por humanos, jerarquía basada en indentación                                                   |      X       |     26/08/2024      |
+| [Docker][docker]     | Virtualización de contenedores para aplicaciones, despliegue y pruebas          | Plataforma de contenedores ligera, portabilidad entre entornos, integración con CI/CD y manejo de versiones    |      X       |     11/11/2024      |
 
 [python]: ./languages/python/index.md
 
@@ -85,3 +86,5 @@
 [xml]: ./others/xml/index.md
 
 [yaml]: ./others/yaml/index.md
+
+[docker]: ./others/docker/index.md
