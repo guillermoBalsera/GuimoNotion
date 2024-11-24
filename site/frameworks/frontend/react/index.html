@@ -16,7 +16,7 @@
         <link rel="prev" href="../angular/additional_resources/">
       
       
-        <link rel="next" href="../mkdocs/">
+        <link rel="next" href="../electron/">
       
       
       <link rel="icon" href="../../../assets/guimonotion.svg">
@@ -1033,6 +1033,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../languages/c%2B%2B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C++
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1465,21 +1486,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Crear una aplicación">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#intalar-nodejs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Intalar node.js
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1493,6 +1499,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renderizado-de-listas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renderizado de listas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#proyeccion-de-contenido" class="md-nav__link">
     <span class="md-ellipsis">
       Proyección de contenido
@@ -1502,9 +1526,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#estados" class="md-nav__link">
+  <a href="#ciclos-de-vida-de-los-componentes" class="md-nav__link">
     <span class="md-ellipsis">
-      Estados
+      Ciclos de vida de los componentes
     </span>
   </a>
   
@@ -1519,6 +1543,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../electron/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electron
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2057,21 +2102,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Crear una aplicación">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#intalar-nodejs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Intalar node.js
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -2085,6 +2115,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renderizado-de-listas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renderizado de listas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#proyeccion-de-contenido" class="md-nav__link">
     <span class="md-ellipsis">
       Proyección de contenido
@@ -2094,9 +2142,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#estados" class="md-nav__link">
+  <a href="#ciclos-de-vida-de-los-componentes" class="md-nav__link">
     <span class="md-ellipsis">
-      Estados
+      Ciclos de vida de los componentes
     </span>
   </a>
   
@@ -2138,7 +2186,7 @@
     
     
     
-      <span class="md-tag">19/10/2024</span>
+      <span class="md-tag">24/11/2024</span>
     
   
 </nav>
@@ -2147,10 +2195,9 @@
 
 <h1 id="react">React</h1>
 <p>React es una biblioteca de javascript que está pensada para construir interfaces de usuario.</p>
-<p>Cunado usamos React no estamos escribiendo HTML sino que estamos escribiendo JSX y el propio react lo compila a javascript.</p>
+<p>Cuando usamos React no estamos escribiendo HTML, sino que estamos escribiendo JSX y el propio react lo compila a javascript.</p>
 <h2 id="crear-una-aplicacion">Crear una aplicación</h2>
-<h3 id="intalar-nodejs">Intalar node.js</h3>
-<p>Lo primero que debemos hacer es instalar [node.js][node] para el manejo de dependencias y la creación del proyecto y sus
+<p>Lo primero que debemos hacer es instalar <a href="../../../others/node/">node.js</a> para el manejo de dependencias y la creación del proyecto y sus
 respectivos componentes.</p>
 <p>Para crear nuestro proyecto vamos a usar <a href="https://vite.dev/">Vite</a></p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>init<span class="w"> </span>-y
@@ -2158,10 +2205,86 @@ respectivos componentes.</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>create<span class="w"> </span>vite@latest
 </code></pre></div>
 <p>Escogeremos la opción <code>JavaScript + SWC</code></p>
+<p>Entramos en la carpeta que se ha creado con el nombre de nuestro proyecto:</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install
+</code></pre></div>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>dev
 </code></pre></div>
 <h2 id="componentes">Componentes</h2>
 <p>Los nombres de los componentes deben estar siempre en <a href="../../../others/cases/">PascalCase</a></p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Calculate</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nb">Number</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">number</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Input</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">myPlaceHolder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Escribe aquí&quot;</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">input</span><span class="w"> </span><span class="na">myPlaceholder</span><span class="o">=</span><span class="p">{</span><span class="nx">placeHolder</span><span class="p">}/&gt;</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="estados">Estados</h3>
+<p>Es un estado interno que corresponde a cada componente individualmente.</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">// Le pasamos al useState el valor por defecto de la variable `isFollowing`</span>
+<span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">isFollowing</span><span class="p">,</span><span class="w"> </span><span class="nx">setIsFollowing</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">handleClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">setIsFollowing</span><span class="p">(</span><span class="o">!</span><span class="nx">isFollowing</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}&gt;</span><span class="nx">Button</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">Calculate</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">number</span><span class="p">,</span><span class="w"> </span><span class="nx">setNumber</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">addOne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">setNumber</span><span class="p">(</span><span class="nx">number</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nb">Number</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">number</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">addOne</span><span class="p">}&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="renderizado-de-listas">Renderizado de listas</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">MovieList</span><span class="p">()</span><span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">movies</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Lord of the rings&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Dune&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Shrek&quot;</span><span class="p">];</span>
+
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">HTMLMovies</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">movies</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">movie</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">(&lt;</span><span class="nt">p</span><span class="w"> </span><span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">movie</span><span class="p">}&gt;{</span><span class="nx">index</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">}</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">{</span><span class="nx">movie</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;)</span>
+<span class="w">    </span><span class="p">})</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">{</span><span class="nx">HTMLMovies</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Para renderizar una lista de objetos:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">MovieList</span><span class="p">()</span><span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">animal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[{</span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;dog&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">species</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;mamal&quot;</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;shark&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">species</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;fish&quot;</span><span class="p">}];</span>
+
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">HTMLAnimals</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">animal</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">animal</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">(&lt;</span><span class="nt">li</span><span class="w"> </span><span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">animal</span><span class="p">.</span><span class="nx">id</span><span class="p">}&gt;{</span><span class="nx">animal</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">li</span><span class="p">&gt;)</span>
+<span class="w">    </span><span class="p">})</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">{</span><span class="nx">HTMLAnimals</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
 <h3 id="proyeccion-de-contenido">Proyección de contenido</h3>
 <p>Cuando queremos proyectar contenido dentro de un componente debemos usar la palabra reservada <code>children</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">Card</span><span class="p">({</span><span class="nx">children</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
@@ -2187,18 +2310,12 @@ respectivos componentes.</p>
 <span class="p">)</span>
 </code></pre></div>
 <p>Aunque esto último no es una buena práctica.</p>
-<h3 id="estados">Estados</h3>
-<p>Es un estado interno que corresponde a cada componente individualmente.</p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1">// Le pasamos al useState el valor por defecto de la variable `isFollowing`</span>
-<span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">isFollowing</span><span class="p">,</span><span class="w"> </span><span class="nx">setIsFollowing</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">handleClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">setIsFollowing</span><span class="p">(</span><span class="o">!</span><span class="nx">isFollowing</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}&gt;</span><span class="nx">Button</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</code></pre></div>
+<h3 id="ciclos-de-vida-de-los-componentes">Ciclos de vida de los componentes</h3>
+<ul>
+<li><strong>Mount</strong>: Cada vez que aparece en la página.</li>
+<li><strong>Updates</strong>: Cada vez que el estado cambia.</li>
+<li><strong>Unmount</strong>: Cuando se elimina de la página.</li>
+</ul>
 <div class="admonition note">
 <p>El DOM virtual hace que cuando se produce un cambio lo único que modifica en el DOM es la parte que ha recibido un cambio.</p>
 <p>Cada vez que se realiza un cambio en un estado React identifica que debe renderizar de nuevo las partes que han cambiado.</p>

@@ -13,8 +13,6 @@ Cuando usamos React no estamos escribiendo HTML, sino que estamos escribiendo JS
 
 ## Crear una aplicación
 
-### Instalar node.js
-
 Lo primero que debemos hacer es instalar [node.js][node] para el manejo de dependencias y la creación del proyecto y sus
 respectivos componentes.
 
@@ -43,6 +41,99 @@ npm run dev
 ## Componentes
 
 Los nombres de los componentes deben estar siempre en [PascalCase][pascal]
+
+```jsx
+function Calculate() {
+    let number = 0;
+    
+    return (
+        <p>Number: {number}</p>
+    )
+}
+```
+
+```jsx
+function Input() {
+    let myPlaceHolder = "Escribe aquí";
+    
+    return (
+        <input myPlaceholder={placeHolder}/>
+    )
+}
+```
+
+### Estados
+
+Es un estado interno que corresponde a cada componente individualmente.
+
+```jsx
+import { useState } from 'react';
+```
+
+```jsx
+// Le pasamos al useState el valor por defecto de la variable `isFollowing`
+const [isFollowing, setIsFollowing] = useState(false);
+const handleClick = () => {
+    setIsFollowing(!isFollowing)
+}
+```
+
+```jsx
+<button onClick={handleClick}>Button</button>
+```
+
+```jsx
+function Calculate() {
+    const [number, setNumber] = useState(0);
+    
+    const addOne = () => {
+        setNumber(number + 1);
+    }
+    
+    return (
+        <div>
+            <p>Number: {number}</p>
+            <button onClick={addOne}></button>
+        </div>
+    )
+}
+```
+
+### Renderizado de listas
+
+```jsx
+function MovieList()  {
+    const movies = ["Lord of the rings", "Dune", "Shrek"];
+    
+    const HTMLMovies = movies.map((movie, index) => {
+        return (<p key={movie}>{index + 1} - {movie}</p>)
+    })
+    
+    return (
+        <section>
+            {HTMLMovies}
+        </section>
+    )
+}
+```
+
+Para renderizar una lista de objetos:
+
+```jsx
+function MovieList()  {
+    const animal = [{id: 1, name: "dog", species: "mamal"}, {id: 2, name: "shark", species: "fish"}];
+    
+    const HTMLAnimals = animal.map((animal) => {
+        return (<li key={animal.id}>{animal.name}</li>)
+    })
+    
+    return (
+        <section>
+            {HTMLAnimals}
+        </section>
+    )
+}
+```
 
 ### Proyección de contenido
 
@@ -79,25 +170,11 @@ return (
 
 Aunque esto último no es una buena práctica.
 
-### Estados
+### Ciclos de vida de los componentes
 
-Es un estado interno que corresponde a cada componente individualmente.
-
-```jsx
-import { useState } from 'react';
-```
-
-```jsx
-// Le pasamos al useState el valor por defecto de la variable `isFollowing`
-const [isFollowing, setIsFollowing] = useState(false);
-const handleClick = () => {
-    setIsFollowing(!isFollowing)
-}
-```
-
-```jsx
-<button onClick={handleClick}>Button</button>
-```
+- **Mount**: Cada vez que aparece en la página.
+- **Updates**: Cada vez que el estado cambia.
+- **Unmount**: Cuando se elimina de la página.
 
 !!! note ""
 

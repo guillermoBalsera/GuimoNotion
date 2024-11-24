@@ -23,6 +23,7 @@
 | [Kotlin][kotlin]    |      No      | Desarrollo de aplicaciones Android, desarrollo web, aplicaciones de servidor |      X       |     02/09/2024      |
 | [Python][python]    |      Sí      | Ciencia de datos, desarrollo web, automatización de scripts                  |      X       |     02/09/2024      |
 | PHP                 |      Sí      | Desarrollo web, gestión de contenido (CMS), scripts del lado del servidor    |              |                     |
+| [C++][c++]          |      No      | Desarrollo de software de alto rendimiento, videojuegos, sistemas embebidos  |      X       |     24/11/2024      |
 
 ## Frameworks
 
@@ -32,7 +33,7 @@
 |----------------------|---------------|-------------------------------------------------------------------------------------|:------------:|:-------------------:|
 | Android con Kotlin   | Kotlin        | Desarrollo de aplicaciones móviles nativas para Android                             |              |                     |
 | [Angular][angular]   | TypeScript    | Desarrollo de aplicaciones web dinámicas y complejas                                |      X       |     09/10/2024      |
-| [React][react]       | JavaScript    | Desarrollo de interfaces de usuario para aplicaciones web de una sola página (SPA)  |      X       |     20/10/2024      |
+| [React][react]       | JavaScript    | Desarrollo de interfaces de usuario para aplicaciones web de una sola página (SPA)  |      X       |     24/10/2024      |
 | Electron             | TypeScript    | Desarrollo de aplicaciones de escritorio multiplataforma utilizando tecnologías web |              |                     |
 | Ionic                | TypeScript    | Desarrollo de aplicaciones móviles híbridas utilizando tecnologías web              |              |                     |
 | WPF                  | C#            | Desarrollo de aplicaciones de escritorio para Windows con interfaces ricas          |              |                     |
@@ -88,3 +89,5 @@
 [yaml]: ./others/yaml/index.md
 
 [docker]: ./others/docker/index.md
+
+[c++]: ./languages/c++/index.md

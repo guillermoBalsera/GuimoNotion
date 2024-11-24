@@ -75,6 +75,7 @@ nav:
       - Java:
           - Introducción: languages/java/index.md
           - Estructuras de control: languages/java/control_structures/index.md
+      - C++: languages/c++/index.md
   - Frontend:
       - Angular:
           - Introducción: frameworks/frontend/angular/index.md
@@ -90,7 +91,7 @@ nav:
           - Rutas: frameworks/frontend/angular/routes/index.md
           - Recursos adicionales: frameworks/frontend/angular/additional_resources/index.md
       - React: frameworks/frontend/react/index.md
-#      - Electron: frameworks/frontend/electron/index.md
+      - Electron: frameworks/frontend/electron/index.md
 #      - Ionic: frameworks/frontend/ionic/index.md
       - MkDocs: frameworks/frontend/mkdocs/index.md
   - BackEnd:
