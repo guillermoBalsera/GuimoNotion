@@ -2,6 +2,7 @@
 
 ??? abstract "Últimas modificaciones"
 
+    - 24/11/2024 - Continuar guía de `React`
     - 11/11/2024 - Añadir guía de `Docker`
     - 19/10/2024 - Añadir guía de `React`
     - 09/10/2024 - Completar la guía de `rutas` en `Angular`
@@ -12,7 +13,6 @@
     - 13/09/2024 - Arreglar error en `Laravel` 
     - 02/09/2024 - Añadir información de las últimas modificaciones a la página de inicio 
     - 02/09/2024 - Añadir guía de `Bash Scripting`
-    - 02/09/2024 - Arreglar error en la configuración
 
 ## Lenguajes de programación
 

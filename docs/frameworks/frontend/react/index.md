@@ -2,18 +2,18 @@
 tags:
 - In development
 - Pending review
-- 19/10/2024
+- 24/11/2024
 ---
 
 # React
 
 React es una biblioteca de javascript que está pensada para construir interfaces de usuario.
 
-Cunado usamos React no estamos escribiendo HTML sino que estamos escribiendo JSX y el propio react lo compila a javascript.
+Cuando usamos React no estamos escribiendo HTML, sino que estamos escribiendo JSX y el propio react lo compila a javascript.
 
 ## Crear una aplicación
 
-### Intalar node.js
+### Instalar node.js
 
 Lo primero que debemos hacer es instalar [node.js][node] para el manejo de dependencias y la creación del proyecto y sus
 respectivos componentes.
@@ -29,6 +29,12 @@ npm create vite@latest
 ```
 
 Escogeremos la opción `JavaScript + SWC`
+
+Entramos en la carpeta que se ha creado con el nombre de nuestro proyecto:
+
+```shell
+npm install
+```
 
 ```shell
 npm run dev
@@ -102,7 +108,7 @@ const handleClick = () => {
     La otra forma de volver a renderizar de nuevo un componente es que su componente padre se vuelva a renderizar.
 
 
-
+[node]: ../../../others/node/index.md
 [vite]: https://vite.dev/
 [pascal]:   ../../../others/cases/index.md
 
