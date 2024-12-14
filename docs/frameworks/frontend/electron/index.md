@@ -14,38 +14,41 @@ Creamos el archivo `main.js` en la raíz del proyecto:
 
 ```javascript
 const {app, BrowserWindow} = require("electron");
+const path = require('path');
 
 let appWin;
 
 createWindow = () => {
-    appWin = new BrowserWindow({
-        width: 800,
-        height: 600,
-        title: "AppName",
-        resizable: false,
-        webPreferences: {
-            contextIsolation: false,
-            nodeIntegration: true
-        }
-    });
+  appWin = new BrowserWindow({
+    width: 800,
+    height: 600,
+    title: "AppName",
+    resizable: false,
+    webPreferences: {
+      contextIsolation: false,
+      nodeIntegration: true
+    }
+  });
 
-    appWin.loadURL(`file://${__dirname}/dist/index.html`);
+  const indexPath = path.join(__dirname, 'dist', 'browser', 'index.html');
 
-    appWin.setMenu(null);
+  appWin.loadURL(`file://${indexPath}`);
 
-    appWin.webContents.openDevTools();
+  appWin.setMenu(null);
 
-    appWin.on("closed", () => {
-        appWin = null;
-    });
+  appWin.webContents.openDevTools();
+
+  appWin.on("closed", () => {
+    appWin = null;
+  });
 }
 
 app.on("ready", createWindow);
 
 app.on("window-all-closed", () => {
-    if (process.platform !== "darwin") {
-        app.quit();
-    }
+  if (process.platform !== "darwin") {
+    app.quit();
+  }
 });
 ```
 
@@ -62,7 +65,8 @@ Debemos ir al archivo `package.json` y modificarlo:
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "electron": "ng build && electron"
+    "electron": "ng build && electron",
+    "dist": "electron-builder"
   }
 }
 ```
@@ -311,6 +315,20 @@ export class GameComponent implements OnInit {
 
 ngOnInit() se encarga de recuperar los clics guardados en local, addClicks() se llama cada vez que el botón es pulsado, y save() guarda la puntuación.
 
+## Crear el instalador de la aplicación
 
+### Asegurarse de haber construido la aplicación de angular previamente
+
+```shell
+ng build
+```
+
+### Crear el instalador
+
+```shell
+npm run dist
+```
+
+Se crea un archivo `.exe` en la carpeta `dist_electron`, que al ejecutarlo instala la app.
 
 [node]: ../../../others/node/index.md

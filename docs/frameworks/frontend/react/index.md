@@ -189,3 +189,9 @@ Aunque esto último no es una buena práctica.
 [vite]: https://vite.dev/
 [pascal]:   ../../../others/cases/index.md
 
+
+
+
+
+Pastillas:
+ - 6 
