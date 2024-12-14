@@ -1545,6 +1545,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#crear-el-instalador-de-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear el instalador de la aplicación
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear el instalador de la aplicación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asegurarse-de-haber-construido-la-aplicacion-de-angular-previamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asegurarse de haber construido la aplicación de angular previamente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-el-instalador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear el instalador
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2125,6 +2158,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#crear-el-instalador-de-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear el instalador de la aplicación
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear el instalador de la aplicación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asegurarse-de-haber-construido-la-aplicacion-de-angular-previamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asegurarse de haber construido la aplicación de angular previamente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-el-instalador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear el instalador
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2148,38 +2214,41 @@
 <h2 id="configurar-el-proyecto">Configurar el proyecto</h2>
 <p>Creamos el archivo <code>main.js</code> en la raíz del proyecto:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">app</span><span class="p">,</span><span class="w"> </span><span class="nx">BrowserWindow</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;electron&quot;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">);</span>
 
 <span class="kd">let</span><span class="w"> </span><span class="nx">appWin</span><span class="p">;</span>
 
 <span class="nx">createWindow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">appWin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">BrowserWindow</span><span class="p">({</span>
-<span class="w">        </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">800</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="mf">600</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;AppName&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">resizable</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">webPreferences</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">contextIsolation</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">            </span><span class="nx">nodeIntegration</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">});</span>
+<span class="w">  </span><span class="nx">appWin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">BrowserWindow</span><span class="p">({</span>
+<span class="w">    </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">800</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="mf">600</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;AppName&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">resizable</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">webPreferences</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">contextIsolation</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">nodeIntegration</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">});</span>
 
-<span class="w">    </span><span class="nx">appWin</span><span class="p">.</span><span class="nx">loadURL</span><span class="p">(</span><span class="sb">`file://</span><span class="si">${</span><span class="nx">__dirname</span><span class="si">}</span><span class="sb">/dist/index.html`</span><span class="p">);</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">indexPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;dist&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;browser&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;index.html&#39;</span><span class="p">);</span>
 
-<span class="w">    </span><span class="nx">appWin</span><span class="p">.</span><span class="nx">setMenu</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">appWin</span><span class="p">.</span><span class="nx">loadURL</span><span class="p">(</span><span class="sb">`file://</span><span class="si">${</span><span class="nx">indexPath</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
 
-<span class="w">    </span><span class="nx">appWin</span><span class="p">.</span><span class="nx">webContents</span><span class="p">.</span><span class="nx">openDevTools</span><span class="p">();</span>
+<span class="w">  </span><span class="nx">appWin</span><span class="p">.</span><span class="nx">setMenu</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 
-<span class="w">    </span><span class="nx">appWin</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;closed&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">appWin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
-<span class="w">    </span><span class="p">});</span>
+<span class="w">  </span><span class="nx">appWin</span><span class="p">.</span><span class="nx">webContents</span><span class="p">.</span><span class="nx">openDevTools</span><span class="p">();</span>
+
+<span class="w">  </span><span class="nx">appWin</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;closed&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">appWin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">  </span><span class="p">});</span>
 <span class="p">}</span>
 
 <span class="nx">app</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;ready&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">createWindow</span><span class="p">);</span>
 
 <span class="nx">app</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;window-all-closed&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">platform</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;darwin&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">app</span><span class="p">.</span><span class="nx">quit</span><span class="p">();</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">platform</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;darwin&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">app</span><span class="p">.</span><span class="nx">quit</span><span class="p">();</span>
+<span class="w">  </span><span class="p">}</span>
 <span class="p">});</span>
 </code></pre></div>
 <p>Debemos ir al archivo <code>package.json</code> y modificarlo:</p>
@@ -2193,7 +2262,8 @@
 <span class="w">    </span><span class="nt">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ng build&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;watch&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ng build --watch --configuration development&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;test&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ng test&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;electron&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ng build &amp;&amp; electron&quot;</span>
+<span class="w">    </span><span class="nt">&quot;electron&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ng build &amp;&amp; electron&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dist&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;electron-builder&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -2403,6 +2473,14 @@ usarlos desde toda la aplicación:</p>
 <span class="p">}</span>
 </code></pre></div>
 <p>ngOnInit() se encarga de recuperar los clics guardados en local, addClicks() se llama cada vez que el botón es pulsado, y save() guarda la puntuación.</p>
+<h2 id="crear-el-instalador-de-la-aplicacion">Crear el instalador de la aplicación</h2>
+<h3 id="asegurarse-de-haber-construido-la-aplicacion-de-angular-previamente">Asegurarse de haber construido la aplicación de angular previamente</h3>
+<div class="highlight"><pre><span></span><code>ng<span class="w"> </span>build
+</code></pre></div>
+<h3 id="crear-el-instalador">Crear el instalador</h3>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>dist
+</code></pre></div>
+<p>Se crea un archivo <code>.exe</code> en la carpeta <code>dist_electron</code>, que al ejecutarlo instala la app.</p>
 
 
 
