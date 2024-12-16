@@ -5,6 +5,8 @@ tags:
   - 09/10/2024
 ---
 
+# Introducción
+
 Angular es un framework de desarrollo web de código abierto mantenido por Google. Está diseñado para facilitar la
 creación de aplicaciones web de una sola página (SPA) al proporcionar una estructura robusta para el desarrollo
 frontend. Angular utiliza TypeScript como lenguaje principal, aunque también puedes escribir código en JavaScript.

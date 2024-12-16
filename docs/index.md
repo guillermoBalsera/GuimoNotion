@@ -2,6 +2,10 @@
 
 ??? abstract "Últimas modificaciones"
 
+    - 16/12/2024 - Añadir servicios a la guía de `Angular`
+    - 16/12/2024 - Añadir como editar el menú contextual a la guía de `Angular`
+    - 15/12/2024 - Mejorar la guía de `Electron` para `Angular`
+    - 24/11/2024 - Continuar guía de `React`
     - 24/11/2024 - Continuar guía de `React`
     - 11/11/2024 - Añadir guía de `Docker`
     - 19/10/2024 - Añadir guía de `React`
@@ -9,10 +13,7 @@
     - 07/10/2024 - Añadir `estructura de proyecto` a la guía de `Angular`
     - 23/09/2024 - Añadir guía de `Java`
     - 23/09/2024 - Ajuste en los tags de la guía de `Python`
-    - 16/09/2024 - Organizar `Laravel` en subcarpetas 
-    - 13/09/2024 - Arreglar error en `Laravel` 
-    - 02/09/2024 - Añadir información de las últimas modificaciones a la página de inicio 
-    - 02/09/2024 - Añadir guía de `Bash Scripting`
+    - 16/09/2024 - Organizar `Laravel` en subcarpetas
 
 ## Lenguajes de programación
 
@@ -32,9 +33,9 @@
 | Framework/Plataforma | Lenguaje Base | Usos más comunes                                                                    | Implementado | Última modificación |
 |----------------------|---------------|-------------------------------------------------------------------------------------|:------------:|:-------------------:|
 | Android con Kotlin   | Kotlin        | Desarrollo de aplicaciones móviles nativas para Android                             |              |                     |
-| [Angular][angular]   | TypeScript    | Desarrollo de aplicaciones web dinámicas y complejas                                |      X       |     09/10/2024      |
+| [Angular][angular]   | TypeScript    | Desarrollo de aplicaciones web dinámicas y complejas                                |      X       |     16/12/2024      |
 | [React][react]       | JavaScript    | Desarrollo de interfaces de usuario para aplicaciones web de una sola página (SPA)  |      X       |     24/10/2024      |
-| Electron             | TypeScript    | Desarrollo de aplicaciones de escritorio multiplataforma utilizando tecnologías web |              |                     |
+| [Electron][electron] | TypeScript    | Desarrollo de aplicaciones de escritorio multiplataforma utilizando tecnologías web |      X       |     02/12/2024      |
 | Ionic                | TypeScript    | Desarrollo de aplicaciones móviles híbridas utilizando tecnologías web              |              |                     |
 | WPF                  | C#            | Desarrollo de aplicaciones de escritorio para Windows con interfaces ricas          |              |                     |
 | [MkDocs][mkdocs]     | Python        | Generación de sitios web de documentación estática a partir de Markdown             |      X       |     02/09/2024      |
@@ -73,6 +74,8 @@
 [angular]: ./frameworks/frontend/angular/index.md
 
 [react]: ./frameworks/frontend/react/index.md
+
+[electron]: ./frameworks/frontend/electron/index.md
 
 [mkdocs]: ./frameworks/frontend/mkdocs/index.md
 

@@ -188,10 +188,3 @@ Aunque esto último no es una buena práctica.
 [node]: ../../../others/node/index.md
 [vite]: https://vite.dev/
 [pascal]:   ../../../others/cases/index.md
-
-
-
-
-
-Pastillas:
- - 6 

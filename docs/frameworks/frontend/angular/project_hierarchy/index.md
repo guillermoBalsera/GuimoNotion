@@ -4,7 +4,7 @@ La estructura del proyecto es clave para una buena comprensión y un manejo ópt
 
 Se recomienda seguir la siguiente estructura:
 
-1. `COMPONENTS`: aquí almacenaremos los distintos componentes reutilizables de nuestro proyecto.
+1. `COMPONENTS`: aquí almacenaremos los distintos componentes reutilizables de nuestro proyecto como botones o contenedores.
 2. `LAYOUT`: en este directorio situaremos el componente base de nuestra aplicación, que actuará como la ruta padre de
    los demás componentes.
 3. `MODELS`: usaremos esta carpeta para almacenar las interfaces de los objetos de nuestro modelo, tanto los utilizados

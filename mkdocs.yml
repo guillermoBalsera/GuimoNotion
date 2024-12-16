@@ -89,9 +89,13 @@ nav:
               - Ciclos de vida: frameworks/frontend/angular/components/life_cicle/index.md
           - Servicios: frameworks/frontend/angular/services/index.md
           - Rutas: frameworks/frontend/angular/routes/index.md
-          - Recursos adicionales: frameworks/frontend/angular/additional_resources/index.md
+          - Recursos adicionales:
+              - Enlaces: frameworks/frontend/angular/additional_resources/index.md
+              - Editar el menú contextual: frameworks/frontend/angular/additional_resources/context-menu/index.md
+              - Variables de entorno: frameworks/frontend/angular/additional_resources/enviroments/index.md
       - React: frameworks/frontend/react/index.md
-      - Electron: frameworks/frontend/electron/index.md
+      - Electron:
+          - Electron con Angular: frameworks/frontend/electron/electron-angular/index.md
 #      - Ionic: frameworks/frontend/ionic/index.md
       - MkDocs: frameworks/frontend/mkdocs/index.md
   - BackEnd:

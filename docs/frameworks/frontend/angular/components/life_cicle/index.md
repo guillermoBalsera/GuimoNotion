@@ -75,9 +75,5 @@ export class UserProfile {
 
 !!! note
 
-    Puede pasar la DestroyRefinstancia a funciones o clases externas a su componente. Utilice este patrón si tiene otro
+    Puede pasar la DestroyRef instancia a funciones o clases externas a su componente. Utilice este patrón si tiene otro
     código que debería ejecutar algún comportamiento de limpieza cuando se destruye el componente.
-
-## afterRender y afterNextRender
-
-
