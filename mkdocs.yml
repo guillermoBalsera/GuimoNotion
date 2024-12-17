@@ -78,8 +78,7 @@ nav:
       - C++: languages/c++/index.md
   - Frontend:
       - Angular:
-          - Introducción: frameworks/frontend/angular/index.md
-          - Instalación: frameworks/frontend/angular/installation/index.md
+          - Instalación: frameworks/frontend/angular/index.md
           - Estructura del proyecto: frameworks/frontend/angular/project_hierarchy/index.md
           - Componentes:
               - Introducción: frameworks/frontend/angular/components/index.md

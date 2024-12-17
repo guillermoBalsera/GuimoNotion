@@ -1,3 +1,8 @@
+---
+tags:
+- 17/12/2024
+---
+
 # Creación de una aplicación de escritorio con Angular y Electron
 
 Lo primero que debemos hacer es instalar [node.js][node] y tener un proyecto Angular preparado.

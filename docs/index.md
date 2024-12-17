@@ -2,6 +2,7 @@
 
 ??? abstract "Últimas modificaciones"
 
+    - 17/12/2024 - Añadir docker de desarrollo a la guía de `Angular`
     - 16/12/2024 - Añadir servicios a la guía de `Angular`
     - 16/12/2024 - Añadir como editar el menú contextual a la guía de `Angular`
     - 15/12/2024 - Mejorar la guía de `Electron` para `Angular`
@@ -13,7 +14,6 @@
     - 07/10/2024 - Añadir `estructura de proyecto` a la guía de `Angular`
     - 23/09/2024 - Añadir guía de `Java`
     - 23/09/2024 - Ajuste en los tags de la guía de `Python`
-    - 16/09/2024 - Organizar `Laravel` en subcarpetas
 
 ## Lenguajes de programación
 

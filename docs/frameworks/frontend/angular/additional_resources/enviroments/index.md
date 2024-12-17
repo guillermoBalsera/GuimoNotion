@@ -2,7 +2,7 @@
 
 ## Públicas
 
-Con variables de entorno públicas nos referimos a todas aquellas que no sean sensibles, como URLs, nombres de servicios
+Con variables de entorno públicas nos referimos a todas aquellas que **no** sean sensibles, como URLs, nombres de servicios
 o configuraciones.
 
 Para este tipo de variables usamos los `environments`:

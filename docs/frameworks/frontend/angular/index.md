@@ -1,43 +1,72 @@
 ---
 tags:
-  - In development
-  - Pending review
-  - 09/10/2024
+- Pending review
+- 17/12/2024
 ---
 
-# Introducción
+# Instalación y creación de un nuevo proyecto
 
-Angular es un framework de desarrollo web de código abierto mantenido por Google. Está diseñado para facilitar la
-creación de aplicaciones web de una sola página (SPA) al proporcionar una estructura robusta para el desarrollo
-frontend. Angular utiliza TypeScript como lenguaje principal, aunque también puedes escribir código en JavaScript.
+## Intalar node.js
 
-## ¿Qué es Angular?
+Lo primero que debemos hacer es instalar [node.js][node] para el manejo de dependencias y la creación del proyecto y sus
+respectivos componentes.
 
-Angular es un framework MVC (Modelo-Vista-Controlador) que permite a los desarrolladores construir aplicaciones
-dinámicas y de alta calidad con una estructura organizada y eficiente. Utiliza una arquitectura basada en componentes y
-proporciona herramientas para el manejo de datos, enrutamiento y pruebas, entre otras funcionalidades.
+## Instalar Angular
 
-## Características Principales
+Para instalar Angular de forma global tenemos que utilizar el comando:
 
-1. **[Componentes][components]**: Angular organiza la aplicación en componentes reutilizables que encapsulan la lógica, la vista y el
-   estilo. Cada componente es una pieza independiente de la interfaz de usuario.
+```sh
+npm install -g @angular/cli
+```
 
-2. **[Data Binding][databinding]**: Angular proporciona dos tipos principales de data binding: bidireccional y unidireccional. El data
-   binding bidireccional mantiene sincronizados el modelo y la vista, mientras que el unidireccional fluye desde el
-   modelo hacia la vista.
+Para instalar Angular en un proyecto tenemos que utilizar el comando desde la terminal ubicándose en el proyecto:
 
-3. **Inyección de Dependencias**: Angular utiliza un sistema de inyección de dependencias para gestionar la creación y
-   el suministro de servicios y otros objetos a los componentes.
+```sh
+npm install @angular/cli
+```
 
-4. **Enrutamiento**: Angular tiene un sistema de enrutamiento integrado que permite la navegación entre diferentes
-   vistas y componentes sin recargar la página.
+Verificamos la instalción son el comando:
 
-5. **Directivas**: Las directivas son atributos o elementos personalizados que permiten a los desarrolladores extender
-   el HTML y modificar el comportamiento de los elementos del DOM.
+```sh
+ng version
+```
 
-6. **Servicios**: Los servicios son objetos que se utilizan para compartir datos y funcionalidades entre diferentes
-   componentes.
+Si no nos permite comprobar la versión de Angular utilizaremos el siguiente comando:
 
+```sh
+Set-ExecutionPolicy - ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
 
-[components]: ./components/index.md
-[databinding]: components/databinding/index.md
+## Creación de un nuevo proyecto
+
+Antes de crear nuestro proyecto debemos decidir que clase de proyecto queremos usar _standalone_ o -clásico_:
+
+- Un proyecto standalone en Angular es una forma más reciente de configurar y desarrollar aplicaciones que permite
+  omitir el uso de NgModules para la organización del código. Este enfoque fue introducido en Angular v14 y tiene como
+  objetivo simplificar la estructura del proyecto y hacer que el desarrollo de componentes sea más directo y menos
+  dependiente de los módulos tradicionales.
+- Un proyecto no standalone o clásico es la forma tradicional de construir aplicaciones Angular, utilizando NgModules
+  para agrupar componentes, directivas, pipes, y servicios en unidades reutilizables.
+
+Para crear un nuevo proyecto standalone en Angular utilizamos en comando:
+
+```sh
+ng new nombreAplicacion
+```
+
+Si queremos crear un nuevo proyecto clásico:
+
+```sh
+ng new nombreAplicacion --standalone=false
+```
+
+El archivo **package.json** muestra las dependencias instaladas, la versión de angular y los comandos habilitados por
+Angular en el proyecto.
+
+Para iniciar el proyecto usamos el comando:
+
+```sh 
+ng serve
+```
+[node]: ../../../others/node/index.md
+
