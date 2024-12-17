@@ -92,6 +92,7 @@ nav:
               - Enlaces: frameworks/frontend/angular/additional_resources/index.md
               - Editar el menú contextual: frameworks/frontend/angular/additional_resources/context-menu/index.md
               - Variables de entorno: frameworks/frontend/angular/additional_resources/enviroments/index.md
+              - Docker para desarrollo: frameworks/frontend/angular/additional_resources/development-docker/index.md
       - React: frameworks/frontend/react/index.md
       - Electron:
           - Electron con Angular: frameworks/frontend/electron/electron-angular/index.md
