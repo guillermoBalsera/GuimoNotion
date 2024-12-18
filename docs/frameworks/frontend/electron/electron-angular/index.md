@@ -336,4 +336,10 @@ npm run dist
 
 Se crea un archivo `.exe` en la carpeta `dist_electron`, que al ejecutarlo instala la app.
 
+### Ejecutar la aplicación sin instalarla
+
+```shell
+npm run electron
+```
+
 [node]: ../../../others/node/index.md
